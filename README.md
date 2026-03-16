@@ -1,6 +1,6 @@
 # anthropics-education-FR
 
-Skills pour Claude — accompagnement scolaire et universitaire.
+Skills pour Claude -accompagnement scolaire et universitaire.
 
 ## Objectif
 
@@ -41,11 +41,11 @@ anthropics-education-FR/
 
 Le système utilise un **chargement progressif à 3 niveaux** :
 
-1. **Metadata** (toujours en contexte) — Le `name` + `description` dans le frontmatter YAML du SKILL.md. C'est ce que Claude lit pour décider s'il doit activer le skill. ~150 mots.
+1. **Metadata** (toujours en contexte) -Le `name` + `description` dans le frontmatter YAML du SKILL.md. C'est ce que Claude lit pour décider s'il doit activer le skill. ~150 mots.
 
-2. **SKILL.md** (chargé quand le skill se déclenche) — Le corps principal avec les modules, les principes, les réponses types. Contient les règles et la logique, pas les détails exhaustifs.
+2. **SKILL.md** (chargé quand le skill se déclenche) -Le corps principal avec les modules, les principes, les réponses types. Contient les règles et la logique, pas les détails exhaustifs.
 
-3. **references/** (chargé à la demande) — Les fichiers détaillés que Claude consulte uniquement quand la conversation porte sur un sujet spécifique. Par exemple, `normes-citation.md` n'est lu que si l'étudiant demande de l'aide sur sa bibliographie.
+3. **references/** (chargé à la demande) -Les fichiers détaillés que Claude consulte uniquement quand la conversation porte sur un sujet spécifique. Par exemple, `normes-citation.md` n'est lu que si l'étudiant demande de l'aide sur sa bibliographie.
 
 Cette architecture évite de surcharger le contexte avec des informations inutiles tout en gardant la profondeur disponible quand elle est nécessaire.
 
@@ -111,11 +111,11 @@ Copier-coller le contenu de `SKILL.md` dans la conversation ou dans les instruct
 
 ## Philosophie
 
-1. **Accompagner, pas remplacer** — Les skills guident l'étudiant dans sa réflexion au lieu d'écrire à sa place
-2. **Rigueur académique** — Aucune source inventée, normes de citation respectées
-3. **Anti-détection IA** — Textes naturels avec filtre intégré (vocabulaire, structure, connecteurs)
-4. **Adaptation au niveau** — Ajustement automatique de la profondeur selon le profil (lycée → M2)
-5. **Chargement progressif** — Les références lourdes ne sont lues que quand c'est pertinent
+1. **Accompagner, pas remplacer** -Les skills guident l'étudiant dans sa réflexion au lieu d'écrire à sa place
+2. **Rigueur académique** -Aucune source inventée, normes de citation respectées
+3. **Anti-détection IA** -Textes naturels avec filtre intégré (vocabulaire, structure, connecteurs)
+4. **Adaptation au niveau** -Ajustement automatique de la profondeur selon le profil (lycée → M2)
+5. **Chargement progressif** -Les références lourdes ne sont lues que quand c'est pertinent
 
 ## Consommation des modèles
 
@@ -136,12 +136,12 @@ Les contributions sont bienvenues. Ouvrez une issue ou une PR pour :
 
 ## Roadmap
 
-- [x] Skill `soutien-academique` — Mémoires, rapports, révisions, dissertation
-- [x] Skill `lettre-motivation` — LM personnalisées tous types
-- [x] Skill `plume-naturelle` — Réécriture anti-IA avec diagnostic et double passe
-- [ ] Skill `prepa-concours` — Préparation aux concours (CPGE, fonction publique, santé)
-- [ ] Skill `bts-pro` — Spécificités BTS (épreuves E4/E6, fiches, PFMP)
-- [ ] Skill `doctorat` — Accompagnement thèse (revue systématique, publication, HDR)
+- [x] Skill `soutien-academique` -Mémoires, rapports, révisions, dissertation
+- [x] Skill `lettre-motivation` -LM personnalisées tous types
+- [x] Skill `plume-naturelle` -Réécriture anti-IA avec diagnostic et double passe
+- [ ] Skill `prepa-concours` -Préparation aux concours (CPGE, fonction publique, santé)
+- [ ] Skill `bts-pro` -Spécificités BTS (épreuves E4/E6, fiches, PFMP)
+- [ ] Skill `doctorat` -Accompagnement thèse (revue systématique, publication, HDR)
 - [ ] Références supplémentaires par discipline (droit, santé, STAPS, info...)
 - [ ] Templates DOCX/PPTX prêts à l'emploi
 
