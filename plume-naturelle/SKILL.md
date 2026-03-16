@@ -12,7 +12,7 @@ description: >
 version: 1.0.0
 ---
 
-# Plume Naturelle — Moteur de réécriture anti-IA pour le français
+# Plume Naturelle -Moteur de réécriture anti-IA pour le français
 
 ## Principe directeur
 
@@ -23,7 +23,7 @@ Retirer les patterns est nécessaire mais insuffisant. Le but final est qu'un pr
 un recruteur ou un pair lise le texte et pense : « cette personne réfléchit et écrit. »
 
 Deux textes peuvent être grammaticalement parfaits, factuellement corrects, et bien
-structurés — l'un sonne comme une machine, l'autre comme un être humain. La différence
+structurés -l'un sonne comme une machine, l'autre comme un être humain. La différence
 tient à des dizaines de micro-signaux : le rythme des phrases, le choix d'un mot concret
 plutôt qu'un mot abstrait, une hésitation assumée, un exemple vécu, une parenthèse qui
 trahit la pensée en cours. Ce skill traque systématiquement les signaux artificiels et
@@ -35,13 +35,13 @@ aucune trace de ce processus. Il doit simplement *être* un bon texte.
 
 ---
 
-## Étape 0 — Diagnostic rapide (OBLIGATOIRE)
+## Étape 0 -Diagnostic rapide (OBLIGATOIRE)
 
 Avant toute réécriture, scanner le texte et compter :
 
 | Signal recherché | Seuil d'alerte |
 |---|---|
-| Tirets cadratins (—) | > 2 par page |
+| Tirets cadratins (— ou –) | > 0 dans tout le texte |
 | « De plus » / « En outre » / « Par ailleurs » | > 1 par paragraphe |
 | Triades (X, Y et Z) | > 2 par page |
 | Superlatifs vides (crucial, fondamental, essentiel, majeur) | > 3 par page |
@@ -60,8 +60,8 @@ Additionner le nombre total d'occurrences détectées.
 
 | Score | Niveau | Action |
 |---|---|---|
-| 0–3 | Léger | Retouches ciblées, le texte est déjà proche du naturel |
-| 4–8 | Modéré | Réécriture partielle, plusieurs paragraphes à reprendre |
+| 0-3 | Léger | Retouches ciblées, le texte est déjà proche du naturel |
+| 4-8 | Modéré | Réécriture partielle, plusieurs paragraphes à reprendre |
 | 9+ | Réécriture profonde | Le texte doit être fondamentalement repensé |
 
 **Toujours afficher le diagnostic à l'utilisateur avant de réécrire.**
@@ -88,7 +88,7 @@ Patterns dominants : [les 3 principaux problèmes]
 
 ---
 
-## Phase 1 — Patterns de contenu
+## Phase 1 -Patterns de contenu
 
 ### Pattern 1 : Inflation de l'importance
 
@@ -105,7 +105,7 @@ L'IA a tendance à gonfler l'importance de tout ce qu'elle décrit. Chaque évé
 > Le prélèvement à la source, entré en vigueur en janvier 2019, a changé la manière
 > dont l'impôt est collecté : c'est l'employeur qui verse directement, et non plus le
 > contribuable qui paie avec un an de décalage. En pratique, ça a surtout simplifié les
-> choses pour les salariés — mais compliqué la vie des gestionnaires de paie.
+> choses pour les salariés -mais compliqué la vie des gestionnaires de paie.
 
 **Règle** : énoncer le fait simplement. Si c'est vraiment important, le lecteur le verra
 sans qu'on le lui dise.
@@ -121,7 +121,7 @@ sérieux, mais sans les contextualiser ni les relier à l'argument.
 
 **Après :**
 > Porter a posé le cadre avec la chaîne de valeur en 1985 ; trente ans plus tard, le
-> modèle tient encore, mais il suppose une entreprise intégrée — ce qui ne correspond
+> modèle tient encore, mais il suppose une entreprise intégrée -ce qui ne correspond
 > plus au fonctionnement de beaucoup de PME qui externalisent presque tout.
 
 **Règle** : ne citer que ce qui sert l'argument. Une référence bien exploitée vaut mieux
@@ -130,7 +130,7 @@ que trois noms lâchés en passant.
 ### Pattern 3 : Analyses superficielles en -ant
 
 Le participe présent est le refuge favori de l'IA quand elle veut donner l'illusion de
-la profondeur sans rien expliquer. « Permettant de... assurant... favorisant... » — ces
+la profondeur sans rien expliquer. « Permettant de... assurant... favorisant... » -ces
 constructions n'expliquent jamais *comment*.
 
 **Avant :**
@@ -141,7 +141,7 @@ constructions n'expliquent jamais *comment*.
 **Après :**
 > Quand le rapprochement bancaire se fait automatiquement, le collaborateur qui y passait
 > deux heures par client peut consacrer ce temps à l'analyse. Le risque d'erreur de
-> saisie disparaît — et avec lui, les heures perdues à chercher d'où vient l'écart de
+> saisie disparaît -et avec lui, les heures perdues à chercher d'où vient l'écart de
 > 12 centimes en fin de mois.
 
 **Règle** : remplacer chaque -ant par un mécanisme concret. Si on ne peut pas expliquer
@@ -163,12 +163,12 @@ toujours « riche », la dynamique est « positive », l'approche est « innovan
 > investissement est le plus rapide.
 
 **Règle** : remplacer les adjectifs promotionnels par des faits. Si le cabinet est
-vraiment innovant, montrer ce qu'il fait — pas le dire.
+vraiment innovant, montrer ce qu'il fait -pas le dire.
 
 ### Pattern 5 : Attributions vagues
 
 « Les experts s'accordent à dire... », « Selon plusieurs études... », « Il est largement
-reconnu que... » — quand l'IA ne sait pas citer une source précise, elle invente une
+reconnu que... » -quand l'IA ne sait pas citer une source précise, elle invente une
 autorité floue.
 
 **Avant :**
@@ -193,7 +193,7 @@ d'une note d'optimisme (maximisée). C'est un tic reconnaissable à dix mètres.
 > technologies.
 
 **Après :**
-> Le principal frein, au cabinet ATF, n'est pas le budget — c'est le temps. Tester
+> Le principal frein, au cabinet Leroy, n'est pas le budget -c'est le temps. Tester
 > Dext ou Pennylane prend des heures que personne n'a en période fiscale. La solution
 > retenue a été de dédier un collaborateur à l'outil pendant le mois de juin, quand
 > l'activité ralentit. Est-ce que ça a marché ? Partiellement. Le logiciel tourne, mais
@@ -204,12 +204,12 @@ succès. Un vrai mémoire professionnel montre ce qui n'a *pas* marché aussi.
 
 ---
 
-## Phase 2 — Patterns de langue
+## Phase 2 -Patterns de langue
 
 ### Pattern 7 : Vocabulaire IA français
 
 L'IA en français a un lexique restreint et répétitif. Les mots ci-dessous, pris
-individuellement, sont parfaitement corrects — mais leur accumulation est un signal fort.
+individuellement, sont parfaitement corrects -mais leur accumulation est un signal fort.
 
 #### Table de remplacement
 
@@ -256,7 +256,7 @@ par page, c'est un signal. Varier, concrétiser, simplifier.
 
 L'IA remplace systématiquement « est » par des verbes plus « soutenus » : constitue,
 représente, incarne, illustre. En français naturel, « être » est le verbe le plus
-courant — et c'est normal.
+courant -et c'est normal.
 
 **Avant :**
 > La comptabilité analytique constitue un outil indispensable qui représente un pilier
@@ -264,7 +264,7 @@ courant — et c'est normal.
 
 **Après :**
 > La comptabilité analytique est un outil de gestion. Elle sert à savoir combien coûte
-> réellement chaque activité — et donc où l'entreprise gagne ou perd de l'argent.
+> réellement chaque activité -et donc où l'entreprise gagne ou perd de l'argent.
 
 **Règle** : ne pas fuir « être ». C'est souvent le choix le plus clair.
 
@@ -293,11 +293,11 @@ jamais.
 > Cette approche améliore la productivité, la qualité et la satisfaction client.
 
 **Après :**
-> En pratique, les délais de production ont baissé — et les clients reçoivent leurs
+> En pratique, les délais de production ont baissé -et les clients reçoivent leurs
 > bilans plus tôt. Pour la qualité, c'est plus nuancé : il y a moins d'erreurs de
 > saisie, mais la revue analytique reste manuelle.
 
-**Règle** : casser les triades. Enumérer par deux, par quatre, ou mieux — développer
+**Règle** : casser les triades. Enumérer par deux, par quatre, ou mieux -développer
 chaque point séparément.
 
 ### Pattern 11 : Variation synonymique excessive
@@ -337,16 +337,15 @@ L'IA produit des énumérations qui sonnent bien mais ne disent rien : « du dia
 
 ---
 
-## Phase 3 — Patterns de style
+## Phase 3 -Patterns de style
 
 ### Pattern 13 : Tirets cadratins en excès
 
-Le tiret cadratin (—) est le signe de ponctuation préféré de l'IA. Dans un texte humain,
-on en trouve un ou deux par page. L'IA en met trois par paragraphe.
+Le tiret cadratin (— ou –) est le signe de ponctuation préféré de l'IA. Un texte humanisé ne doit en contenir aucun. Remplacer systématiquement par une virgule, un point, une parenthèse ou une reformulation.
 
 **Avant :**
-> La digitalisation — qui touche tous les secteurs — impose aux cabinets — qu'ils soient
-> grands ou petits — de repenser leurs processus — sous peine de perdre en compétitivité.
+> La digitalisation -qui touche tous les secteurs -impose aux cabinets -qu'ils soient
+> grands ou petits -de repenser leurs processus -sous peine de perdre en compétitivité.
 
 **Après :**
 > La digitalisation touche tous les secteurs, y compris les petits cabinets. Ceux qui ne
@@ -362,7 +361,7 @@ L'IA met en gras tous les mots qu'elle juge importants. Le résultat : une page 
 est souligné, donc rien ne ressort.
 
 **Règle** : dans un mémoire ou un rapport, le gras se limite aux titres et sous-titres.
-Dans le corps du texte, il est exceptionnel — un ou deux mots par chapitre, pas plus.
+Dans le corps du texte, il est exceptionnel -un ou deux mots par chapitre, pas plus.
 En cas de doute, supprimer tout le gras dans le corps du texte.
 
 ### Pattern 15 : Listes à puces avec en-têtes en gras
@@ -412,11 +411,11 @@ Autres points de typographie française :
 - Points de suspension : trois points (…) et non trois points séparés (...)
 
 **Règle** : vérifier systématiquement la typographie française. Un texte avec des
-guillemets droits trahit une origine anglophone — ou une génération par IA.
+guillemets droits trahit une origine anglophone -ou une génération par IA.
 
 ---
 
-## Phase 4 — Patterns de communication
+## Phase 4 -Patterns de communication
 
 ### Pattern 19 : Artefacts de chatbot
 
@@ -430,7 +429,7 @@ relecture :
 - « Je serais ravi de vous aider avec... »
 
 **Règle** : supprimer intégralement. Si ces phrases apparaissent dans un texte soumis
-à humanisation, c'est un signal que le texte n'a subi aucune relecture — prévoir une
+à humanisation, c'est un signal que le texte n'a subi aucune relecture -prévoir une
 réécriture profonde.
 
 ### Pattern 20 : Disclaimers de connaissance
@@ -463,7 +462,7 @@ signaler à l'utilisateur.
 
 ---
 
-## Phase 5 — Remplissage et couverture
+## Phase 5 -Remplissage et couverture
 
 ### Pattern 22 : Phrases de remplissage
 
@@ -525,14 +524,14 @@ passer concrètement ? Qu'est-ce que l'auteur recommande ? Qu'est-ce qui reste �
 > incontournable dont les perspectives s'annoncent prometteuses.
 
 **Après :**
-> Le cabinet ATF va déployer Pennylane sur l'ensemble des dossiers d'ici septembre.
+> Le cabinet Leroy va déployer Pennylane sur l'ensemble des dossiers d'ici septembre.
 > Le risque principal est la surcharge en période fiscale. La recommandation est de
 > maintenir l'ancien système en parallèle pendant six mois, le temps que toute l'équipe
-> soit à l'aise — quitte à assumer le coût de la double licence.
+> soit à l'aise -quitte à assumer le coût de la double licence.
 
 ---
 
-## Phase 6 — Patterns spécifiques au français académique
+## Phase 6 -Patterns spécifiques au français académique
 
 Ces patterns ne figurent pas dans les guides anglophones. Ils sont propres au système
 éducatif français et aux mémoires produits dans les formations professionnelles (DCG,
@@ -560,10 +559,10 @@ la réflexion.
 > digitale des cabinets d'expertise comptable.
 
 **Après :**
-> En septembre 2024, quand j'ai commencé mon alternance au cabinet ATF, les
+> En septembre 2024, quand j'ai commencé mon alternance au cabinet Leroy, les
 > collaborateurs utilisaient encore un tableur Excel pour le suivi des déclarations
 > de TVA. Huit mois plus tard, la moitié des dossiers est sur Pennylane. Ce mémoire
-> raconte cette transition — ce qui a marché, ce qui a coincé, et ce qu'il reste à faire.
+> raconte cette transition -ce qui a marché, ce qui a coincé, et ce qu'il reste à faire.
 
 ### Pattern 26 : Transitions mécaniques
 
@@ -580,11 +579,11 @@ L'IA signale chaque changement de section avec une phrase de transition scolaire
 
 **Avant :**
 > Après avoir présenté le cadre théorique de la transformation digitale, nous allons
-> maintenant nous intéresser à sa mise en oeuvre concrète au sein du cabinet ATF.
+> maintenant nous intéresser à sa mise en oeuvre concrète au sein du cabinet Leroy.
 
 **Après :**
 > [Fin de la partie I. Début de la partie II avec un titre explicite.]
-> Le cabinet ATF emploie huit personnes et traite 200 dossiers par an, principalement
+> Le cabinet Leroy emploie huit personnes et traite 200 dossiers par an, principalement
 > des TPE et des professions libérales. C'est ce terrain qui a servi de laboratoire.
 
 ### Pattern 27 : Conclusions creuses
@@ -604,7 +603,7 @@ résumer ce qu'on a déjà lu, elle ne sert à rien.
 
 **Après :**
 > La question de départ était : comment un petit cabinet peut-il se digitaliser sans
-> s'arrêter de produire ? La réponse, au cabinet ATF, a été de procéder outil par outil,
+> s'arrêter de produire ? La réponse, au cabinet Leroy, a été de procéder outil par outil,
 > en commençant par la facture fournisseur. Ce qui n'a pas été résolu : la formation
 > continue. Deux collaborateurs sur huit ne sont toujours pas autonomes sur Pennylane,
 > et personne n'a le temps de les accompagner.
@@ -616,7 +615,7 @@ qui sonne creux quand il n'est pas ancré dans du concret.
 
 | Expression IA | Le problème |
 |---|---|
-| Optimisation fiscale | Trop vague — optimisation de quoi, comment, pour quel gain ? |
+| Optimisation fiscale | Trop vague -optimisation de quoi, comment, pour quel gain ? |
 | Pilotage de la performance | Quel indicateur ? Quel tableau de bord ? Quelle fréquence ? |
 | Création de valeur | Valeur pour qui ? Mesurée comment ? |
 | Avantage concurrentiel durable | Par rapport à qui ? Sur quel marché ? |
@@ -630,7 +629,7 @@ explication concrète. Sinon, c'est du remplissage.
 ### Pattern 29 : Incohérence temporelle
 
 Dans les mémoires en alternance, l'IA mélange les temps : présent de narration, passé
-composé, imparfait, parfois même passé simple — le tout dans le même paragraphe, sans
+composé, imparfait, parfois même passé simple -le tout dans le même paragraphe, sans
 logique.
 
 **Règle** : choisir un système temporel et s'y tenir.
@@ -645,7 +644,7 @@ Vérifier la cohérence temporelle à chaque paragraphe.
 
 Un vrai texte humain varie légèrement de registre. Un mémoire professionnel peut contenir
 un passage un peu plus informel quand l'auteur raconte une anecdote, puis revenir à un
-ton plus analytique. L'IA maintient un registre parfaitement constant — c'est justement
+ton plus analytique. L'IA maintient un registre parfaitement constant -c'est justement
 ce qui sonne faux.
 
 **Règle** : autoriser de légères variations. Une parenthèse plus familière dans un
@@ -655,11 +654,11 @@ rapprochements à la main »). Ces micro-variations sont des signatures humaines
 
 ---
 
-## Phase 7 — Injection d'âme
+## Phase 7 -Injection d'âme
 
 Après avoir retiré les patterns IA, le texte risque d'être « propre » mais sans vie.
 C'est un texte fantôme : grammaticalement correct, factuellement exact, structurellement
-cohérent — et parfaitement ennuyeux.
+cohérent -et parfaitement ennuyeux.
 
 ### Signes d'un texte sans âme
 
@@ -677,15 +676,15 @@ cohérent — et parfaitement ennuyeux.
 
 Phrase courte. Puis une longue qui prend le temps de développer une idée, qui s'autorise
 un détour, qui ajoute une nuance. Puis une courte à nouveau. Le rythme, c'est la
-respiration du texte — et un texte qui ne respire pas est un texte mort.
+respiration du texte -et un texte qui ne respire pas est un texte mort.
 
 **Avant (rythme uniforme) :**
 > Le logiciel a été déployé en septembre. La formation a duré deux semaines. Les
 > résultats ont été positifs. La productivité a augmenté.
 
 **Après (rythme varié) :**
-> Le logiciel a été déployé en septembre. La formation — deux semaines, pas une de plus,
-> parce que la période fiscale approchait — a été intense mais insuffisante pour les
+> Le logiciel a été déployé en septembre. La formation -deux semaines, pas une de plus,
+> parce que la période fiscale approchait -a été intense mais insuffisante pour les
 > collaborateurs les moins à l'aise avec l'informatique. Résultat : en décembre, trois
 > personnes sur huit utilisent vraiment l'outil. Les autres reviennent à Excel dès que
 > ça se complique.
@@ -693,7 +692,7 @@ respiration du texte — et un texte qui ne respire pas est un texte mort.
 #### Avoir un avis
 
 Un mémoire professionnel n'est pas un rapport d'audit neutre. L'auteur a vécu la mission,
-il a observé, il a un point de vue. Ne pas juste rapporter — réagir.
+il a observé, il a un point de vue. Ne pas juste rapporter -réagir.
 
 **Avant (neutre) :**
 > L'outil présente des avantages et des inconvénients.
@@ -711,7 +710,7 @@ admettent ne pas savoir.
 
 - « C'est impressionnant, mais aussi un peu inquiétant. »
 - « Honnêtement, je ne suis pas sûr que ce soit la bonne approche. »
-- « Les résultats sont encourageants — reste à voir s'ils tiennent sur la durée. »
+- « Les résultats sont encourageants -reste à voir s'ils tiennent sur la durée. »
 - « Il y a quelque chose de dérangeant dans le fait que... »
 
 #### Utiliser « je » quand le format le permet
@@ -733,11 +732,11 @@ Un texte trop lisse est suspect. Les vrais textes humains ont des aspérités : 
 parenthèse qui ouvre un aparté, une question rhétorique, une précision inutile mais
 vivante, une reformulation en cours de phrase.
 
-- « Le taux d'erreur a baissé (enfin, sur les dossiers testés — les autres, on ne sait
+- « Le taux d'erreur a baissé (enfin, sur les dossiers testés -les autres, on ne sait
   pas). »
 - « Pourquoi ne pas avoir commencé plus tôt ? Bonne question. »
-- « Le directeur du cabinet — qui est aussi expert-comptable, commissaire aux comptes
-  et formateur, autrement dit quelqu'un de débordé — a validé le projet en juin. »
+- « Le directeur du cabinet -qui est aussi expert-comptable, commissaire aux comptes
+  et formateur, autrement dit quelqu'un de débordé -a validé le projet en juin. »
 
 #### Être précis sur les ressentis
 
@@ -750,19 +749,19 @@ inquiétant. Un humain est plus précis.
 **Après :**
 > Il y a quelque chose de dérangeant dans le fait que la moitié des cabinets n'ont
 > toujours pas de processus de sauvegarde automatisé. Ce n'est pas un problème
-> technologique — les solutions existent et coûtent 20 euros par mois. C'est un
+> technologique -les solutions existent et coûtent 20 euros par mois. C'est un
 > problème d'habitude, et ça, c'est beaucoup plus difficile à changer.
 
 ---
 
-## Phase 8 — Contre-mesures anti-détection statistique (LLM-based)
+## Phase 8 -Contre-mesures anti-détection statistique (LLM-based)
 
 Les détecteurs modernes (Compilatio, Turnitin AI, GPTZero) n'utilisent plus seulement
 des listes de mots. Ils font passer le texte dans leurs propres LLM (Claude Sonnet 4.5,
 GPT 5.2, GPT 5.1, Gemini 2.5 Pro, Gemini 3 Pro) et analysent des **signaux statistiques**
 invisibles à l'oeil nu. Comprendre ces signaux est essentiel pour les contrer.
 
-### 8.1 — La perplexité (le signal #1)
+### 8.1 -La perplexité (le signal #1)
 
 **Ce que le détecteur mesure :** à chaque mot du texte, le LLM calcule la probabilité
 qu'il avait de prédire ce mot. Si le texte entier est composé de mots « évidents »
@@ -783,21 +782,21 @@ exactement celui qu'un modèle aurait prédit.
   de « Complexe ».
 
 - **Insérer des détails spécifiques imprévisibles.** Les noms propres, les chiffres précis,
-  les dates exactes, les noms d'outils réels — tout ce qu'un LLM ne peut pas prédire —
+  les dates exactes, les noms d'outils réels (tout ce qu'un LLM ne peut pas prédire)
   augmentent la perplexité du texte.
 
-  **Avant (basse perplexité — chaque mot est prédictible) :**
+  **Avant (basse perplexité -chaque mot est prédictible) :**
   > L'automatisation des processus comptables permet d'améliorer la productivité.
 
-  **Après (haute perplexité — mots imprévisibles en gras) :**
+  **Après (haute perplexité -mots imprévisibles en gras) :**
   > Depuis qu'on a basculé les **rapprochements bancaires** sur **Dext** en **octobre**,
-  > **Marie** — qui y passait **trois heures** par client — a récupéré ses **mardis après-midi**.
+  > **Marie** -qui y passait **trois heures** par client -a récupéré ses **mardis après-midi**.
 
 - **Emprunter au registre oral (quand le format le permet).** Les tournures orales sont
   statistiquement imprévisibles pour un LLM entraîné sur du texte écrit formel.
   « Le souci, c'est que... », « Du coup... » (en rapport de stage), « Autrement dit... »
 
-### 8.2 — La burstiness (le signal #2)
+### 8.2 -La burstiness (le signal #2)
 
 **Ce que le détecteur mesure :** la variance de complexité entre les phrases. Un humain
 écrit de manière « burst » : une phrase simple, puis une complexe avec subordonnées,
@@ -815,12 +814,12 @@ puis une très courte. L'IA tend vers une complexité **uniforme**.
   (« Résultat : un gain de 3 heures »), des questions (« Et si c'était plus simple ? »).
 
 - **Casser la régularité des paragraphes.** Un paragraphe de 2 phrases. Suivi d'un de 8.
-  Puis un de 4. L'IA produit des paragraphes de longueur similaire — les humains non.
+  Puis un de 4. L'IA produit des paragraphes de longueur similaire -les humains non.
 
 **Test rapide :** compter les mots de chaque phrase sur une demi-page. Si l'écart-type
 est inférieur à 5, le texte est trop uniforme. Viser un écart-type supérieur à 8.
 
-### 8.3 — La distribution de probabilité des tokens
+### 8.3 -La distribution de probabilité des tokens
 
 **Ce que le détecteur mesure :** le détecteur re-génère le texte mot par mot avec son
 propre LLM. Si, à chaque position, le mot présent dans le texte est celui que le LLM
@@ -835,7 +834,7 @@ aurait choisi (top-1 ou top-3), le texte est signalé comme IA.
   - Le dernier mot avant un point (l'IA finit souvent par un nom abstrait)
 
 - **Commencer les phrases de manière variée.** Varier entre :
-  - Un nom propre (« Le cabinet ATF... »)
+  - Un nom propre (« Le cabinet Leroy... »)
   - Un adverbe (« Concrètement, ... »)
   - Un verbe (« Reste à savoir si... »)
   - Un pronom (« J'ai constaté que... »)
@@ -845,10 +844,10 @@ aurait choisi (top-1 ou top-3), le texte est signalé comme IA.
   Ne jamais commencer plus de deux phrases consécutives par le même type de mot.
 
 - **Placer l'information inattendue en position forte.** Début ou fin de phrase :
-  > « Le gain de temps est réel — **mais personne ne l'utilise le vendredi**. »
+  > « Le gain de temps est réel -**mais personne ne l'utilise le vendredi**. »
   L'incise finale est imprévisible pour un LLM et ancre le texte dans le réel.
 
-### 8.4 — L'entropie et la cohérence thématique
+### 8.4 -L'entropie et la cohérence thématique
 
 **Ce que le détecteur mesure :** l'IA maintient un niveau d'entropie (incertitude
 informationnelle) constant tout au long du texte. Un humain a des zones denses
@@ -864,7 +863,7 @@ informationnelle) constant tout au long du texte. Un humain a des zones denses
   pense en écrivant.
 
   > « Le taux d'utilisation de Pennylane a atteint 75 % en janvier (je soupçonne que
-  > c'est parce que les résolutions de nouvelle année ont joué — en février, on était
+  > c'est parce que les résolutions de nouvelle année ont joué -en février, on était
   > retombé à 60 %). »
 
 - **Créer des ruptures de rythme informationnelles.** Phrase longue pleine de données,
@@ -873,12 +872,12 @@ informationnelle) constant tout au long du texte. Un humain a des zones denses
   > à 12 minutes sur les 30 dossiers testés entre octobre et décembre. Honnêtement,
   > je ne m'y attendais pas. »
 
-### 8.5 — Les marqueurs de richesse lexicale
+### 8.5 -Les marqueurs de richesse lexicale
 
 **Ce que le détecteur mesure :** le ratio type/token (nombre de mots uniques / nombre
 total de mots). L'IA a un ratio plus bas que les humains car elle recycle les mêmes
 mots. Les détecteurs mesurent aussi les **hapax** (mots qui n'apparaissent qu'une seule
-fois dans le texte) — les humains en produisent plus.
+fois dans le texte) -les humains en produisent plus.
 
 **Comment enrichir naturellement le vocabulaire :**
 
@@ -891,13 +890,13 @@ fois dans le texte) — les humains en produisent plus.
   est sale ». Ces mots sont rares dans les corpus d'entraînement IA.
 
 - **Éviter les verbes passe-partout.** « Faire », « mettre en place », « permettre »,
-  « avoir » — les remplacer par des verbes spécifiques : « paramétrer », « basculer »,
+  « avoir » -les remplacer par des verbes spécifiques : « paramétrer », « basculer »,
   « déployer », « ventiler », « lettrer », « pointer ».
 
 - **Viser au moins 2-3 hapax par paragraphe.** Un mot qui n'apparaît qu'une fois dans
   tout le texte est un signal humain fort.
 
-### 8.6 — Le piège de la sur-humanisation
+### 8.6 -Le piège de la sur-humanisation
 
 **Attention** : les détecteurs LLM de dernière génération (Compilatio v4, Turnitin v3)
 sont entraînés sur des textes « humanisés par IA ». Ils reconnaissent donc les patterns
@@ -917,11 +916,11 @@ d'humanisation mécanique :
 2. **Ancrer dans le réel** avec des détails que seule une personne ayant vécu l'expérience
    connaîtrait (nom du logiciel, nombre de collaborateurs, anecdote de terrain)
 3. **Accepter les imperfections naturelles** : une phrase un peu longue, une transition
-   abrupte, une répétition non voulue — PAS des fautes artificielles
+   abrupte, une répétition non voulue -PAS des fautes artificielles
 4. **Maintenir une cohérence de voix** : le même « je » tout au long, avec les mêmes
    tics de langage légers (un étudiant qui dit « du coup » le dira plusieurs fois)
 
-### 8.7 — Checklist anti-détection statistique
+### 8.7 -Checklist anti-détection statistique
 
 À passer sur tout texte humanisé avant livraison :
 
@@ -943,7 +942,7 @@ d'humanisation mécanique :
 
 ---
 
-## Processus complet — Format de sortie
+## Processus complet -Format de sortie
 
 Chaque réécriture suit ces cinq étapes, dans cet ordre. Ne jamais sauter d'étape.
 
@@ -963,13 +962,13 @@ Adapter au type de document (cf. table ci-dessous).
 Se poser la question : « Si j'étais Compilatio avec Claude Sonnet 4.5 et GPT 5.2,
 qu'est-ce qui me ferait flaguer ce texte ? »
 
-**Grille 1 — Patterns de surface :**
+**Grille 1 -Patterns de surface :**
 - Les tells IA qui pourraient subsister (vocabulaire, connecteurs, triades)
 - Les passages encore trop lisses
 - Les transitions encore mécaniques
 - Les endroits où le « je » ou l'avis manque (si le format le permet)
 
-**Grille 2 — Signaux statistiques :**
+**Grille 2 -Signaux statistiques :**
 - La variance de longueur de phrase est-elle suffisante ?
 - Y a-t-il assez de détails spécifiques (noms, chiffres, dates) ?
 - Le vocabulaire est-il suffisamment riche (hapax, termes techniques) ?
@@ -1038,11 +1037,11 @@ naturel, exemples concrets.
 
 ## Exemple complet
 
-### AVANT — Introduction typiquement IA d'un mémoire professionnel
+### AVANT -Introduction typiquement IA d'un mémoire professionnel
 
 > Dans un monde en constante évolution, la transformation digitale est devenue un enjeu
-> majeur pour les entreprises. De plus, cette mutation profonde — qui touche tous les
-> secteurs — s'inscrit dans une dynamique globale de modernisation. En outre, il convient
+> majeur pour les entreprises. De plus, cette mutation profonde -qui touche tous les
+> secteurs -s'inscrit dans une dynamique globale de modernisation. En outre, il convient
 > de souligner que les cabinets d'expertise comptable ne font pas exception à cette
 > tendance. Par ailleurs, l'automatisation des processus comptables permet d'améliorer
 > significativement la productivité, favorisant ainsi une meilleure allocation des
@@ -1076,11 +1075,11 @@ Patterns dominants :
   3. Conclusion positive générique (Pattern 24)
 ```
 
-### APRÈS — Version humanisée
+### APRÈS -Version humanisée
 
-> Le cabinet ATF traite 200 dossiers par an avec les mêmes outils qu'en 2015. Les
+> Le cabinet Leroy traite 200 dossiers par an avec les mêmes outils qu'en 2015. Les
 > déclarations de TVA se font encore sur tableur, les rapprochements bancaires à la
-> main. Ce n'est pas un problème de volonté — c'est un problème de temps et de moyens.
+> main. Ce n'est pas un problème de volonté -c'est un problème de temps et de moyens.
 > La question que pose ce mémoire est simple : par où commencer quand on est huit, que
 > les clients attendent leurs bilans, et que personne n'a trois semaines pour tester un
 > nouveau logiciel ?
@@ -1159,12 +1158,12 @@ Si l'utilisateur demande une humanisation « totale » ou « profonde » :
 2. **Ne jamais mentionner le processus d'humanisation dans le texte final.** Le texte
    ne doit contenir aucune trace de cette réécriture.
 
-3. **Le concret bat l'abstrait.** Toujours. Un chiffre, un nom, une date, un lieu —
+3. **Le concret bat l'abstrait.** Toujours. Un chiffre, un nom, une date, un lieu :
    c'est ce qui rend un texte vivant et crédible.
 
 4. **La perfection est suspecte.** Un texte trop parfait, trop équilibré, trop bien
    structuré est un signal IA. Les vrais textes humains ont des imperfections mineures
-   — une phrase un peu longue, une transition abrupte, un mot répété.
+   -une phrase un peu longue, une transition abrupte, un mot répété.
 
 5. **L'auto-audit est obligatoire.** Ne jamais livrer sans relire avec l'oeil du
    détecteur. Passer la double grille : patterns de surface ET signaux statistiques.
@@ -1177,7 +1176,7 @@ Si l'utilisateur demande une humanisation « totale » ou « profonde » :
 7. **Respecter le registre du document.** Ne pas injecter de la familiarité dans une
    dissertation. Ne pas maintenir un ton guindé dans un rapport de stage.
 
-8. **Préserver le sens.** L'humanisation ne change pas le contenu — elle change la
+8. **Préserver le sens.** L'humanisation ne change pas le contenu -elle change la
    forme. Si le texte original dit quelque chose de faux, le signaler à l'utilisateur
    plutôt que de réécrire joliment une erreur.
 
@@ -1193,4 +1192,4 @@ Si l'utilisateur demande une humanisation « totale » ou « profonde » :
 | Fichier | Quand le consulter |
 |---|---|
 | `references/patterns-par-discipline.md` | Patterns IA spécifiques à une discipline (compta, droit, SHS, info, santé) |
-| `/mnt/skills/user/soutien-academique/SKILL.md` | Si le texte à humaniser est un mémoire/rapport — utiliser aussi les règles d'écriture naturelle de ce skill |
+| `/mnt/skills/user/soutien-academique/SKILL.md` | Si le texte à humaniser est un mémoire/rapport -utiliser aussi les règles d'écriture naturelle de ce skill |
