@@ -102,6 +102,48 @@ Si un mot sonne comme un rapport de consultant McKinsey, le remplacer par son
 équivalent concret. "Nous avons identifié des synergies entre les équipes" → "Les
 deux équipes ont commencé à travailler ensemble sur le même fichier client."
 
+### Vocabulaire IA spécifique compta/gestion
+
+Les mémoires en compta/gestion ont leurs propres patterns IA. Les détecteurs les repèrent
+d'autant plus que ce vocabulaire est récurrent dans les formations ChatGPT.
+
+| Mot/expression IA (compta/gestion) | Remplacements possibles |
+|-------------------------------------|------------------------|
+| optimisation fiscale | réduction de la charge fiscale, choix de régime fiscal, stratégie déclarative |
+| pilotage de la performance | suivi des résultats, tableau de bord mensuel, analyse des écarts |
+| création de valeur | augmentation du résultat net, amélioration de la marge, gain de productivité chiffré |
+| outil d'aide à la décision | tableau de bord, reporting, fichier de suivi |
+| levier de compétitivité | avantage concret, gain mesurable, différenciation sur [point précis] |
+| digitalisation des processus | passage de [outil ancien] à [outil nouveau], automatisation de [tâche précise] |
+| dans un contexte de mondialisation | [supprimer ou remplacer par le contexte réel de l'entreprise] |
+| accompagner la transformation | mettre en place [outil], former les équipes à [logiciel] |
+| gestion optimale des ressources | [décrire ce qui a été fait concrètement avec des chiffres] |
+
+### Cohérence temporelle — mémoires en alternance
+
+Les mémoires en alternance mélangent souvent les temps de manière incohérente, ce qui
+est un signal de rédaction automatisée. Règle claire :
+
+| Section du mémoire | Temps à utiliser | Exemple |
+|---|---|---|
+| Description de l'entreprise | Présent | "Le cabinet compte 8 collaborateurs" |
+| Missions réalisées | Passé composé ou imparfait | "J'ai développé une macro" / "Le processus prenait 3 heures" |
+| Cadre théorique | Présent de vérité générale | "Selon Bouquin (2010), le contrôle de gestion vise à..." |
+| Analyse des résultats | Présent d'analyse | "Les résultats montrent que..." |
+| Préconisations | Conditionnel ou futur | "Le cabinet pourrait envisager..." |
+
+**Piège fréquent :** passer du passé au présent au milieu d'un paragraphe de mission.
+Relire chaque paragraphe en vérifiant que le temps est cohérent du début à la fin.
+
+---
+
+## 3b. Filtre anti-IA approfondi — skill humanizer
+
+> Si l'étudiant a besoin d'un filtre plus profond que cette checklist (par exemple pour
+> réécrire un texte déjà produit), le skill **plume-naturelle** peut être chargé en
+> complément : `/mnt/skills/user/plume-naturelle/SKILL.md` (si installé). Il propose
+> un diagnostic complet, 30 patterns de détection, et une double passe de réécriture.
+
 ---
 
 ## 4. Introductions et conclusions

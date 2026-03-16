@@ -1,13 +1,17 @@
 ---
 name: soutien-academique
 description: >
-  Accompagne les étudiants (lycée, licence, BUT, master) dans la rédaction académique et le
+  Accompagne les étudiants (lycée, IUT, BUT, licence, master) dans la rédaction académique et le
   soutien scolaire. Trigger dès que l'utilisateur mentionne : mémoire, rapport de stage, thèse,
   soutenance, problématique, revue de littérature, méthodologie de recherche, bibliographie,
-  citation APA, rapport d'alternance, fiche de révision, explication de cours, aide aux devoirs,
-  dissertation, commentaire de texte, annales, partiel, rédaction académique. Trigger aussi pour :
-  "j'ai un mémoire à rendre", "je comprends pas ce cours", "aide-moi à réviser", "je prépare
-  ma soutenance", "je bloque sur ma problématique", ou tout sujet de devoir/examen partagé.
+  citation APA, rapport d'alternance, contrat d'apprentissage, fiche de révision, explication de
+  cours, aide aux devoirs, dissertation, commentaire de texte, annales, partiel, correction,
+  corrigé, rédaction académique, écrit de synthèse, note de synthèse, résumé de document,
+  SAÉ, projet de groupe, rapport d'activité. Trigger aussi pour : "j'ai un mémoire à rendre",
+  "je comprends pas ce cours", "aide-moi à réviser", "je prépare ma soutenance", "je bloque sur
+  ma problématique", "j'ai du mal avec", "j'ai pas compris", "je dois rendre", ou tout sujet de
+  devoir/examen partagé. Concerne aussi les formations BUT, IUT, GEA, TC, INFO, MMI, GEII,
+  licence pro, BTS, et tout cursus du système éducatif français.
   TOUJOURS utiliser ce skill pour toute demande liée à l'éducation, la rédaction universitaire,
   la méthodologie de recherche ou le soutien scolaire, même implicite.
 version: 1.0.0
@@ -442,6 +446,114 @@ Quand l'étudiant demande de préparer sa soutenance, proposer :
 
 ---
 
+## Module G — Projets de groupe et SAÉ
+
+> Pour les étudiants en BUT (SAÉ obligatoires), licence, et tout travail collaboratif.
+
+### Répartition des rôles et livrables
+
+Quand un groupe commence un projet, poser immédiatement :
+1. **Qui fait quoi ?** Définir des rôles clairs : chef de projet, rédacteur principal,
+   responsable données/terrain, responsable mise en forme, relecteur
+2. **Quels livrables, pour quand ?** Tableau partagé avec deadlines intermédiaires
+3. **Quel outil de collaboration ?** Google Docs (temps réel), OneDrive (si imposé),
+   Git (si projet technique)
+
+Template de répartition :
+
+```
+PROJET DE GROUPE — [Intitulé]
+Date de rendu : [JJ/MM/AAAA]
+
+| Membre        | Rôle principal         | Parties assignées      | Deadline intermédiaire |
+|---------------|------------------------|------------------------|------------------------|
+| [Nom 1]       | Chef de projet         | Introduction + coord.  | [date]                 |
+| [Nom 2]       | Rédacteur partie 1     | Cadre théorique        | [date]                 |
+| [Nom 3]       | Rédacteur partie 2     | Analyse terrain        | [date]                 |
+| [Nom 4]       | Mise en forme + biblio | Relecture + formatage  | [date -3 jours]        |
+```
+
+### Rédaction collaborative sans incohérences
+
+Le problème #1 des travaux de groupe : chaque membre écrit dans un style différent.
+
+Solutions :
+- **Définir une charte dès le départ** : temps de conjugaison (présent de narration ou passé),
+  utilisation du "nous" ou impersonnel, niveau de langage, format des titres
+- **Un seul rédacteur final** pour homogénéiser le style (idéalement pas la veille du rendu)
+- **Relecture croisée** : chacun relit la partie d'un autre, pas la sienne
+
+### Comptes rendus de réunion et suivi
+
+Template de compte rendu :
+
+```
+RÉUNION — [Date] — [Durée]
+Présents : [noms]
+Absents : [noms]
+
+POINTS ABORDÉS :
+1. [sujet] → décision prise : [...]
+2. [sujet] → en attente de [...]
+
+ACTIONS À MENER :
+• [Nom] : [action] → deadline [date]
+• [Nom] : [action] → deadline [date]
+
+PROCHAINE RÉUNION : [date, heure, lieu]
+```
+
+### Gestion des conflits dans le groupe
+
+Situations courantes et comment les gérer :
+- **Un membre ne fait rien** : confronter factuellement ("tu devais livrer X pour le [date],
+  c'est pas fait — qu'est-ce qui bloque ?"). Si ça persiste, alerter l'enseignant AVANT le rendu.
+- **Désaccord sur le contenu** : trancher par la consigne ou les sources, pas par l'opinion.
+- **Qualité inégale** : le relecteur final harmonise, mais le groupe doit en discuter tôt.
+
+### Soutenance collective vs individuelle
+
+| Aspect | Collective | Individuelle |
+|---|---|---|
+| Répartition du temps | Définir qui présente quoi, transitions fluides | Chacun présente l'ensemble de son travail |
+| Questions du jury | Peuvent être adressées à n'importe qui | Adressées au présentateur uniquement |
+| Piège | Répéter ce qu'un coéquipier a dit | Ne pas connaître le travail des autres |
+| Conseil | Répéter ensemble au moins 2 fois en conditions réelles | S'assurer de maîtriser aussi les parties des autres |
+
+---
+
+## Module H — Spécificités disciplinaires
+
+> Adapter le niveau d'exigence et les ressources selon la discipline de l'étudiant.
+
+Le module complet est dans la référence dédiée. Voici les principes directeurs :
+
+### Règle d'adaptation
+
+Dès que la discipline de l'étudiant est identifiée, ajuster :
+1. **La norme de citation** (APA 7 en gestion/SHS, norme française en droit, Vancouver en santé,
+   IEEE en informatique)
+2. **Le type de sources attendues** (Cairn pour SHS, PubMed pour santé, IEEE Xplore pour info)
+3. **Le vocabulaire académique** propre au champ (ne pas utiliser du jargon SHS dans un mémoire
+   de compta, et inversement)
+4. **La structure du mémoire** (IMRAD en santé, classique en gestion, libre en lettres)
+
+### Tableau synthétique rapide
+
+| Discipline | Norme citation | Base principale | Piège fréquent |
+|---|---|---|---|
+| Compta/Gestion | APA 7 ou française | Cairn, DALLOZ | Buzzwords sans chiffres ("pilotage de la performance") |
+| Droit | Française (notes de bas de page) | DALLOZ, Légifrance | Oublier le syllogisme juridique |
+| SHS/Psycho | APA 7 | Cairn, PsycINFO | Pas de positionnement épistémologique |
+| Informatique/SI | IEEE ou APA | IEEE Xplore, ACM | Mémoire sans schéma technique |
+| Santé | Vancouver | PubMed, HAS | Pas de niveau de preuve |
+| Lettres/Langues | Française ou Chicago | Persée, Fabula | Mauvaise édition du texte étudié |
+
+> **Ressource détaillée :** `references/disciplines-specificites.md` — guide complet par discipline
+> avec auteurs de référence, méthodologies spécifiques, et vocabulaire à connaître.
+
+---
+
 ## Génération de documents (PDF, DOCX, PPTX)
 
 ### ⚠️ Avertissement important — consommation des modèles
@@ -562,6 +674,10 @@ que quand la conversation porte spécifiquement sur le sujet couvert.
 | `references/dissertation-commentaire.md` | L'étudiant travaille sur une dissertation, un commentaire de texte, un commentaire d'arrêt |
 | `references/templates-documents.md` | Génération de fichier demandée : modèles de page de garde, sommaire, bibliographie, charte typo |
 | `references/revisions-examens.md` | L'étudiant prépare un examen : méthodes de révision, plannings, fiches par type de matière, gestion du stress |
+| `references/recherche-documentaire.md` | L'étudiant cherche des sources, ne sait pas où chercher, ou a besoin d'évaluer la fiabilité d'une référence |
+| `references/gestion-projet-memoire.md` | L'étudiant a besoin d'organiser son planning mémoire, gérer les réunions tuteur, surmonter un blocage |
+| `references/note-synthese.md` | L'étudiant travaille sur une note de synthèse, un écrit de synthèse, ou un résumé de dossier documentaire |
+| `references/disciplines-specificites.md` | La discipline de l'étudiant nécessite des normes, sources ou méthodologies spécifiques |
 
 ### Skills externes (si disponibles dans l'environnement)
 
@@ -570,4 +686,5 @@ que quand la conversation porte spécifiquement sur le sujet couvert.
 | `/mnt/skills/public/pdf/SKILL.md` | Génération de fichier PDF demandée |
 | `/mnt/skills/public/docx/SKILL.md` | Génération de document Word demandée |
 | `/mnt/skills/public/pptx/SKILL.md` | Génération de présentation PowerPoint demandée |
-| `/mnt/skills/user/humanizer/SKILL.md` | Filtre anti-détection IA approfondi (si installé) |
+| `/mnt/skills/user/plume-naturelle/SKILL.md` | Filtre anti-détection IA approfondi — réécriture complète avec diagnostic et double passe |
+| `/mnt/skills/user/lettre-motivation/SKILL.md` | L'étudiant a besoin d'une LM pour MonMaster, une école, ou un stage en lien avec son mémoire |
