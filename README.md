@@ -88,7 +88,7 @@ Les skills peuvent se compléter selon le besoin :
 ### Sur Claude.ai (avec Claude Code ou Cowork)
 
 ```bash
-git clone https://github.com/VOTRE-USERNAME/anthropics-education-FR.git
+git clone https://github.com/StealthyLabsHQ/anthropics-education-FR.git
 
 # Installer les skills souhaités (avec leurs références)
 cp -r anthropics-education-FR/soutien-academique /mnt/skills/user/
