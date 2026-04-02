@@ -239,12 +239,113 @@ Objet : Candidature au [intitulé exact]  - [Réf. annonce si applicable]
 
 ---
 
+## Module 5 - Réseautage digital (Cold Email / LinkedIn / Relances)
+
+La lettre de motivation classique est souvent précédée ou remplacée par des messages
+digitaux. Ce module couvre les formats courts à fort impact.
+
+### 5a. Message de connexion LinkedIn (300 caractères max)
+
+Contrainte dure : 300 caractères incluant espaces. Chaque mot doit être justifié.
+
+Structure en 3 temps :
+1. **Accroche de contexte** : pourquoi cette personne en particulier (1 élément précis)
+2. **Valeur apportée** : ce que le candidat propose, pas ce qu'il cherche
+3. **Appel à l'action minimal** : invitation, pas demande d'emploi
+
+❌ Générique :
+"Bonjour, je suis étudiant en Master et je cherche une alternance dans votre secteur.
+Pourrions-nous échanger ?"
+
+✅ Personnalisé (298 caractères) :
+"Bonjour [Prénom], votre post sur [sujet précis] m'a interpellé — je travaille sur un
+projet similaire en BUT GEA. J'aimerais vous poser 2 questions sur [axe concret].
+Échange de 15 min possible ?"
+
+**Règle d'or** : ne pas demander un stage/emploi dans le premier message.
+Demander un échange, une opinion, un conseil.
+
+### 5b. Cold Email d'approche directe
+
+Format : 5-7 phrases, objet impactant, structure AIDA adaptée.
+
+**Structure canonique :**
+
+```
+Objet : [Verbe d'action] + [résultat ou angle concret] — pas "Candidature"
+
+§1 (Pourquoi vous) : 1 élément précis sur leur travail/projet/entreprise
+§2 (Qui je suis) : 1 preuve centrale, chiffrée si possible
+§3 (Ce que je propose) : angle concret (stage, alternance, question experte)
+§4 (Appel à l'action) : simple, daté, sans pression
+```
+
+❌ Objet générique : "Candidature stage développeur"
+✅ Objet impactant : "Automatisation des rapports : retour d'expérience VBA"
+
+❌ Générique :
+"Je me permets de vous contacter car votre entreprise m'intéresse beaucoup..."
+
+✅ Personnalisé :
+"Votre article sur [sujet] soulève exactement le problème que j'ai rencontré chez
+[Entreprise] : [problème précis]. J'ai développé [solution]. Si ça peut vous être
+utile ou si vous avez 10 min pour comparer nos approches, je suis disponible."
+
+### 5c. Emails de relance post-candidature
+
+Délai recommandé : 7-10 jours après envoi de candidature, 24-48h après entretien.
+
+**Relance après candidature silencieuse :**
+- Rappel de la candidature en 1 phrase
+- Ajout d'un élément nouveau (actualité récente de l'entreprise, article publié)
+- Maintien de la disponibilité sans insistance
+
+**Email de remerciement post-entretien :**
+Délai : sous 24h. Objectif : prouver l'écoute active.
+
+Structure :
+1. Remercier pour le temps accordé (1 phrase, pas de "merci infiniment")
+2. **Rebondir sur 1 point précis de l'échange** : montrer qu'on a écouté et réfléchi
+3. Compléter/corriger si nécessaire (une réponse améliorée, un exemple oublié)
+4. Réaffirmer l'intérêt en 1 phrase de conclusion
+
+❌ Bateau :
+"Merci pour cet entretien enrichissant. Je reste disponible pour toute question."
+
+✅ Ancré :
+"Notre échange sur [point précis abordé] a confirmé ma conviction que [insight].
+Après réflexion, j'aurais complété ma réponse sur [sujet] par [précision].
+Je reste disponible si vous souhaitez approfondir."
+
+**Référence étendue :** `references/reseautage-digital.md` — templates complets,
+variantes par secteur, erreurs fréquentes.
+
+---
+
+## Checklist interne avant livraison (auto-évaluation Claude)
+
+*(Usage interne — ne pas afficher à l'utilisateur)*
+
+Avant de livrer toute lettre ou message, vérifier mentalement :
+- [ ] Ai-je collecté suffisamment d'informations concrètes sur le candidat ET la cible ?
+- [ ] La première phrase ne commence pas par "Je" et nomme la cible avec son intitulé exact ?
+- [ ] Chaque paragraphe contient au moins 1 élément non-transférable à une autre lettre ?
+- [ ] La "preuve centrale" est chiffrée ou datée ?
+- [ ] Le §3 parle d'abord de ce que le candidat apporte ?
+- [ ] Zéro déclaration de qualité sans exemple concret ?
+- [ ] Le filtre anti-généricité (Étape 4) a été mentalement appliqué ?
+- [ ] Pour un message LinkedIn : moins de 300 caractères ?
+- [ ] Pour un cold email : l'objet est-il un verbe d'action ou un résultat concret ?
+
+---
+
 ## Références complémentaires
 
 ### Ressources du skill
 
 → `references/types-candidature.md`  - Spécificités par type + paragraphes types
 → `references/anti-generique.md`  - 20 paires avant/après pour éliminer les phrases creuses
+→ `references/reseautage-digital.md`  - Cold emails, messages LinkedIn, relances et remerciements post-entretien
 
 ### Skills externes (si disponibles dans l'environnement)
 

@@ -601,6 +601,113 @@ Dès que la discipline de l'étudiant est identifiée, ajuster :
 
 ---
 
+## Module 9 - Soutien à la neurodiversité (TDAH, Dys)
+
+Activer quand l'étudiant mentionne : TDAH, dyslexie, dyspraxie, dyscalculie,
+dysorthographie, "j'ai du mal à me concentrer", "je lis mais je retiens rien",
+"les gros blocs de texte me bloquent", ou demande explicitement une aide adaptée.
+
+### Adaptations automatiques
+
+| Trouble mentionné | Adaptations à activer |
+|-------------------|-----------------------|
+| **TDAH** | Paragraphes ≤ 5 lignes, tâches Pomodoro (25 min), listes d'actions courtes, pas de plans trop hiérarchisés |
+| **Dyslexie** | Phrases courtes, police sans empattement recommandée, éviter les murs de texte, espacement entre paragraphes, reformulations multiples |
+| **Dyspraxie** | Privilégier le verbal sur l'écrit, listes d'étapes numérotées très précises, ne jamais supposer que "c'est évident" |
+| **Dyscalculie** | Éviter les tableaux de données brutes, traduire les chiffres en formulations textuelles |
+| **Non précisé mais signalé** | Appliquer les adaptations TDAH + Dyslexie en priorité |
+
+### Technique Pomodoro adaptée aux révisions
+
+Pour un étudiant TDAH : ne jamais donner un plan de révision de 4h d'un bloc.
+
+Structure recommandée :
+```
+Bloc 1 (25 min) : [Tâche 1 ultra-précise — ex: "lire et surligner pages 12-18"]
+Pause (5 min) : se lever, bouger
+Bloc 2 (25 min) : [Tâche 2 — ex: "résumer les pages 12-18 en 5 bullet points"]
+Pause longue (15 min) : après 2 blocs
+```
+
+**Ne jamais écrire** "révise le chapitre 3" → trop vague pour un cerveau TDAH.
+**Toujours écrire** "Lis les pages 45-52, repère les 3 dates clés, note-les."
+
+### Fiches de révision adaptées DYS
+
+Format recommandé pour dyslexiques :
+- Titres en couleur ou surligné (si format le permet)
+- Maximum 5 bullet points par fiche
+- 1 concept = 1 fiche (jamais de fiches "fourre-tout")
+- Reformulation en "langage simple" puis version académique juste après
+- Associer 1 image mentale ou analogie à chaque concept abstrait
+
+**Référence étendue :** `references/neurodiversite.md` — profils DYS détaillés,
+outils numériques accessibles, communication avec l'administration.
+
+---
+
+## Module 10 - Simulateur Peer-Review
+
+Activer quand l'étudiant dit : "je veux tester ma problématique", "regarder si
+mon argument tient", "simule un regard critique", "joue le rôle d'un relecteur",
+"est-ce que mon intro est solide", ou avant un envoi au tuteur/directeur.
+
+### Deux modes de simulation disponibles
+
+**Mode A : L'Étudiant Candide (Bienveillant)**
+Claude joue le rôle d'un pair curieux qui ne comprend pas tout.
+Objectif : identifier les implicites non expliqués, les zones floues, les termes
+non définis. L'auteur doit clarifier, pas défendre.
+
+Questions types du mode Candide :
+- "Quand tu dis [terme], tu veux dire exactement quoi ?"
+- "Pourquoi tu pars du principe que [hypothèse implicite] ?"
+- "C'est quoi le lien entre [§2] et [§3] ?"
+- "Qui a dit ça ? Tu as une source ?"
+- "Si un lecteur ne connaît pas [concept], il comprend quand même ?"
+
+**Mode B : Le Reviewer 2 (Critique)**
+Claude joue le rôle d'un relecteur académique exigeant.
+Objectif : identifier les failles logiques, les affirmations non prouvées,
+les problématiques trop larges ou trop étroites.
+
+Questions types du mode Reviewer 2 :
+- "Ta problématique est-elle vraiment une question ou juste un thème ?"
+- "Quelle est la contribution originale par rapport à [auteur de référence] ?"
+- "Tu affirmes X — quelle est ta preuve ? Corrélation ≠ causalité."
+- "Le périmètre de ton étude justifie-t-il une généralisation ?"
+- "Pourquoi cette méthodologie et pas [alternative] ?"
+- "Ta conclusion répond-elle exactement à ta problématique ?"
+
+### Protocole de simulation
+
+**Étape 1 :** L'étudiant précise le mode voulu (Candide ou Reviewer 2).
+
+**Étape 2 :** L'étudiant soumet la section à tester (intro, problématique,
+conclusion, ou le texte entier — max 500 mots recommandé).
+
+**Étape 3 :** Claude pose 5-7 questions dans le rôle choisi, sans réécrire,
+sans donner la réponse, sans juger.
+
+**Étape 4 :** L'étudiant répond. Claude évalue la solidité des réponses :
+- "Ta réponse tient." → point solide
+- "Cette réponse soulève une nouvelle question : [X]." → approfondir
+- "Cette réponse ne convainc pas parce que [raison précise]." → à retravailler
+
+**Étape 5 :** Synthèse des 3 points les plus solides et des 2 points à consolider.
+
+### Ce que le simulateur ne fait PAS
+
+- Ne rédige pas à la place de l'étudiant
+- Ne "note" pas le travail sur 20
+- Ne remplace pas le regard du tuteur réel (les attentes institutionnelles varient)
+- Ne simule pas un jury complet (voir `references/questions-jury.md` pour ça)
+
+**Référence étendue :** `references/peer-review-simulator.md` — banque de 50+
+questions par mode, grille d'évaluation de la solidité argumentative.
+
+---
+
 ## Checklist universelle avant livraison
 
 Avant de livrer tout contenu académique, vérifier :
@@ -678,6 +785,9 @@ que quand la conversation porte spécifiquement sur le sujet couvert.
 | `references/gestion-projet-memoire.md` | L'étudiant a besoin d'organiser son planning mémoire, gérer les réunions tuteur, surmonter un blocage |
 | `references/note-synthese.md` | L'étudiant travaille sur une note de synthèse, un écrit de synthèse, ou un résumé de dossier documentaire |
 | `references/disciplines-specificites.md` | La discipline de l'étudiant nécessite des normes, sources ou méthodologies spécifiques |
+
+| `references/neurodiversite.md` | L'étudiant mentionne un TDAH, une dyslexie, ou un autre trouble DYS — adapter les explications, le rythme et les outils de révision |
+| `references/peer-review-simulator.md` | L'étudiant veut tester sa problématique avant l'envoi au tuteur, ou demande un regard critique simulé |
 
 ### Skills externes (si disponibles dans l'environnement)
 
