@@ -8,7 +8,7 @@
 
 ## Table des matières
 
-1. [Profils DYS — caractéristiques et adaptations](#1-profils-dys)
+1. [Profils DYS : caractéristiques et adaptations](#1-profils-dys)
 2. [Techniques de révision adaptées](#2-techniques-de-révision)
 3. [Outils numériques accessibles](#3-outils-numériques)
 4. [Rédaction académique avec un trouble DYS](#4-rédaction-académique)
@@ -17,7 +17,7 @@
 
 ---
 
-## 1. Profils DYS — caractéristiques et adaptations
+## 1. Profils DYS : caractéristiques et adaptations
 
 ### TDAH (Trouble Déficit de l'Attention avec ou sans Hyperactivité)
 
@@ -49,12 +49,12 @@
 - Orthographe atypique malgré les connaissances (≠ ignorance)
 - Confusion fréquente de lettres visuellement similaires (b/d, p/q)
 - Bonne compréhension orale mais difficultés à l'écrit
-- Relecture difficile — les erreurs "se corrigent" dans la tête de l'étudiant
+- Relecture difficile : les erreurs "se corrigent" dans la tête de l'étudiant
 
 **Adaptations clés :**
 - Phrases courtes (≤ 15 mots recommandés)
-- Pas de murs de texte — espacer les paragraphes
-- Répétitions bienvenues — ne pas supposer qu'une idée lue une fois est retenue
+- Pas de murs de texte : espacer les paragraphes
+- Répétitions bienvenues : ne pas supposer qu'une idée lue une fois est retenue
 - Proposer des reformulations alternatives pour les passages complexes
 - Encourager l'utilisation d'outils de synthèse vocale pour la relecture
 - Valoriser les idées plutôt que la forme orthographique
@@ -106,7 +106,7 @@ Principe : alterner travail focalisé et pause obligatoire.
 **Structure de base :**
 ```
 Bloc de travail : 25 minutes exactement (minuteur visible)
-Pause courte    : 5 minutes (se lever, bouger — PAS d'écran)
+Pause courte    : 5 minutes (se lever, bouger : PAS d'écran)
 Après 4 blocs  : Pause longue de 20-30 minutes
 ```
 
@@ -114,13 +114,13 @@ Après 4 blocs  : Pause longue de 20-30 minutes
 progressivement jusqu'à 25 min sur plusieurs semaines.
 
 **Règle d'or :** la tâche d'un bloc est définie AVANT de démarrer. Jamais "je vais
-réviser le cours" — toujours "je vais lire et surligner les pages 23-30".
+réviser le cours" : toujours "je vais lire et surligner les pages 23-30".
 
 ### Fiches de révision DYS-friendly
 
 **Format recommandé :**
 ```
-FICHE [Concept] — [Date]
+FICHE [Concept] : [Date]
 
 En 1 phrase : [définition ultra-simple]
 
@@ -152,7 +152,7 @@ d'un coup d'œil remplace les plans linéaires difficiles à maintenir en tête.
 Recommandations :
 - Outils : Miro, XMind, Coggle (en ligne, gratuit)
 - Maximum 3 niveaux de profondeur
-- Couleurs par catégorie (mais pas trop — 4-5 max)
+- Couleurs par catégorie (mais pas trop : 4-5 max)
 - 1 concept = 1 mot ou 2 mots, jamais une phrase entière dans un nœud
 
 ---
@@ -211,7 +211,7 @@ Recommandations :
 - Écrire une phrase de résumé de chaque paragraphe AVANT de l'écrire en entier
 - Relire avec un outil de synthèse vocale plutôt qu'à l'œil
 
-**Sur les délais :** la procrastination du TDAH n'est pas de la paresse — c'est
+**Sur les délais :** la procrastination du TDAH n'est pas de la paresse : c'est
 une difficulté réelle à initier une tâche non urgente. Stratégie efficace :
 créer une contrainte artificielle (rencontre avec un pair, engagement verbal).
 

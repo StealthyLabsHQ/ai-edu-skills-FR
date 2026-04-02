@@ -14,7 +14,7 @@ description: >
 version: 1.0.0
 ---
 
-# Skill — Entretien Oral
+# Skill : Entretien Oral
 
 Préparation complète aux entretiens de sélection : méthode STAR, traque des réponses
 "bateau", entretiens blancs simulés, et adaptation au type de jury.
@@ -31,11 +31,11 @@ Les jurys sélectionnent sur deux axes :
 2. **La forme** : est-il capable de les expliquer clairement sous pression ?
 
 **Règle cardinale** : une réponse "bateau" est une réponse qui pourrait être donnée par
-n'importe quel candidat. Elle ne différencie pas — elle dilue.
+n'importe quel candidat. Elle ne différencie pas : elle dilue.
 
 ---
 
-## Étape 0 — Collecte du contexte (OBLIGATOIRE)
+## Étape 0 : Collecte du contexte (OBLIGATOIRE)
 
 Avant tout entretien blanc ou conseil, identifier :
 
@@ -52,7 +52,7 @@ Avant tout entretien blanc ou conseil, identifier :
 
 ---
 
-## Module 1 — Méthode STAR
+## Module 1 : Méthode STAR
 
 ### Qu'est-ce que la méthode STAR
 
@@ -94,7 +94,7 @@ Chacune doit avoir un résultat mesurable ou observable.
 
 ---
 
-## Module 2 — Entretien blanc simulé
+## Module 2 : Entretien blanc simulé
 
 ### Format de l'entretien blanc
 
@@ -118,7 +118,7 @@ Authenticité : [Naturelle / Un peu récitée / Réponse bateau]
 
 Point fort : [ce qui fonctionne, en 1 phrase]
 Point à améliorer : [1 seule chose, avec suggestion concrète]
-Reformulation suggérée : [si nécessaire — débuter la réponse différemment]
+Reformulation suggérée : [si nécessaire : débuter la réponse différemment]
 ```
 
 ### Questions d'entretien blanc par catégorie
@@ -128,7 +128,7 @@ avec analyse des réponses bateau et reformulations recommandées.
 
 ---
 
-## Module 3 — Traque des réponses "bateau"
+## Module 3 : Traque des réponses "bateau"
 
 ### Définition
 
@@ -153,7 +153,7 @@ Elle prouve que le candidat a préparé, pas qu'il est le bon candidat.
 
 **4. "Je suis passionné par [domaine]."**
 - Pourquoi c'est bateau : tout le monde dans la salle dit la même chose
-- Antidote : "Ma passion pour X se manifeste par [action concrète] — j'ai lu [livre
+- Antidote : "Ma passion pour X se manifeste par [action concrète] : j'ai lu [livre
   précis / suivi [formation] / travaillé sur [projet] en dehors des cours."
 
 **5. "Je travaille bien en équipe."**
@@ -161,8 +161,8 @@ Elle prouve que le candidat a préparé, pas qu'il est le bon candidat.
 - Antidote : exemple STAR où la dynamique d'équipe était difficile et a été surmontée
 
 **6. "Je suis à l'aise à l'oral."** (dit souvent d'une voix tremblante)
-- Pourquoi c'est contre-productif : l'entretien est la preuve — inutile de le déclarer
-- Antidote : ne rien dire sur ses qualités orales — les démontrer par la performance
+- Pourquoi c'est contre-productif : l'entretien est la preuve : inutile de le déclarer
+- Antidote : ne rien dire sur ses qualités orales : les démontrer par la performance
 
 **7. "Je suis très rigoureux."**
 - Antidote : "J'ai mis en place [système précis] dans [contexte] pour [résultat]."
@@ -176,12 +176,12 @@ Elle prouve que le candidat a préparé, pas qu'il est le bon candidat.
 - Antidote : "Récemment, j'ai [appris X] en dehors des cours parce que [raison précise]."
 
 **10. "Je suis disponible immédiatement."**
-- Ce n'est pas une réponse bateau mais un détail logistique — ne jamais l'utiliser
+- Ce n'est pas une réponse bateau mais un détail logistique : ne jamais l'utiliser
   comme argument de candidature principal
 
 ---
 
-## Module 4 — Types d'entretiens spécifiques
+## Module 4 : Types d'entretiens spécifiques
 
 ### Entretien de motivation Master / Grande École
 
@@ -196,7 +196,7 @@ Elle prouve que le candidat a préparé, pas qu'il est le bon candidat.
 - "Pourquoi pas [formation concurrente] ?"
 - "Avez-vous des questions ?"
 
-**Piège de la dernière question :** "Avez-vous des questions ?" — toujours préparer 2-3
+**Piège de la dernière question :** "Avez-vous des questions ?" : toujours préparer 2-3
 questions concrètes sur le programme (pas sur des informations déjà sur le site).
 
 ### Entretien d'alternance / stage
@@ -206,9 +206,9 @@ questions concrètes sur le programme (pas sur des informations déjà sur le si
 **Différences clés :**
 - Plus orienté compétences techniques et savoir-faire concrets
 - Les exemples de projets réalisés (mêmes académiques) ont beaucoup de poids
-- La question "pourquoi l'alternance et pas le présentiel" peut être posée — préparer la réponse
+- La question "pourquoi l'alternance et pas le présentiel" peut être posée : préparer la réponse
 
-**Question piège fréquente :** "Vous avez fait [X] en cours — vous savez vraiment faire ça ?"
+**Question piège fréquente :** "Vous avez fait [X] en cours : vous savez vraiment faire ça ?"
 → Répondre honnêtement sur le niveau (débutant/intermédiaire) + montrer la capacité d'apprentissage
 
 ### Entretien concours fonction publique
@@ -218,12 +218,12 @@ questions concrètes sur le programme (pas sur des informations déjà sur le si
 **Particularités :**
 - Neutralité attendue sur les sujets politiques
 - Connaissance du secteur public et de l'institution attendue
-- Le "pourquoi le service public" est une question quasi-systématique — préparer une réponse
+- Le "pourquoi le service public" est une question quasi-systématique : préparer une réponse
   sincère et argumentée (pas "pour la sécurité de l'emploi")
 
 ---
 
-## Module 5 — Présentation initiale : "Parlez-moi de vous"
+## Module 5 : Présentation initiale : "Parlez-moi de vous"
 
 La présentation initiale (1-3 min selon le contexte) est souvent mal préparée car
 elle semble simple. C'est pourtant le moment qui donne le ton.
@@ -231,19 +231,19 @@ elle semble simple. C'est pourtant le moment qui donne le ton.
 ### Structure recommandée
 
 ```
-[Accroche contextuelle — 15 sec]
-  → Pas "Je m'appelle X et j'ai Y ans" — inutile, le jury a le dossier
+[Accroche contextuelle : 15 sec]
+  → Pas "Je m'appelle X et j'ai Y ans" : inutile, le jury a le dossier
   → Commencer par le "fil rouge" de son parcours : pourquoi je suis là
 
-[Parcours en 3 temps — 60 sec]
+[Parcours en 3 temps : 60 sec]
   → Formation de base et ce qu'elle m'a apporté (concrètement)
   → Expérience(s) clé(s) et ce que j'en ai retiré (chiffre ou résultat)
   → Ce que ça m'a amené à vouloir faire (projet professionnel bref)
 
-[Pourquoi ce programme / ce poste — 30 sec]
+[Pourquoi ce programme / ce poste : 30 sec]
   → 1 élément spécifique nommé + lien avec le parcours
 
-[Invitation à l'échange — 5 sec]
+[Invitation à l'échange : 5 sec]
   → "Je suis prêt à approfondir tout point qui vous intéresse."
 ```
 
@@ -258,7 +258,7 @@ elle semble simple. C'est pourtant le moment qui donne le ton.
 
 ## Checklist interne avant l'entretien blanc
 
-*(Usage interne — ne pas afficher à l'utilisateur)*
+*(Usage interne : ne pas afficher à l'utilisateur)*
 
 - [ ] Le contexte exact de l'entretien est connu (type, durée, jury) ?
 - [ ] Le profil du candidat (formation, expériences, point fort/faible) est collecté ?
