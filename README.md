@@ -4,7 +4,7 @@ Skills pour ChatGPT & Claude : accompagnement scolaire et universitaire.
 
 ## Objectif
 
-Bibliothèque de skills `.md` open-source pour transformer Claude en assistant pédagogique adapté au système éducatif français, du lycée au master.
+Bibliothèque de skills `.md` open-source pour transformer Claude et ChatGPT en assistant pédagogique adapté au système éducatif français, du lycée au master.
 
 ## Arborescence
 
@@ -30,13 +30,13 @@ ai-edu-skills-FR/
 │       └── peer-review-simulator.md          ← Simulateur Peer-Review : Mode Candide + Mode Reviewer 2
 ├── lettre-motivation/
 │   ├── SKILL.md                              ← Lettres de motivation + réseautage digital (Module 5)
-│   └── references/
+│   └── references/                           ← Ressources chargées à la demande
 │       ├── types-candidature.md              ← Spécificités par type de candidature
 │       ├── anti-generique.md                 ← 20 paires avant/après anti-phrases creuses
 │       └── reseautage-digital.md             ← Cold emails, messages LinkedIn, relances, remerciements post-entretien
 ├── plume-naturelle/
 │   ├── SKILL.md                              ← Réécriture anti-IA + Mode Pédagogique + Oralité
-│   └── references/
+│   └── references/                           ← Ressources chargées à la demande
 │       ├── patterns-par-discipline.md        ← Patterns IA spécifiques par discipline
 │       ├── marqueurs-ia-francais.md          ← Liste noire transversale de 80+ marqueurs IA avec multiplicateurs
 │       ├── prompts-detecteurs.md             ← Prompts de détection reconstitués (formules, seuils, architecture)
@@ -44,17 +44,17 @@ ai-edu-skills-FR/
 │       └── mode-pedagogique.md              ← Annotation pédagogique, remédiation, scripts de soutenance annotés
 ├── orientation-strategie/
 │   ├── SKILL.md                              ← Parcoursup, MonMaster, réorientation, filières méconnues
-│   └── references/
+│   └── references/                           ← Ressources chargées à la demande
 │       ├── parcoursup-monmaster.md           ← Guide des filières, critères de sélection, calendriers
 │       └── projet-formation-motive.md        ← Templates PFM, 15 paires avant/après, grille de vérification
 ├── entretien-oral/
 │   ├── SKILL.md                              ← Entretiens blancs, méthode STAR, réponses bateau
-│   └── references/
+│   └── references/                           ← Ressources chargées à la demande
 │       ├── methode-star.md                   ← Exemples STAR par secteur, stock de 6 histoires, exercices
 │       └── questions-pieges.md              ← 50+ questions avec antidotes, réponses bateau, erreurs de fond/forme
 └── productivite-pkm/
     ├── SKILL.md                              ← Obsidian, Notion, Zotero, Zettelkasten pour mémoire
-    └── references/
+    └── references/                           ← Ressources chargées à la demande
         ├── zettelkasten-obsidian.md          ← Config Obsidian complète, plugins, templates, workflows
         └── zotero-bibliographie.md           ← Zotero avancé, styles de citation français, intégration Word
 ```
