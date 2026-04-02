@@ -124,23 +124,23 @@ Les skills peuvent se compléter selon le besoin :
 
 ### Comment installer les skills
 
-#### Sur Claude — [claude.ai/customize/skills](https://claude.ai/customize/skills)
+#### Sur Claude : [claude.ai/customize/skills](https://claude.ai/customize/skills)
 
 1. Aller sur [claude.ai/customize/skills](https://claude.ai/customize/skills)
 2. Cliquer sur **"Add skill"**
 3. Donner un nom au skill (ex : `soutien-academique`)
 4. Coller le contenu du fichier `SKILL.md` correspondant dans le champ instructions
 5. Ajouter les fichiers du dossier `references/` en pièces jointes du skill
-6. Sauvegarder — le skill s'active automatiquement dès qu'il est pertinent
+6. Sauvegarder : le skill s'active automatiquement dès qu'il est pertinent
 
-#### Sur ChatGPT — [chatgpt.com/skills](https://chatgpt.com/skills)
+#### Sur ChatGPT : [chatgpt.com/skills](https://chatgpt.com/skills)
 
 1. Aller sur [chatgpt.com/skills](https://chatgpt.com/skills)
 2. Cliquer sur **"Create skill"**
 3. Donner un nom et une description au skill
 4. Coller le contenu du fichier `SKILL.md` dans le champ instructions
 5. Importer les fichiers du dossier `references/` dans la base de connaissances du skill
-6. Publier — le skill est disponible dans vos conversations
+6. Publier : le skill est disponible dans vos conversations
 
 > **Conseil :** installer un skill à la fois pour tester avant d'en ajouter d'autres.
 
