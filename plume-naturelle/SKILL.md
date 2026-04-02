@@ -2101,7 +2101,7 @@ Si l'utilisateur demande une humanisation « totale » ou « profonde » :
 
 ---
 
-## Mode Pédagogique — Annoter plutôt que réécrire
+## Mode Pédagogique : Annoter plutôt que réécrire
 
 Activé quand l'utilisateur dit : "explique-moi pourquoi ça sonne IA", "apprends-moi
 à écrire mieux", "annote mon texte", "montre-moi mes erreurs", "mode pédagogique",
@@ -2125,7 +2125,7 @@ patterns récurrents dans son écriture.
 ⁽¹⁾ PATTERN : Ouverture contextuelle IA. Un humain commence par son sujet, pas par
     un constat sur le monde. → Supprime ou remplace par la situation concrète que
     tu analyses.
-⁽²⁾ PATTERN : "Faire face à des défis" — formule ultra-récurrente dans les textes IA.
+⁽²⁾ PATTERN : "Faire face à des défis" : formule ultra-récurrente dans les textes IA.
     → Nomme le défi précis : concurrence ? pression sur les marges ? turnover ?
 ⁽³⁾ PATTERN : Adjectif superlatif vague ("complexe", "crucial", "important").
     → Soit tu supprimes, soit tu quantifies : "une concurrence 3x plus intense
@@ -2156,12 +2156,12 @@ PROCHAIN TEXTE : concentre-toi en priorité sur [1 seul point, pas 5]
 Un étudiant qui reçoit 15 types de corrections ne travaille aucun. Un étudiant qui
 reçoit 1 correction précise l'intègre.
 
-**Référence étendue :** `references/mode-pedagogique.md` — grille d'annotation
+**Référence étendue :** `references/mode-pedagogique.md` : grille d'annotation
 complète, exercices de remédiation par pattern, progression sur plusieurs sessions.
 
 ---
 
-## Mode Oralité — Scripts de soutenance et prises de parole
+## Mode Oralité : Scripts de soutenance et prises de parole
 
 Activé quand l'utilisateur mentionne : "script de soutenance", "présentation orale",
 "je dois parler devant un jury", "discours", "exposé oral", "pitch".
@@ -2195,35 +2195,35 @@ Activé quand l'utilisateur mentionne : "script de soutenance", "présentation o
 
 **Micro-hésitations légitimes** (humanisent sans affaiblir) :
 - "...enfin, plus précisément..."
-- "...ce qui n'est pas — ou pas exactement — la même chose que..."
+- "...ce qui n'est pas : ou pas exactement : la même chose que..."
 - "...je dirais même..."
 
 **Ce qu'il ne faut PAS dans un script oral :**
 - Participes présents en -ant (sonnent IA à l'oral)
 - Triades systématiques (artificiel quand énoncé à voix haute)
 - Phrases dépassant 20 mots (impossible à dire sans perdre le fil)
-- "Il convient de noter que" — jamais à l'oral
+- "Il convient de noter que" : jamais à l'oral
 - Raisonnement sur-explicite sans pause : l'audience a besoin de temps de traitement
 
 ### Format de script annoté
 
 ```
-[PARTIE 1 — 2 min]
+[PARTIE 1 : 2 min]
 
-"Bonsoir. Je vais vous présenter [titre exact] — une question qui m'est venue
-de [situation concrète]. [PAUSE — regarder le jury]
+"Bonsoir. Je vais vous présenter [titre exact] : une question qui m'est venue
+de [situation concrète]. [PAUSE : regarder le jury]
 
 En [durée de stage/projet], j'ai observé que [fait précis]. Ce n'est pas
-évident au premier abord — [PAUSE] — mais ça soulève une vraie question :
+évident au premier abord : [PAUSE] : mais ça soulève une vraie question :
 [problématique en 1 phrase simple].
 
-Je vais vous montrer trois choses. [Lever 3 doigts — PAUSE] Premier point :
+Je vais vous montrer trois choses. [Lever 3 doigts : PAUSE] Premier point :
 [X]. Deuxième : [Y]. Troisième : [Z]. On commence."
 
-[TRANSITION — vérifier que tout le monde suit]
+[TRANSITION : vérifier que tout le monde suit]
 ```
 
-**Référence étendue :** `references/mode-pedagogique.md` — section oralité avec
+**Référence étendue :** `references/mode-pedagogique.md` : section oralité avec
 exemples complets de scripts annotés, gestion du stress et de la voix.
 
 ---

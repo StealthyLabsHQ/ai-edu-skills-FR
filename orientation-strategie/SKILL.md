@@ -15,7 +15,7 @@ description: >
 version: 1.0.0
 ---
 
-# Skill — Orientation Stratégique
+# Skill : Orientation Stratégique
 
 Aide à la construction du projet d'orientation : choix de filière, Parcoursup,
 MonMaster, réorientation, et rédaction du Projet de Formation Motivé (PFM).
@@ -24,7 +24,7 @@ MonMaster, réorientation, et rédaction du Projet de Formation Motivé (PFM).
 
 ## Principe directeur
 
-L'orientation n'est pas un choix unique et définitif — c'est une trajectoire à
+L'orientation n'est pas un choix unique et définitif : c'est une trajectoire à
 construire avec les informations disponibles aujourd'hui. L'objectif n'est pas de
 trouver "la voie parfaite", mais d'identifier la prochaine étape logique qui ouvre
 le plus de portes vers les ambitions identifiées.
@@ -35,14 +35,14 @@ brillante sur le papier est inutile si elle n'est pas faisable.
 
 ---
 
-## Étape 0 — Collecte du profil (OBLIGATOIRE avant tout conseil)
+## Étape 0 : Collecte du profil (OBLIGATOIRE avant tout conseil)
 
 Ne jamais donner de recommandation sans ces éléments. Si des informations sont
 déjà connues dans la conversation, les utiliser sans re-demander.
 
 ### Profil académique
 - Formation actuelle (intitulé exact, établissement, niveau)
-- Notes ou moyennes dans les matières clés (pas besoin de toutes — les 3-4 les plus
+- Notes ou moyennes dans les matières clés (pas besoin de toutes : les 3-4 les plus
   représentatives suffisent)
 - Points forts et points faibles académiques perçus
 
@@ -66,7 +66,7 @@ déjà connues dans la conversation, les utiliser sans re-demander.
 
 ---
 
-## Module 1 — Exploration des filières
+## Module 1 : Exploration des filières
 
 ### 1a. Croisement profil / nomenclature des diplômes français
 
@@ -104,12 +104,12 @@ Ne jamais présenter les débouchés de façon abstraite. Toujours :
 - Mentionner les taux d'insertion si connus (enquêtes BCO/OVE pour les BUT, enquêtes IP pour les Masters)
 - Signaler les secteurs recruteurs et les zones géographiques actives
 
-**Ressource étendue :** `references/parcoursup-monmaster.md` — guide des filières
+**Ressource étendue :** `references/parcoursup-monmaster.md` : guide des filières
 Parcoursup et MonMaster, critères d'évaluation, taux de sélectivité.
 
 ---
 
-## Module 2 — Parcoursup (Terminale → Bac+1/2/3)
+## Module 2 : Parcoursup (Terminale → Bac+1/2/3)
 
 ### 2a. Comprendre les attendus nationaux
 
@@ -138,11 +138,11 @@ Ces attendus doivent transparaître explicitement dans le PFM.
 
 ### 2c. Rédaction du PFM (Projet de Formation Motivé)
 
-Voir section dédiée : [Module 4 — PFM Parcoursup](#module-4---pfm-parcoursup).
+Voir section dédiée : [Module 4 : PFM Parcoursup](#module-4---pfm-parcoursup).
 
 ---
 
-## Module 3 — MonMaster (Licence → Master)
+## Module 3 : MonMaster (Licence → Master)
 
 ### 3a. Spécificités de MonMaster
 
@@ -172,14 +172,14 @@ Management apporte une perspective juridique rare. Transformer la différence en
 
 ---
 
-## Module 4 — PFM Parcoursup
+## Module 4 : PFM Parcoursup
 
 ### Différences PFM vs Lettre de Motivation classique
 
 | Critère | Lettre de Motivation | PFM Parcoursup |
 |---------|---------------------|----------------|
 | Longueur | 300-500 mots | 1500 caractères max (espaces inclus) |
-| Identité | Prénom/Nom en en-tête | Anonyme — PAS de nom, prénom, établissement |
+| Identité | Prénom/Nom en en-tête | Anonyme : PAS de nom, prénom, établissement |
 | Destinataire | Connu (recruteur nommé) | Commission anonyme |
 | Format | Document formel | Texte libre dans interface |
 | Objectif | Convaincre un recruteur | Prouver l'adéquation aux attendus de la formation |
@@ -187,20 +187,20 @@ Management apporte une perspective juridique rare. Transformer la différence en
 ### Structure recommandée du PFM (1500 caractères)
 
 ```
-§1 — Pourquoi cette formation (200-250 caractères)
+§1 : Pourquoi cette formation (200-250 caractères)
   → 1 élément spécifique du programme nommé
   → Lien direct avec une expérience ou un projet personnel
 
-§2 — Preuve de l'adéquation (500-600 caractères)
+§2 : Preuve de l'adéquation (500-600 caractères)
   → 2-3 éléments concrets du parcours (cours, projets, stages, centres d'intérêt)
   → Montrer explicitement que les attendus sont couverts
-  → "Show, don't tell" — pas "je suis motivé", mais "j'ai fait X"
+  → "Show, don't tell" : pas "je suis motivé", mais "j'ai fait X"
 
-§3 — Projet professionnel (400-450 caractères)
+§3 : Projet professionnel (400-450 caractères)
   → Où on se voit dans 3-5 ans (même approximativement)
   → Pourquoi cette formation est la voie logique vers cet objectif
 
-§4 — Connaissance du secteur (250-300 caractères)
+§4 : Connaissance du secteur (250-300 caractères)
   → Une démarche concrète prouvant l'intérêt : JPO, échange avec un étudiant,
     salon, lecture d'une publication, visite d'entreprise
 ```
@@ -211,12 +211,12 @@ Management apporte une perspective juridique rare. Transformer la différence en
 - Intitulé exact de la formation visée (ex : "BUT Informatique" et non "l'IUT")
 - Mentionner les attendus nationaux implicitement ou explicitement
 
-**Référence étendue :** `references/projet-formation-motive.md` — templates par type
+**Référence étendue :** `references/projet-formation-motive.md` : templates par type
 de formation, 15+ paires avant/après, grille de vérification Parcoursup.
 
 ---
 
-## Module 5 — Réorientation
+## Module 5 : Réorientation
 
 ### Diagnostiquer la situation
 
@@ -248,7 +248,7 @@ pour les raisons suivantes : [raisons concrètes]."
 
 ## Checklist interne avant livraison
 
-*(Usage interne — ne pas afficher à l'utilisateur)*
+*(Usage interne : ne pas afficher à l'utilisateur)*
 
 - [ ] Le profil complet a-t-il été collecté (notes, motivations, contraintes, vision) ?
 - [ ] Les recommandations sont-elles réalistes au regard des notes et contraintes ?

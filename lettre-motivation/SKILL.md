@@ -258,7 +258,7 @@ Structure en 3 temps :
 Pourrions-nous échanger ?"
 
 ✅ Personnalisé (298 caractères) :
-"Bonjour [Prénom], votre post sur [sujet précis] m'a interpellé — je travaille sur un
+"Bonjour [Prénom], votre post sur [sujet précis] m'a interpellé : je travaille sur un
 projet similaire en BUT GEA. J'aimerais vous poser 2 questions sur [axe concret].
 Échange de 15 min possible ?"
 
@@ -272,7 +272,7 @@ Format : 5-7 phrases, objet impactant, structure AIDA adaptée.
 **Structure canonique :**
 
 ```
-Objet : [Verbe d'action] + [résultat ou angle concret] — pas "Candidature"
+Objet : [Verbe d'action] + [résultat ou angle concret] : pas "Candidature"
 
 §1 (Pourquoi vous) : 1 élément précis sur leur travail/projet/entreprise
 §2 (Qui je suis) : 1 preuve centrale, chiffrée si possible
@@ -317,14 +317,14 @@ Structure :
 Après réflexion, j'aurais complété ma réponse sur [sujet] par [précision].
 Je reste disponible si vous souhaitez approfondir."
 
-**Référence étendue :** `references/reseautage-digital.md` — templates complets,
+**Référence étendue :** `references/reseautage-digital.md` : templates complets,
 variantes par secteur, erreurs fréquentes.
 
 ---
 
 ## Checklist interne avant livraison (auto-évaluation Claude)
 
-*(Usage interne — ne pas afficher à l'utilisateur)*
+*(Usage interne : ne pas afficher à l'utilisateur)*
 
 Avant de livrer toute lettre ou message, vérifier mentalement :
 - [ ] Ai-je collecté suffisamment d'informations concrètes sur le candidat ET la cible ?
