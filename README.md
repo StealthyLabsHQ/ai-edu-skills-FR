@@ -1,4 +1,4 @@
-# anthropics-education-FR
+# ai-edu-skills-FR
 
 Skills pour Claude : accompagnement scolaire et universitaire.
 
@@ -9,7 +9,7 @@ Bibliothèque de skills `.md` open-source pour transformer Claude en assistant p
 ## Arborescence
 
 ```
-anthropics-education-FR/
+ai-edu-skills-FR/
 ├── README.md
 ├── soutien-academique/
 │   ├── SKILL.md                              ← Skill principal (10 modules)
@@ -147,15 +147,15 @@ Les skills peuvent se compléter selon le besoin :
 ### Sur Claude.ai (avec Claude Code ou Cowork)
 
 ```bash
-git clone https://github.com/StealthyLabsHQ/anthropics-education-FR.git
+git clone https://github.com/StealthyLabsHQ/ai-edu-skills-FR.git
 
 # Installer tous les skills
-cp -r anthropics-education-FR/soutien-academique /mnt/skills/user/
-cp -r anthropics-education-FR/lettre-motivation /mnt/skills/user/
-cp -r anthropics-education-FR/plume-naturelle /mnt/skills/user/
-cp -r anthropics-education-FR/orientation-strategie /mnt/skills/user/
-cp -r anthropics-education-FR/entretien-oral /mnt/skills/user/
-cp -r anthropics-education-FR/productivite-pkm /mnt/skills/user/
+cp -r ai-edu-skills-FR/soutien-academique /mnt/skills/user/
+cp -r ai-edu-skills-FR/lettre-motivation /mnt/skills/user/
+cp -r ai-edu-skills-FR/plume-naturelle /mnt/skills/user/
+cp -r ai-edu-skills-FR/orientation-strategie /mnt/skills/user/
+cp -r ai-edu-skills-FR/entretien-oral /mnt/skills/user/
+cp -r ai-edu-skills-FR/productivite-pkm /mnt/skills/user/
 ```
 
 > **Important :** copier le dossier entier (avec `references/`) pour que le chargement progressif fonctionne. Sans le dossier `references/`, Claude n'aura pas accès aux ressources détaillées.
