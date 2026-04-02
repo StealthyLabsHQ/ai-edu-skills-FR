@@ -21,15 +21,15 @@
 Pour chaque question : ce qui est attendu, ce qui est rédhibitoire, et un exemple
 de réponse différenciante.
 
-### Q1 — "Présentez-vous en 2 minutes."
+### Q1 : "Présentez-vous en 2 minutes."
 
 **Ce qui est attendu :** Fil rouge du parcours → moment clé → pourquoi ici maintenant.
 **Ce qui est rédhibitoire :** Récitation chronologique du CV.
-**Piège courant :** Commencer par "Je m'appelle X, j'ai Y ans..." — inutile.
+**Piège courant :** Commencer par "Je m'appelle X, j'ai Y ans..." : inutile.
 
 ---
 
-### Q2 — "Pourquoi ce programme / ce poste ?"
+### Q2 : "Pourquoi ce programme / ce poste ?"
 
 **Ce qui est attendu :** 1 élément très spécifique du programme/poste + lien avec le parcours.
 **Ce qui est rédhibitoire :** "Votre réputation", "les débouchés sont bons", "l'ambiance".
@@ -37,7 +37,7 @@ de réponse différenciante.
 
 ---
 
-### Q3 — "Quelles sont vos forces ?"
+### Q3 : "Quelles sont vos forces ?"
 
 **Ce qui est attendu :** 1-2 qualités prouvées par exemples concrets.
 **Ce qui est rédhibitoire :** "Je suis rigoureux, motivé et travailleur." (triade bateau).
@@ -45,7 +45,7 @@ de réponse différenciante.
 
 ---
 
-### Q4 — "Quelles sont vos faiblesses ?"
+### Q4 : "Quelles sont vos faiblesses ?"
 
 **Ce qui est attendu :** Un vrai défaut + ce qu'on fait pour y remédier.
 **Ce qui est rédhibitoire :** "Mon plus grand défaut est le perfectionnisme."
@@ -54,7 +54,7 @@ et une action concrète mise en place depuis.
 
 ---
 
-### Q5 — "Où vous voyez-vous dans 5 ans ?"
+### Q5 : "Où vous voyez-vous dans 5 ans ?"
 
 **Ce qui est attendu :** Un projet professionnel cohérent avec ce programme.
 **Ce qui est rédhibitoire :** "Je ne sais pas encore" / "À un poste de direction."
@@ -63,7 +63,7 @@ mais pas absente.
 
 ---
 
-### Q6 — "Pourquoi pas [formation concurrente] ?"
+### Q6 : "Pourquoi pas [formation concurrente] ?"
 
 **Ce qui est attendu :** Justification positive de ce choix (pas critique des autres).
 **Ce qui est rédhibitoire :** Critiquer la formation concurrente / dire qu'on n'a pas été pris.
@@ -72,7 +72,7 @@ parce que [raison précise liée au profil]."
 
 ---
 
-### Q7 — "Parlez-moi d'un échec."
+### Q7 : "Parlez-moi d'un échec."
 
 **Ce qui est attendu :** Vraie responsabilité + vrai apprentissage.
 **Ce qui est rédhibitoire :** "J'ai eu un 9/20 mais c'était de la faute du prof."
@@ -80,7 +80,7 @@ parce que [raison précise liée au profil]."
 
 ---
 
-### Q8 — "Quelles sont vos expériences marquantes ?"
+### Q8 : "Quelles sont vos expériences marquantes ?"
 
 **Ce qui est attendu :** Sélectionner 1-2 expériences vraiment différenciantes.
 **Ce qui est rédhibitoire :** Lister toutes ses expériences en 30 secondes chacune.
@@ -88,7 +88,7 @@ parce que [raison précise liée au profil]."
 
 ---
 
-### Q9 — "Avez-vous des questions ?"
+### Q9 : "Avez-vous des questions ?"
 
 **Ce qui est attendu :** 2-3 questions montrant l'intérêt pour le programme/poste.
 **Ce qui est rédhibitoire :** "Non, tout est clair." / Poser des questions dont la réponse
@@ -98,7 +98,7 @@ les axes de recherche actifs, sur les projets en cours.
 
 ---
 
-### Q10 — "Qu'est-ce qui vous différencie des autres candidats ?"
+### Q10 : "Qu'est-ce qui vous différencie des autres candidats ?"
 
 **Ce qui est attendu :** L'angle différenciant du profil, formulé avec humilité.
 **Ce qui est rédhibitoire :** "Je suis très motivé" (tout le monde l'est).
@@ -107,7 +107,7 @@ que peu de candidats ont dans ce programme : [en quoi c'est utile ici]."
 
 ---
 
-### Q11 — "Comment vous définiriez-vous en 3 mots ?"
+### Q11 : "Comment vous définiriez-vous en 3 mots ?"
 
 **Ce qui est attendu :** 3 mots choisis + 1 phrase d'explication pour chacun.
 **Ce qui est rédhibitoire :** "Motivé, rigoureux, dynamique." (triade universelle).
@@ -115,16 +115,16 @@ que peu de candidats ont dans ce programme : [en quoi c'est utile ici]."
 
 ---
 
-### Q12 — "Qu'est-ce que vous apporterez à ce programme ?"
+### Q12 : "Qu'est-ce que vous apporterez à ce programme ?"
 
 **Ce qui est attendu :** Perspective concrète + compétence transférable.
 **Ce qui est rédhibitoire :** "Je m'investirai à fond."
 **Différenciant :** "Mon expérience en [domaine X] me permet d'apporter [perspective Y]
-aux projets de groupe — notamment sur [axe précis du programme]."
+aux projets de groupe : notamment sur [axe précis du programme]."
 
 ---
 
-### Q13 — "Comment travaillez-vous en équipe ?"
+### Q13 : "Comment travaillez-vous en équipe ?"
 
 **Ce qui est attendu :** Exemple STAR + rôle précis dans l'équipe.
 **Ce qui est rédhibitoire :** "Je m'adapte facilement à tous les profils."
@@ -133,7 +133,7 @@ collaboration "parfaite".
 
 ---
 
-### Q14 — "Qu'est-ce que vous avez lu récemment ?"
+### Q14 : "Qu'est-ce que vous avez lu récemment ?"
 
 **Ce qui est attendu :** 1 lecture liée au domaine (ou non, si pertinente) + ce qu'on en a tiré.
 **Ce qui est rédhibitoire :** "Je n'ai pas beaucoup le temps de lire." / Inventer un titre.
@@ -141,7 +141,7 @@ collaboration "parfaite".
 
 ---
 
-### Q15 — "Décrivez votre style de management."
+### Q15 : "Décrivez votre style de management."
 
 **Ce qui est attendu :** Style ancré dans une expérience, pas théorique.
 **Ce qui est rédhibitoire :** "Je suis participatif et à l'écoute." (déclaration non prouvée)
@@ -150,7 +150,7 @@ formellement, mais lors de [projet], j'ai joué un rôle de coordination qui res
 
 ---
 
-### Q16 — "Qu'avez-vous fait pendant [période creuse dans le CV] ?"
+### Q16 : "Qu'avez-vous fait pendant [période creuse dans le CV] ?"
 
 **Ce qui est attendu :** Honnêteté + construction active ou apprentissage.
 **Ce qui est rédhibitoire :** Justification défensive ou mensonge.
@@ -159,7 +159,7 @@ a appris sur soi.
 
 ---
 
-### Q17 — "Pourquoi avez-vous changé de voie ?" (réorientation)
+### Q17 : "Pourquoi avez-vous changé de voie ?" (réorientation)
 
 **Ce qui est attendu :** Cohérence narrative (la réorientation comme progression, pas fuite).
 **Ce qui est rédhibitoire :** "Je n'aimais pas mon ancienne voie." (fuite)
@@ -169,7 +169,7 @@ précisément à ce gap."
 
 ---
 
-### Q18 — "Que savez-vous de notre programme / entreprise ?"
+### Q18 : "Que savez-vous de notre programme / entreprise ?"
 
 **Ce qui est attendu :** Connaissance des spécificités (pas juste "vous êtes leaders du marché")
 **Ce qui est rédhibitoire :** Informations génériques qu'on trouve en 2 min sur le site web.
@@ -177,7 +177,7 @@ précisément à ce gap."
 
 ---
 
-### Q19 — "Quelles sont vos ambitions salariales ?"
+### Q19 : "Quelles sont vos ambitions salariales ?"
 
 **Ce qui est attendu :** Fourchette réaliste, basée sur une recherche.
 **Ce qui est rédhibitoire :** "Je ne sais pas" / Fourchette très éloignée des standards du secteur.
@@ -186,7 +186,7 @@ précisément à ce gap."
 
 ---
 
-### Q20 — "C'est quoi votre plus grande réussite ?"
+### Q20 : "C'est quoi votre plus grande réussite ?"
 
 **Ce qui est attendu :** Une réalisation concrète, pas un trait de caractère.
 **Ce qui est rédhibitoire :** "Mon bac" (sauf contexte très junior) / "Je suis fier d'être
@@ -211,13 +211,13 @@ position fondée.
 **Ce que le jury teste :** Confiance ancrée, pas arrogance.
 **Réponse efficace :** 2-3 preuves concrètes + humilité sur ce qui reste à apprendre.
 
-### "Votre dossier est bon mais pas exceptionnel — pourquoi vous et pas un meilleur dossier ?"
+### "Votre dossier est bon mais pas exceptionnel : pourquoi vous et pas un meilleur dossier ?"
 
 **Ce que le jury teste :** Capacité à valoriser des éléments non-académiques.
 **Réponse efficace :** "Les notes reflètent une partie de mon profil. Voici ce que les
 notes ne montrent pas : [expérience, projet, compétence non évaluée académiquement]."
 
-### "Vous semblez avoir postulé partout — sommes-nous vraiment votre premier choix ?"
+### "Vous semblez avoir postulé partout : sommes-nous vraiment votre premier choix ?"
 
 **Ce que le jury teste :** Sincérité de la motivation.
 **Ne jamais mentir :** Si ce n'est pas le premier choix, dire pourquoi c'est un choix
@@ -242,7 +242,7 @@ fort quand même : "Votre programme est dans mon top 3 pour [raisons précises].
 
 ### Entretien Alternance (RH + Manager)
 
-- "Vous travaillez en alternance — comment gérez-vous le switch école/entreprise ?"
+- "Vous travaillez en alternance : comment gérez-vous le switch école/entreprise ?"
 - "Donnez-moi un exemple de situation où vous avez dû apprendre vite."
 - "Comment réagissez-vous quand on vous donne une critique ?"
 
@@ -274,7 +274,7 @@ fort quand même : "Votre programme est dans mon top 3 pour [raisons précises].
 | "Je suis à l'écoute des autres" | Universel | Exemple de conflit géré avec écoute active |
 | "J'apprends vite" | Déclaration non prouvée | "En [X jours], j'ai appris [Y] pour [résultat]" |
 | "Je suis passionné" | Tout le monde est "passionné" | La passion se démontre par les actions |
-| "Je suis disponible immédiatement" | Détail logistique non différenciant | Argument inutile — ne pas en faire un point |
+| "Je suis disponible immédiatement" | Détail logistique non différenciant | Argument inutile : ne pas en faire un point |
 
 ---
 

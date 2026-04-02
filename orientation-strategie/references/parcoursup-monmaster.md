@@ -1,4 +1,4 @@
-# Référence : Parcoursup et MonMaster — Guide des filières
+# Référence : Parcoursup et MonMaster : Guide des filières
 
 > **Quand charger ce fichier :** L'étudiant fait des recherches sur les filières
 > accessibles via Parcoursup ou MonMaster, veut comprendre les critères de sélection,
@@ -11,7 +11,7 @@
 1. [Architecture du système Parcoursup](#1-architecture-parcoursup)
 2. [Types de formations et sélectivité](#2-types-de-formations)
 3. [Critères d'évaluation par formation](#3-critères-dévaluation)
-4. [MonMaster — spécificités et stratégie](#4-monmaster)
+4. [MonMaster : spécificités et stratégie](#4-monmaster)
 5. [Calendriers et délais](#5-calendriers)
 6. [Bases de données et outils d'aide à la décision](#6-outils)
 
@@ -79,7 +79,7 @@
 | **CPGE** | Notes math/français, appréciations | Excellence scolaire, "capacité à aller en grande école" |
 | **Écoles spécialisées** | Variable | Motivation sincère + connaissance du secteur |
 
-### Les "attendus nationaux" — comment les exploiter
+### Les "attendus nationaux" : comment les exploiter
 
 Chaque formation publie ses attendus nationaux sur Parcoursup (onglet "critères généraux").
 Ces attendus sont la grille de lecture de la commission.
@@ -89,13 +89,13 @@ Ces attendus sont la grille de lecture de la commission.
 2. Identifier les termes clés (compétences, qualités, connaissances demandées)
 3. Reprendre ces termes dans le PFM avec des preuves concrètes
 
-Exemple — Attendu BUT GEA : "curiosité pour les aspects économiques et juridiques de l'entreprise"
+Exemple : Attendu BUT GEA : "curiosité pour les aspects économiques et juridiques de l'entreprise"
 → PFM : "Dans mon TPE de Terminale sur la structure des PME françaises, j'ai analysé [...]
 ce qui m'a confirmé mon intérêt pour la gestion d'entreprise."
 
 ---
 
-## 4. MonMaster — spécificités et stratégie
+## 4. MonMaster : spécificités et stratégie
 
 ### Fonctionnement de MonMaster
 
@@ -105,16 +105,16 @@ ce qui m'a confirmé mon intérêt pour la gestion d'entreprise."
 
 ### Ce qui compte dans un dossier MonMaster
 
-**Niveau 1 — Éliminatoire :**
+**Niveau 1 : Éliminatoire :**
 - Licence ou équivalent dans un domaine suffisamment proche
 - Relevés de notes (la moyenne générale de L3 est regardée)
 
-**Niveau 2 — Différenciant :**
+**Niveau 2 : Différenciant :**
 - Expérience professionnelle dans le domaine (stage, alternance, projet)
 - Lettre de motivation montrant la connaissance du programme
 - Recommandations (si acceptées par le programme)
 
-**Niveau 3 — Déterminant pour les programmes très sélectifs :**
+**Niveau 3 : Déterminant pour les programmes très sélectifs :**
 - Publications, projets de recherche
 - Entretien de sélection (préparation avec skill entretien-oral)
 
@@ -140,7 +140,7 @@ Un profil atypique peut être valorisé si la lettre explique clairement :
 
 ## 5. Calendriers et délais
 
-### Calendrier Parcoursup (indicatif — à vérifier chaque année)
+### Calendrier Parcoursup (indicatif : à vérifier chaque année)
 
 | Période | Action |
 |---------|--------|

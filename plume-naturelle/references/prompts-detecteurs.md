@@ -555,7 +555,7 @@ signaux humains les plus efficaces :
 
 ---
 
-## 10. Compilatio — Données empiriques officielles (2025-2026)
+## 10. Compilatio : Données empiriques officielles (2025-2026)
 
 > **Statut de cette section :** données issues de la documentation officielle Compilatio,
 > du rapport de Claude for Chrome (2 avril 2026), et de l'étude indépendante Dessus & Seyve
@@ -595,7 +595,7 @@ confirme qu'un LLM est utilisé pour l'analyse stylistique (étape 2), combiné 
 de traitement statistique préalable. Les métriques de perplexité et burstiness sont
 les deux indicateurs explicitement cités dans la communication officielle.
 
-**Version en production (au 2 avril 2026) : v4.5.3** — mise en production le 4 septembre 2025.
+**Version en production (au 2 avril 2026) : v4.5.3** : mise en production le 4 septembre 2025.
 Version précédente : v4.2.1 (octobre 2024).
 
 ---
@@ -634,7 +634,7 @@ est vraisemblablement couverte dans la même entrée ou dans la catégorie "autr
 - Prompts IA utilisés : questions simples, **sans instructions de style particulier**
 - Ces conditions sont plus favorables que l'usage réel (textes académiques post-édités)
 
-**Étude indépendante (Dessus & Seyve, STICEF 2025 — hal-04578682) :**
+**Étude indépendante (Dessus & Seyve, STICEF 2025 : hal-04578682) :**
 - 86 documents testés en conditions universitaires réelles (francophones)
 - Résultat sur les textes humains : **zéro faux positif dans cet échantillon**
 - Comparaison avec d'autres détecteurs : Compilatio Magister+ = meilleure performance testée
@@ -705,14 +705,14 @@ Compilatio **ne publie aucun seuil automatique d'alerte**. Il n'existe pas de r�
 
 Le score est présenté comme un **indicateur probabiliste** à interpréter contextuellement
 par l'enseignant. La formulation retenue est délibérément prudente :
-**"textes potentiellement générés par IA"** — jamais "textes générés par IA".
+**"textes potentiellement générés par IA"** : jamais "textes générés par IA".
 
 Pour un document de 1 000 mots avec un score de 10 % : 100 mots présentent
 un style similaire à celui d'une IA. L'interprétation est laissée à l'enseignant.
 
 **Cohérence avec le seuil Turnitin 0.20 (section 9.3) :** Compilatio adopte une approche
 similaire de non-signalement automatique à faible score. L'objectif pratique du skill
-reste < 20 % — zone dans laquelle même un enseignant vigilant aura du mal à justifier
+reste < 20 % : zone dans laquelle même un enseignant vigilant aura du mal à justifier
 une sanction en l'absence de seuil institutionnel défini.
 
 ---
@@ -722,15 +722,15 @@ une sanction en l'absence de seuil institutionnel défini.
 À partir de ces données empiriques, les priorités pour un texte soumis à Compilatio :
 
 **Priorité absolue :**
-1. **Varier la longueur des phrases** (burstiness) — cité explicitement dans la doc comme
+1. **Varier la longueur des phrases** (burstiness) : cité explicitement dans la doc comme
    métrique clé. Cible : B > 0.3 (formule section 3).
-2. **Augmenter la perplexité** — l'autre métrique explicitement citée. Injection de
+2. **Augmenter la perplexité** : l'autre métrique explicitement citée. Injection de
    vocabulaire concret, noms propres, chiffres, termes idiosyncrasiques.
 
 **Si soumis à Magister+ :**
-3. **Changer la structure argumentative** (pas seulement le lexique) — la détection
+3. **Changer la structure argumentative** (pas seulement le lexique) : la détection
    sémantique (embeddings) contourne les reformulations lexicales pures.
-4. **Éviter les substitutions Unicode** — le module de détection des textes altérés
+4. **Éviter les substitutions Unicode** : le module de détection des textes altérés
    les cible spécifiquement. Ce vecteur est donc à exclure.
 
 **Si soumis à Magister (non +) :**
@@ -750,5 +750,5 @@ une sanction en l'absence de seuil institutionnel défini.
 - Gemini 3.1 Pro, prompt de détection reconstitué (métriques, seuils, format JSON)
 - ChatGPT 5.4 Thinking, architecture réelle d'un détecteur (pipeline LLM + modules externes, plafonds de confiance, littérature DetectGPT/GLTR)
 - ChatGPT 5.4 Pro, prompt de production (hiérarchie des preuves, catégorie paraphrase, seuil 0.20, métriques complètes)
-- **Rapport Claude for Chrome, 2 avril 2026** — documentation officielle Compilatio (support.compilatio.net, compilatio.net/ia-detecteur-info, compilatio.net/magister-plus), version v4.5.3
+- **Rapport Claude for Chrome, 2 avril 2026** : documentation officielle Compilatio (support.compilatio.net, compilatio.net/ia-detecteur-info, compilatio.net/magister-plus), version v4.5.3
 - **Dessus, P. & Seyve, D. (2025)**. *La détection de l'utilisation de robots conversationnels en contexte universitaire : Le cas de Compilatio Magister+*. STICEF, Vol. 32, No 1, pp. 112–128. Preprint : HAL UGA, hal-04578682

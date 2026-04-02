@@ -15,7 +15,7 @@ description: >
 version: 1.0.0
 ---
 
-# Skill — Productivité et PKM (Personal Knowledge Management)
+# Skill : Productivité et PKM (Personal Knowledge Management)
 
 Organisation des notes, de la bibliographie et de la gestion des connaissances
 pour les mémoires, thèses et projets de recherche académique.
@@ -36,7 +36,7 @@ jamais utilisé est inutile. Un système imparfait utilisé chaque jour est exce
 
 ---
 
-## Étape 0 — Diagnostic du contexte (OBLIGATOIRE)
+## Étape 0 : Diagnostic du contexte (OBLIGATOIRE)
 
 Avant toute recommandation d'outil ou de méthode, identifier :
 
@@ -51,7 +51,7 @@ Avant toute recommandation d'outil ou de méthode, identifier :
 
 ---
 
-## Module 1 — Principes fondamentaux du PKM académique
+## Module 1 : Principes fondamentaux du PKM académique
 
 ### Les 3 erreurs universelles
 
@@ -79,7 +79,7 @@ La clé : **ne pas mélanger** les trois types dans le même fichier.
 
 ---
 
-## Module 2 — Méthode Zettelkasten adaptée au mémoire
+## Module 2 : Méthode Zettelkasten adaptée au mémoire
 
 ### Principe original (Niklas Luhmann)
 
@@ -88,7 +88,7 @@ de fiches sur papier. Chaque fiche : 1 idée, 1 numéro unique, des liens vers d
 
 ### Adaptation numérique pour l'étudiant français
 
-Pas besoin d'un Zettelkasten "pur" — une adaptation simple suffit.
+Pas besoin d'un Zettelkasten "pur" : une adaptation simple suffit.
 
 **Règle des notes atomiques :**
 - 1 note = 1 idée (pas 1 note = 1 chapitre ou 1 auteur)
@@ -108,7 +108,7 @@ culture nationale (voir → [[Hofstede et variables culturelles]]).
 ```
 
 **Ce qui rend ce système puissant :** quand on écrit le mémoire, on ne part pas
-d'une page blanche — on assemble des notes déjà reliées.
+d'une page blanche : on assemble des notes déjà reliées.
 
 ### Workflow Zettelkasten pour un mémoire
 
@@ -124,17 +124,17 @@ Liaison vers notes existantes (quelles idées ça confirme ? contredit ? enrichi
 Liaison vers la structure du mémoire (quelle partie cette idée alimente-t-elle ?)
 ```
 
-**Référence étendue :** `references/zettelkasten-obsidian.md` — configuration
+**Référence étendue :** `references/zettelkasten-obsidian.md` : configuration
 Obsidian pour le Zettelkasten, templates de notes, plugins recommandés.
 
 ---
 
-## Module 3 — Obsidian pour le mémoire
+## Module 3 : Obsidian pour le mémoire
 
 ### Pourquoi Obsidian
 
 - Gratuit, local (tes notes ne sont pas sur le cloud d'une entreprise)
-- Basé sur Markdown (format texte universel — tes notes survivront à l'outil)
+- Basé sur Markdown (format texte universel : tes notes survivront à l'outil)
 - Système de liens bidirectionnels (voir la "carte" de tes idées)
 - Communauté active, nombreux templates académiques disponibles
 
@@ -190,7 +190,7 @@ Limites : [biais méthodologique, date, contexte]
 
 ---
 
-## Module 4 — Notion pour les mémoires collaboratifs et SAÉ
+## Module 4 : Notion pour les mémoires collaboratifs et SAÉ
 
 ### Quand Notion > Obsidian
 
@@ -220,7 +220,7 @@ Limites : [biais méthodologique, date, contexte]
 
 ---
 
-## Module 5 — Zotero pour la bibliographie
+## Module 5 : Zotero pour la bibliographie
 
 ### Pourquoi Zotero est indispensable pour un mémoire
 
@@ -234,7 +234,7 @@ Limites : [biais méthodologique, date, contexte]
 
 **1. Installation :**
 - Zotero desktop (gratuit)
-- Zotero Connector (extension navigateur) — permet de sauvegarder une source en 1 clic
+- Zotero Connector (extension navigateur) : permet de sauvegarder une source en 1 clic
 - Plugin Word/LibreOffice (inclus dans l'installation)
 
 **2. Structure des collections :**
@@ -261,12 +261,12 @@ Pour un mémoire de niveau master :
 3. **Plugin Better BibTeX** (Zotero) + **Zotero Integration** (Obsidian) : lien automatique
    entre les deux outils (citer une source Zotero directement dans Obsidian)
 
-**Référence étendue :** `references/zotero-bibliographie.md` — configuration avancée,
+**Référence étendue :** `references/zotero-bibliographie.md` : configuration avancée,
 styles de citation français, synchronisation cloud, export vers Word.
 
 ---
 
-## Module 6 — Système minimal viable (pour délais serrés)
+## Module 6 : Système minimal viable (pour délais serrés)
 
 Si l'étudiant manque de temps pour mettre en place un vrai système :
 
@@ -288,7 +288,7 @@ C'est déjà considérable.
 
 ## Checklist interne avant livraison
 
-*(Usage interne — ne pas afficher à l'utilisateur)*
+*(Usage interne : ne pas afficher à l'utilisateur)*
 
 - [ ] Le diagnostic (volume, délai, confort technique) a été fait ?
 - [ ] Les recommandations sont-elles réalistes au regard du temps disponible ?

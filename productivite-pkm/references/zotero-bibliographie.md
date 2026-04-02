@@ -1,4 +1,4 @@
-# Référence : Zotero et Bibliographie — Configuration Avancée
+# Référence : Zotero et Bibliographie : Configuration Avancée
 
 > **Quand charger ce fichier :** L'étudiant configure Zotero, a des problèmes avec sa
 > bibliographie, veut changer de style de citation, ou a besoin d'exporter vers Word.
@@ -22,7 +22,7 @@
 ### Installation complète
 
 1. **Zotero Desktop** : zotero.org/download (gratuit, Windows/Mac/Linux)
-2. **Zotero Connector** : extension navigateur (Chrome/Firefox/Safari) — sauvegarde une source en 1 clic depuis n'importe quelle page
+2. **Zotero Connector** : extension navigateur (Chrome/Firefox/Safari) : sauvegarde une source en 1 clic depuis n'importe quelle page
 3. **Plugin Word/LibreOffice** : installé automatiquement lors de l'installation de Zotero
 
 ### Paramètres recommandés (Edit > Preferences)
@@ -54,7 +54,7 @@ Advanced :
 │   ├── 📁 Résultats à comparer
 │   └── 📁 À lire (inbox)
 ├── 📁 Cours [semestre]
-└── 📁 Non retenu (garder — peut servir plus tard)
+└── 📁 Non retenu (garder : peut servir plus tard)
 ```
 
 ---
@@ -145,9 +145,9 @@ Zotero Style Repository : zotero.org/styles
 
 **Pour les normes françaises :** chercher "French" dans le repository.
 Les styles les plus utilisés en France académique :
-- "APA (French)" — adapté à la langue française
-- "Bibliographie style Sciences Po" — pour les sciences politiques
-- "French Legal" — pour le droit
+- "APA (French)" : adapté à la langue française
+- "Bibliographie style Sciences Po" : pour les sciences politiques
+- "French Legal" : pour le droit
 
 ### Modifier un style existant (avancé)
 
@@ -194,7 +194,7 @@ Le plugin Zotero apparaît comme un onglet "Zotero" dans Word.
    → Elle sera écrasée lors du prochain "Refresh"
    → Corriger dans Zotero Desktop, puis "Refresh" dans Word
 4. Avant le rendu final : "Unlink Citations" pour rendre le document indépendant
-   → ATTENTION : cette action est irréversible — garder une copie avant
+   → ATTENTION : cette action est irréversible : garder une copie avant
 ```
 
 ---
@@ -219,8 +219,8 @@ toutes les annotations exportées dans une note Zotero formatée.
 
 | Couleur | Utilisation |
 |---------|-------------|
-| 🟡 Jaune | Citation utile — à potentiellement citer |
-| 🔴 Rouge | Argument central — crucial pour mon mémoire |
+| 🟡 Jaune | Citation utile : à potentiellement citer |
+| 🔴 Rouge | Argument central : crucial pour mon mémoire |
 | 🔵 Bleu | Définition ou concept à noter |
 | 🟢 Vert | Méthodologie intéressante |
 | 🟠 Orange | Point à vérifier ou source à trouver |
@@ -269,8 +269,8 @@ Indépendamment de la synchronisation, sauvegarder régulièrement :
 
 ### Les 3 habitudes pour une bibliographie propre
 
-1. **Vérifier les métadonnées à l'import** — ne pas faire confiance à l'automatique pour les sources françaises (les bases de données françaises ont des standards d'export variables)
+1. **Vérifier les métadonnées à l'import** : ne pas faire confiance à l'automatique pour les sources françaises (les bases de données françaises ont des standards d'export variables)
 
-2. **Un item = un PDF joint** — si le PDF manque, aller le chercher immédiatement (accès plus difficile plus tard)
+2. **Un item = un PDF joint** : si le PDF manque, aller le chercher immédiatement (accès plus difficile plus tard)
 
-3. **Tagger immédiatement** — un item sans tag est un item perdu dans 3 mois
+3. **Tagger immédiatement** : un item sans tag est un item perdu dans 3 mois

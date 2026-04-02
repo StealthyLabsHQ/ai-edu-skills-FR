@@ -1,4 +1,4 @@
-# Référence : Zettelkasten et Obsidian — Configuration Complète
+# Référence : Zettelkasten et Obsidian : Configuration Complète
 
 > **Quand charger ce fichier :** L'étudiant veut configurer Obsidian pour son mémoire,
 > comprendre le Zettelkasten, ou a besoin de templates avancés et de plugins recommandés.
@@ -11,7 +11,7 @@
 2. [Plugins recommandés pour le mémoire](#2-plugins)
 3. [Templates complets](#3-templates)
 4. [Workflows avancés](#4-workflows)
-5. [La vue graphique — comment la lire et l'exploiter](#5-vue-graphique)
+5. [La vue graphique : comment la lire et l'exploiter](#5-vue-graphique)
 
 ---
 
@@ -21,7 +21,7 @@
 
 1. Télécharger Obsidian sur obsidian.md (gratuit, Windows/Mac/Linux/iOS/Android)
 2. Créer un "Vault" (dossier local) dédié au mémoire
-3. **Ne pas** mettre le Vault dans OneDrive/Google Drive par défaut — risques de conflits
+3. **Ne pas** mettre le Vault dans OneDrive/Google Drive par défaut : risques de conflits
    (utiliser plutôt le plugin Obsidian Sync ou Git pour la sauvegarde)
 
 ### Paramètres recommandés (Settings)
@@ -106,7 +106,7 @@ Prérequis : Zotero installé + plugin "Better BibTeX for Zotero" dans Zotero.
 
 ## 3. Templates complets
 
-### Template — Note de lecture (Sources)
+### Template : Note de lecture (Sources)
 
 Sauvegarder dans `04 - Ressources/Templates/Note de lecture.md`
 
@@ -132,7 +132,7 @@ tags: [source, {{discipline}}, {{thème}}]
 {{Résumé factuel : thèse de l'auteur, méthode, terrain}}
 
 ## Arguments clés
-- {{Argument 1 — formulé comme une affirmation}}
+- {{Argument 1 : formulé comme une affirmation}}
 - {{Argument 2}}
 - {{Argument 3}}
 
@@ -148,7 +148,7 @@ Limites : {{biais, date, contexte, échantillon}}
 Lien vers sources critiques : [[{{source qui la contredit}}]]
 
 ## Concepts clés à noter
-→ [[{{Concept 1 — créer la note si elle n'existe pas}}]]
+→ [[{{Concept 1 : créer la note si elle n'existe pas}}]]
 → [[{{Concept 2}}]]
 
 ## Liens vers mon mémoire
@@ -160,7 +160,7 @@ Lien vers sources critiques : [[{{source qui la contredit}}]]
 
 ---
 
-### Template — Note conceptuelle (Concepts)
+### Template : Note conceptuelle (Concepts)
 
 Sauvegarder dans `04 - Ressources/Templates/Note conceptuelle.md`
 
@@ -177,21 +177,21 @@ tags: [concept, {{discipline}}, {{thème}}]
 {{2-3 lignes : définition de travail, pas encyclopédique}}
 
 ## Développement
-{{5-10 lignes max — l'essentiel, pas tout}}
+{{5-10 lignes max : l'essentiel, pas tout}}
 
 ## Exemple concret
 {{1 exemple précis qui illustre le concept}}
 
 ## Sources qui étayent
-→ [[{{Source 1}}]] — {{ce qu'elle dit sur ce concept}}
+→ [[{{Source 1}}]] : {{ce qu'elle dit sur ce concept}}
 → [[{{Source 2}}]]
 
 ## Sources qui nuancent ou contredisent
-→ [[{{Source contradictoire}}]] — {{en quoi}}
+→ [[{{Source contradictoire}}]] : {{en quoi}}
 
 ## Concepts reliés
-→ [[{{Concept proche}}]] — {{relation}}
-→ [[{{Concept opposé}}]] — {{tension}}
+→ [[{{Concept proche}}]] : {{relation}}
+→ [[{{Concept opposé}}]] : {{tension}}
 
 ## Application dans mon mémoire
 → Utilisé dans : [[{{Chapitre}}]] pour argumenter {{quoi}}
@@ -200,12 +200,12 @@ tags: [concept, {{discipline}}, {{thème}}]
 
 ---
 
-### Template — Dashboard (vue d'ensemble)
+### Template : Dashboard (vue d'ensemble)
 
 Sauvegarder à la racine du Vault comme `Dashboard.md`
 
 ```markdown
-# Dashboard — [Titre du mémoire]
+# Dashboard : [Titre du mémoire]
 
 **Deadline :** {{date de rendu}}
 **Directeur :** {{nom}}
@@ -238,9 +238,9 @@ WHERE statut = "embryonnaire"
 ---
 
 ## Liens rapides
-→ [[_Plan]] — Plan du mémoire
-→ [[_Problematique]] — La question centrale
-→ [[Bibliographie]] — Sources confirmées
+→ [[_Plan]] : Plan du mémoire
+→ [[_Problematique]] : La question centrale
+→ [[Bibliographie]] : Sources confirmées
 ```
 
 *Note : Les blocs `dataview` nécessitent le plugin Dataview.*
@@ -290,7 +290,7 @@ WHERE statut = "embryonnaire"
 
 ---
 
-## 5. La vue graphique — comment la lire et l'exploiter
+## 5. La vue graphique : comment la lire et l'exploiter
 
 ### Lecture de la vue graphique
 

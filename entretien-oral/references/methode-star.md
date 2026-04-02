@@ -1,4 +1,4 @@
-# Référence : Méthode STAR — Exemples et Exercices
+# Référence : Méthode STAR : Exemples et Exercices
 
 > **Quand charger ce fichier :** L'étudiant construit ses réponses STAR, prépare
 > son stock d'exemples pour un entretien, ou a du mal à structurer ses anecdotes.
@@ -9,7 +9,7 @@
 
 1. [Rappel STAR et erreurs fréquentes](#1-rappel-star)
 2. [Exemples complets par secteur](#2-exemples-par-secteur)
-3. [Stock de 6 histoires — template de préparation](#3-stock-dhistoires)
+3. [Stock de 6 histoires : template de préparation](#3-stock-dhistoires)
 4. [Exercices de construction STAR](#4-exercices)
 5. [Adapter STAR au contexte académique](#5-star-académique)
 
@@ -20,23 +20,23 @@
 ### Structure STAR
 
 ```
-S — Situation (15 sec)
+S : Situation (15 sec)
     Contexte en 2 phrases maximum.
-    Qui, quoi, quand, où — juste les faits utiles.
+    Qui, quoi, quand, où : juste les faits utiles.
     NE PAS décrire toute l'histoire de l'entreprise.
 
-T — Tâche (15 sec)
+T : Tâche (15 sec)
     Votre mission ou objectif dans cette situation.
     Ce qu'on attendait de vous, ou ce que vous vous êtes fixé.
     Distinguer clairement votre rôle de celui des autres.
 
-A — Action (45-60 sec)
+A : Action (45-60 sec)
     Ce que VOUS avez fait. Verbes d'action actifs.
     Les étapes ou décisions clés.
     Montrer la réflexion : "j'ai décidé X parce que Y"
     Le "je" doit dominer, pas le "on"
 
-R — Résultat (15-20 sec)
+R : Résultat (15-20 sec)
     Ce qui s'est passé concrètement.
     Chiffre si possible : %, €, temps, nombre.
     Si le résultat est mitigé : ce qu'on en a appris (acceptable et apprécié)
@@ -47,10 +47,10 @@ R — Résultat (15-20 sec)
 
 | Erreur | Exemple | Correction |
 |--------|---------|------------|
-| Situation trop longue | "Il faut que je vous explique d'abord le contexte de l'entreprise..." | Maximum 2 phrases — les détails inutiles nuisent |
+| Situation trop longue | "Il faut que je vous explique d'abord le contexte de l'entreprise..." | Maximum 2 phrases : les détails inutiles nuisent |
 | Tâche confondue avec la situation | Répéter la situation en §T | T = votre rôle précis dans cette situation |
 | Action au "on" | "On a décidé de..." / "L'équipe a..." | "J'ai proposé..." / "J'ai pris en charge..." |
-| Résultat absent | S'arrêter à l'action sans conclure | Toujours fermer la boucle — même un apprentissage |
+| Résultat absent | S'arrêter à l'action sans conclure | Toujours fermer la boucle : même un apprentissage |
 | Résultat flou | "Ça s'est bien passé" | "Le client a renouvelé le contrat" / "On a livré J-3" |
 | Exemple trop ancien | Exemple du collège pour un Master | Utiliser des exemples des 2-3 dernières années |
 | Exemple trop banal | "J'ai dû gérer un groupe de travail" | Choisir une situation avec une vraie difficulté |
@@ -69,7 +69,7 @@ S : "En alternance dans un cabinet d'expertise, j'ai été chargé de rapprocher
      les comptes d'un client PME dont les écritures de fin d'année présentaient
      des anomalies détectées par le manager."
 
-T : "Ma mission était d'identifier la source des écarts — 3 jours pour produire
+T : "Ma mission était d'identifier la source des écarts : 3 jours pour produire
      un rapport avant la clôture."
 
 A : "J'ai commencé par exporter toutes les écritures sur les comptes suspects
@@ -91,7 +91,7 @@ R : "Le rapport a permis de régulariser 14 écritures. Le manager a intégré m
 **STAR complet :**
 ```
 S : "Pour l'association étudiante de mon IUT, j'ai été chargé d'organiser une
-     conférence métier pour 80 participants — budget de 600€ et 6 semaines."
+     conférence métier pour 80 participants : budget de 600€ et 6 semaines."
 
 T : "Trouver 3 intervenants, gérer la logistique, et faire connaître l'événement
      au-delà de l'IUT."
@@ -116,7 +116,7 @@ R : "118 participants (vs 80 prévus), 3 entreprises représentées ont proposé
 **STAR complet :**
 ```
 S : "En stage de 3ème semaine, mon maître de stage m'a demandé de reprendre
-     un projet en React — un framework que je n'avais jamais utilisé.
+     un projet en React : un framework que je n'avais jamais utilisé.
      Le livrable était attendu en 2 semaines."
 
 T : "Produire une interface fonctionnelle de gestion d'inventaire côté client."
@@ -173,7 +173,7 @@ T : "Trouver un compromis accepté par les deux parties sans escalade vers
 A : "J'ai d'abord organisé une réunion de classe pour structurer les griefs de
      façon factuelle (pas de plaintes vagues mais des points précis : délai
      insuffisant, consigne ambiguë sur le format). Puis j'ai demandé un rendez-vous
-     avec le chargé de TD — seul, pas en groupe pour éviter l'effet tribunal.
+     avec le chargé de TD : seul, pas en groupe pour éviter l'effet tribunal.
      En présentation, j'ai reformulé les griefs en questions ('La consigne sur
      le format signifie-t-elle X ou Y ?') plutôt qu'en accusations."
 
@@ -184,7 +184,7 @@ R : "Le chargé de TD a accepté de clarifier la consigne par écrit et d'accord
 
 ---
 
-## 3. Stock de 6 histoires — template de préparation
+## 3. Stock de 6 histoires : template de préparation
 
 ### Instructions
 
@@ -200,7 +200,7 @@ de répondre à quasi toutes les questions comportementales en 30 secondes.
 | 5 | | Adaptation / changement | |
 | 6 | | Leadership sans autorité formelle | |
 
-### Histoire 3 — L'échec (la plus difficile à préparer, la plus appréciée)
+### Histoire 3 : L'échec (la plus difficile à préparer, la plus appréciée)
 
 L'échec est la question qui fait le plus peur mais qui différencie le plus.
 Un candidat qui "n'a jamais vraiment raté" n'est pas crédible.
@@ -214,7 +214,7 @@ Un candidat qui "n'a jamais vraiment raté" n'est pas crédible.
 **Template :**
 ```
 "J'ai [contexte de l'échec]. Ce qui s'est mal passé : [fait précis, pas généralité].
-Ma responsabilité dans cet échec : [être précis — 'j'ai sous-estimé', 'j'ai attendu
+Ma responsabilité dans cet échec : [être précis : 'j'ai sous-estimé', 'j'ai attendu
 trop longtemps', 'je n'ai pas demandé d'aide assez tôt'].
 Ce que j'en ai appris : [changement concret de comportement depuis].
 Aujourd'hui, dans [contexte similaire], je [nouvelle approche]."
@@ -224,20 +224,20 @@ Aujourd'hui, dans [contexte similaire], je [nouvelle approche]."
 
 ## 4. Exercices de construction STAR
 
-### Exercice 1 — La dissection
+### Exercice 1 : La dissection
 
 Prendre une anecdote professionnelle/académique que l'étudiant connaît bien.
 Claude pose 4 questions dans l'ordre STAR. L'étudiant répond à chacune.
 Claude identifie les zones manquantes (résultat absent, action au "on", etc.)
 
-### Exercice 2 — La minuterie
+### Exercice 2 : La minuterie
 
 L'étudiant raconte sa réponse STAR à voix haute (ou en texte) sans structure préparée.
 Claude chronomètre mentalement et identifie :
 - Si la réponse dépasse 2 minutes → quelle partie couper ?
 - Si la réponse est sous 45 secondes → quelle partie développer ?
 
-### Exercice 3 — La question pièges
+### Exercice 3 : La question pièges
 
 Claude pose la même question de 3 façons différentes :
 1. "Parlez-moi d'une situation où vous avez géré un projet."

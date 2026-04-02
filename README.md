@@ -1,6 +1,6 @@
 # anthropics-education-FR
 
-Skills pour Claude — accompagnement scolaire et universitaire.
+Skills pour Claude : accompagnement scolaire et universitaire.
 
 ## Objectif
 
@@ -63,11 +63,11 @@ anthropics-education-FR/
 
 Le système utilise un **chargement progressif à 3 niveaux** :
 
-1. **Metadata** (toujours en contexte) — Le `name` + `description` dans le frontmatter YAML du SKILL.md. C'est ce que Claude lit pour décider s'il doit activer le skill. ~150 mots.
+1. **Metadata** (toujours en contexte) : Le `name` + `description` dans le frontmatter YAML du SKILL.md. C'est ce que Claude lit pour décider s'il doit activer le skill. ~150 mots.
 
-2. **SKILL.md** (chargé quand le skill se déclenche) — Le corps principal avec les modules, les principes, les réponses types. Contient les règles et la logique, pas les détails exhaustifs.
+2. **SKILL.md** (chargé quand le skill se déclenche) : Le corps principal avec les modules, les principes, les réponses types. Contient les règles et la logique, pas les détails exhaustifs.
 
-3. **references/** (chargé à la demande) — Les fichiers détaillés que Claude consulte uniquement quand la conversation porte sur un sujet spécifique. Par exemple, `normes-citation.md` n'est lu que si l'étudiant demande de l'aide sur sa bibliographie.
+3. **references/** (chargé à la demande) : Les fichiers détaillés que Claude consulte uniquement quand la conversation porte sur un sujet spécifique. Par exemple, `normes-citation.md` n'est lu que si l'étudiant demande de l'aide sur sa bibliographie.
 
 Cette architecture évite de surcharger le contexte avec des informations inutiles tout en gardant la profondeur disponible quand elle est nécessaire.
 
@@ -149,7 +149,7 @@ cp -r anthropics-education-FR/productivite-pkm /mnt/skills/user/
 
 Copier-coller le contenu de `SKILL.md` dans la conversation ou dans les instructions système d'un appel API.
 
-## Plume Naturelle — le moteur anti-détection
+## Plume Naturelle : le moteur anti-détection
 
 Le skill `plume-naturelle` est le plus avancé du repo. Il a été construit à partir de
 l'auto-analyse de **6 modèles LLM** qui décrivent leurs propres biais de génération.
@@ -159,9 +159,9 @@ d'auto-évaluation réparties en 3 tiers :
 
 | Tier | Formules | Coût computationnel | Accès |
 |------|----------|---------------------|-------|
-| **Tier 1** | Formules 1-34 : stylométrie, N-grammes, POS-tagging, burstiness, TTR, Zipf, Brunet, Gini, entropie, similarité cosinus | O(N) — instantané | Direct dans ce skill |
-| **Tier 2** | Formules 35-36 : Perplexité (PPL, Cross-Entropy Loss), Ratios GLTR (buckets de rang) | O(N × V) — nécessite inférence sur modèle proxy | API LLaMA/GPT-2 |
-| **Tier 3** | Formule 37 : DetectGPT (Perturbation Discrepancy, Z-score) | O(K × N × V) — très coûteux | GPU dédié |
+| **Tier 1** | Formules 1-34 : stylométrie, N-grammes, POS-tagging, burstiness, TTR, Zipf, Brunet, Gini, entropie, similarité cosinus | O(N) : instantané | Direct dans ce skill |
+| **Tier 2** | Formules 35-36 : Perplexité (PPL, Cross-Entropy Loss), Ratios GLTR (buckets de rang) | O(N × V) : nécessite inférence sur modèle proxy | API LLaMA/GPT-2 |
+| **Tier 3** | Formule 37 : DetectGPT (Perturbation Discrepancy, Z-score) | O(K × N × V) : très coûteux | GPU dédié |
 | **Syntaxique** | Formule 38 : Variance de la profondeur des arbres syntaxiques (σ²_D) | O(N) si parseur spaCy | Tier 1 (approximation) ou parseur |
 
 **Mode Pédagogique** : annotation du texte de l'étudiant avec codes de patterns, exercices
@@ -189,7 +189,7 @@ et les détails de l'étudiant, l'objectif est 5-20 % (zone invisible pour Turni
 - Nouvelle référence `mode-pedagogique.md` : grille d'annotation complète, scripts complets
 
 **`soutien-academique`** :
-- Module 9 : soutien à la neurodiversité (TDAH, dyslexie, DYS) — adaptations, Pomodoro, fiches DYS-friendly
+- Module 9 : soutien à la neurodiversité (TDAH, dyslexie, DYS) : adaptations, Pomodoro, fiches DYS-friendly
 - Module 10 : simulateur Peer-Review (Mode Candide + Mode Reviewer 2)
 - Nouvelles références `neurodiversite.md` et `peer-review-simulator.md`
 
@@ -201,13 +201,13 @@ et les détails de l'étudiant, l'objectif est 5-20 % (zone invisible pour Turni
 
 ## Philosophie
 
-1. **Accompagner, pas remplacer** — Les skills guident l'étudiant dans sa réflexion au lieu d'écrire à sa place
-2. **Rigueur académique** — Aucune source inventée, normes de citation respectées
-3. **Anti-détection IA** — 48 patterns, 8 phases, 38 formules (3 tiers), 5 prompts reconstitués, questionnaire d'ancrage
-4. **Adaptation au niveau** — Ajustement automatique de la profondeur selon le profil (lycée → M2)
-5. **Chargement progressif** — Les références lourdes ne sont lues que quand c'est pertinent
-6. **Pédagogie de l'écriture** — Mode annotation pour que l'étudiant progresse, pas seulement pour corriger
-7. **Accessibilité** — Support neurodiversité (TDAH, DYS) intégré
+1. **Accompagner, pas remplacer** : Les skills guident l'étudiant dans sa réflexion au lieu d'écrire à sa place
+2. **Rigueur académique** : Aucune source inventée, normes de citation respectées
+3. **Anti-détection IA** : 48 patterns, 8 phases, 38 formules (3 tiers), 5 prompts reconstitués, questionnaire d'ancrage
+4. **Adaptation au niveau** : Ajustement automatique de la profondeur selon le profil (lycée → M2)
+5. **Chargement progressif** : Les références lourdes ne sont lues que quand c'est pertinent
+6. **Pédagogie de l'écriture** : Mode annotation pour que l'étudiant progresse, pas seulement pour corriger
+7. **Accessibilité** : Support neurodiversité (TDAH, DYS) intégré
 
 ## Consommation des modèles
 
@@ -228,15 +228,15 @@ Les contributions sont bienvenues. Ouvrez une issue ou une PR pour :
 
 ## Roadmap
 
-- [x] Skill `soutien-academique` — Mémoires, rapports, révisions, dissertation, neurodiversité, peer-review
-- [x] Skill `lettre-motivation` — LM personnalisées + réseautage digital (cold email, LinkedIn, relances)
-- [x] Skill `plume-naturelle` — Réécriture anti-IA : 48 patterns, 8 phases, 38 formules (Tier 1-3), mode pédagogique, oralité
-- [x] Skill `orientation-strategie` — Parcoursup, MonMaster, PFM, filières méconnues, réorientation
-- [x] Skill `entretien-oral` — STAR, entretiens blancs, réponses bateau, questions pièges
-- [x] Skill `productivite-pkm` — Zettelkasten, Obsidian, Notion, Zotero pour mémoires et thèses
-- [ ] Skill `prepa-concours` — Préparation aux concours (CPGE, fonction publique, santé)
-- [ ] Skill `bts-pro` — Spécificités BTS (épreuves E4/E6, fiches, PFMP)
-- [ ] Skill `doctorat` — Accompagnement thèse (revue systématique, publication, HDR)
+- [x] Skill `soutien-academique` : Mémoires, rapports, révisions, dissertation, neurodiversité, peer-review
+- [x] Skill `lettre-motivation` : LM personnalisées + réseautage digital (cold email, LinkedIn, relances)
+- [x] Skill `plume-naturelle` : Réécriture anti-IA : 48 patterns, 8 phases, 38 formules (Tier 1-3), mode pédagogique, oralité
+- [x] Skill `orientation-strategie` : Parcoursup, MonMaster, PFM, filières méconnues, réorientation
+- [x] Skill `entretien-oral` : STAR, entretiens blancs, réponses bateau, questions pièges
+- [x] Skill `productivite-pkm` : Zettelkasten, Obsidian, Notion, Zotero pour mémoires et thèses
+- [ ] Skill `prepa-concours` : Préparation aux concours (CPGE, fonction publique, santé)
+- [ ] Skill `bts-pro` : Spécificités BTS (épreuves E4/E6, fiches, PFMP)
+- [ ] Skill `doctorat` : Accompagnement thèse (revue systématique, publication, HDR)
 - [ ] Références supplémentaires par discipline (droit, santé, STAPS, info...)
 - [ ] Templates DOCX/PPTX prêts à l'emploi
 
