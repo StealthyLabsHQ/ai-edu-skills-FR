@@ -9,7 +9,7 @@ description: >
   robot". Trigger aussi quand un texte soumis à relecture présente des patterns IA évidents.
   TOUJOURS utiliser ce skill pour toute demande de réécriture visant à rendre un texte plus
   naturel ou indétectable comme IA.
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Plume Naturelle -Moteur de réécriture anti-IA pour le français
@@ -53,6 +53,9 @@ Avant toute réécriture, scanner le texte et compter :
 | Absence totale de première personne (quand le format l'autorise) | Drapeau rouge |
 | Vocabulaire IA récurrent (cf. liste Phase 2) | > 5 par page |
 | Phrases d'ouverture formulaïques | > 0 |
+| Raisonnement sur-explicite (chaque étape détaillée sans saut) | Drapeau rouge |
+| Exemples génériques/hypothétiques (« Imaginons une entreprise X ») | > 0 |
+| Registre uniformément soutenu sans variation | Drapeau rouge |
 
 ### Calcul du score
 
@@ -248,6 +251,19 @@ individuellement, sont parfaitement corrects -mais leur accumulation est un sign
 | Partie prenante | Acteur concerné / Personne impliquée |
 | Optimiser | Améliorer / Rendre plus efficace |
 | Piloter (la performance) | Suivre / Gérer / Surveiller |
+| Tapisserie (au sens figuré) | Ensemble / Mosaïque / Patchwork (si registre le permet) |
+| Naviguer dans (hors nautisme) | Gérer / Se débrouiller avec / Composer avec |
+| Orchestrer | Organiser / Coordonner / Mettre en place |
+| Plonger dans | Examiner / Étudier / Regarder de près |
+| Il est primordial de | Il faut / C'est nécessaire de |
+| En fin de compte | Au final / Bref / Pour résumer |
+| Paysage (au sens figuré) | Contexte / Situation / Environnement |
+| Indéniablement | Clairement / C'est un fait / ∅ |
+| Intrinsèquement | En soi / Par nature / Fondamentalement |
+| Catalyseur | Déclencheur / Ce qui a lancé / Moteur |
+| Prisme (au sens figuré) | Angle / Point de vue / Sous l'angle de |
+| Tant... que... (en ouverture) | ∅ (reformuler sans cette structure) |
+| À l'aune de | Selon / D'après / En fonction de |
 
 **Règle** : aucun de ces mots n'est interdit. Mais si le texte en contient plus de cinq
 par page, c'est un signal. Varier, concrétiser, simplifier.
@@ -652,6 +668,95 @@ passage narratif (« et là, honnêtement, on ne savait plus par quel bout prend
 problème »), un ton plus sec dans une recommandation (« il faut arrêter de faire les
 rapprochements à la main »). Ces micro-variations sont des signatures humaines.
 
+### Pattern 31 : Raisonnement trop explicite (absence de sauts déductifs)
+
+L'IA montre chaque étape de son raisonnement, chaque maillon de la chaîne logique.
+Un humain fait des sauts : il laisse certaines conclusions implicites parce que le
+lecteur est capable de faire le lien tout seul. Le sur-explicite est un signal IA
+majeur que les détecteurs repèrent via l'entropie constante du texte.
+
+**Avant :**
+> Le cabinet a mis en place un logiciel de dématérialisation. Ce logiciel permet de
+> scanner les factures. Les factures scannées sont ensuite traitées automatiquement.
+> Ce traitement automatique réduit le temps de saisie. La réduction du temps de saisie
+> libère du temps pour le conseil. Le temps libéré pour le conseil améliore la relation
+> client.
+
+**Après :**
+> Depuis que les factures passent par Dext, les collaborateurs ne saisissent presque
+> plus rien. Le temps récupéré, ils le passent en rendez-vous client. La qualité du
+> conseil s'en ressent.
+
+**Règle** : ne pas relier chaque cause à chaque effet. Si le lien est évident, le
+lecteur le fera seul. Un texte qui explique tout sonne comme un texte qui ne fait pas
+confiance à son lecteur, et c'est exactement ce que fait un LLM.
+
+**Technique avancée :** s'autoriser une légère digression pertinente avant de revenir
+au sujet principal. Un humain pense en arbre, pas en ligne droite.
+
+> « Le rapprochement bancaire automatique a divisé le temps de traitement par trois.
+> (C'est d'ailleurs le même type de gain qu'on observe dans les cabinets qui sont passés
+> à la facturation électronique en avance de phase, avant l'obligation de 2026.)
+> Reste que trois collaborateurs sur huit ne font toujours pas confiance à l'outil. »
+
+La digression entre parenthèses est imprévisible pour un détecteur et ancre le texte
+dans une connaissance de terrain.
+
+### Pattern 32 : Exemples génériques et hypothétiques
+
+L'IA illustre ses propos avec des exemples abstraits : « Imaginons une entreprise X »,
+« Prenons le cas d'une PME type ». Un humain cite des détails hyper-spécifiques, de
+niche, parfois triviaux, qui trahissent une observation réelle.
+
+**Avant :**
+> Par exemple, une entreprise souhaitant améliorer sa gestion des stocks pourrait mettre
+> en place un système d'inventaire automatisé.
+
+**Après :**
+> Au cabinet, le client qui a le plus souffert du passage à la facturation électronique,
+> c'est un plombier à Villejuif qui facturait tout sur des carnets autocopiants. On a dû
+> lui installer Henrri sur son téléphone et le former en deux séances de 45 minutes un
+> samedi matin.
+
+**Règle** : les détails spécifiques (Villejuif, carnets autocopiants, Henrri, samedi
+matin) sont impossibles à prédire pour un LLM. Ils augmentent la perplexité du texte
+et signalent une expérience vécue. Même quand l'utilisateur n'a pas ces détails, lui
+demander : « Vous avez un exemple concret de votre terrain ? Un cas, un nom, une
+anecdote ? »
+
+**Trois niveaux de spécificité :**
+
+| Niveau | Exemple | Perplexité |
+|---|---|---|
+| Générique (IA) | « Une entreprise a amélioré ses processus » | Très basse |
+| Moyen | « Un cabinet comptable de 8 personnes a réduit ses délais » | Moyenne |
+| Spécifique (humain) | « Le cabinet Leroy à Ivry a ramené le délai de production des bilans de 6 à 4 semaines en basculant sur Pennylane, sauf pour les SCI qui restent sur Sage » | Haute |
+
+### Pattern 33 : Registre de langue uniformément soutenu
+
+L'IA maintient un registre soutenu parfaitement constant. Un humain mélange. Dans le
+même paragraphe, on peut trouver du vocabulaire technique pointu et une expression
+plus courante. Cette variation est naturelle et les détecteurs la mesurent.
+
+**Avant (registre uniforme) :**
+> L'analyse des écarts budgétaires constitue un instrument fondamental du contrôle de
+> gestion, permettant d'identifier les dérives et de mettre en oeuvre des actions
+> correctives de manière proactive.
+
+**Après (registre mixte) :**
+> L'analyse des écarts budgétaires, c'est le nerf de la guerre en contrôle de gestion.
+> Quand le réalisé dérape de 15 % par rapport au prévisionnel, il faut comprendre
+> pourquoi, et vite. En l'occurrence, c'était un problème de provisions mal estimées
+> sur trois gros dossiers.
+
+**Règle** : dans un même paragraphe, autoriser un ou deux mots d'un registre plus
+courant (« c'est le nerf de la guerre », « ça coince », « du coup ») au milieu d'un
+vocabulaire technique précis. Le contraste est un signal humain fort.
+
+**Attention :** cette règle ne s'applique pas aux dissertations et mémoires de recherche,
+où le registre soutenu est la norme. Elle s'applique aux mémoires professionnels,
+rapports de stage, et tout document où le « je » est autorisé.
+
 ---
 
 ## Phase 7 -Injection d'âme
@@ -953,7 +1058,7 @@ avant de réécrire, sauf s'il a explicitement demandé une réécriture directe
 
 ### Étape 2 : Réécriture brouillon
 
-Première passe de réécriture. Appliquer les 30 patterns de surface (Phases 1-6).
+Première passe de réécriture. Appliquer les 33 patterns de surface (Phases 1-6).
 Injecter l'âme (Phase 7). Appliquer les contre-mesures statistiques (Phase 8).
 Adapter au type de document (cf. table ci-dessous).
 
@@ -1191,5 +1296,6 @@ Si l'utilisateur demande une humanisation « totale » ou « profonde » :
 
 | Fichier | Quand le consulter |
 |---|---|
-| `references/patterns-par-discipline.md` | Patterns IA spécifiques à une discipline (compta, droit, SHS, info, santé) |
+| `references/patterns-par-discipline.md` | Patterns IA spécifiques à une discipline (compta, droit, SHS, info, santé, lettres) |
+| `references/marqueurs-ia-francais.md` | Liste noire transversale de 60+ marqueurs IA en français (mots, structures, signaux statistiques) |
 | `/mnt/skills/user/soutien-academique/SKILL.md` | Si le texte à humaniser est un mémoire/rapport -utiliser aussi les règles d'écriture naturelle de ce skill |

@@ -222,4 +222,8 @@ remonter légèrement le registre si nécessaire.
 [ ] Le texte sonne naturel lu à voix haute
 [ ] Variation visible dans la longueur des phrases
 [ ] Pas de structure mécanique (3 éléments systématiques, parallélismes forcés)
+[ ] Au moins 1 saut déductif (conclusion implicite, pas tout explicité)
+[ ] Exemples spécifiques avec noms/lieux/chiffres (pas d'exemples hypothétiques)
+[ ] Légère variation de registre si le format l'autorise (pas uniformément soutenu)
+[ ] "Cela" : max 2 par page
 ```
