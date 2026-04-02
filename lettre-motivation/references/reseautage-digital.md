@@ -8,8 +8,8 @@
 
 ## Table des matières
 
-1. [Messages LinkedIn — 300 caractères](#1-messages-linkedin)
-2. [Cold Emails — approche directe](#2-cold-emails)
+1. [Messages LinkedIn : 300 caractères](#1-messages-linkedin)
+2. [Cold Emails : approche directe](#2-cold-emails)
 3. [Emails de relance post-candidature](#3-emails-de-relance)
 4. [Emails de remerciement post-entretien](#4-remerciement-post-entretien)
 5. [Erreurs fréquentes et corrections](#5-erreurs-fréquentes)
@@ -17,7 +17,7 @@
 
 ---
 
-## 1. Messages LinkedIn — 300 caractères
+## 1. Messages LinkedIn : 300 caractères
 
 ### Contraintes techniques
 
@@ -39,11 +39,11 @@ Bonjour [Prénom], votre post sur [sujet précis] m'a amené à chercher [votre
 profil/votre entreprise]. Je travaille sur [lien avec le sujet]. Une question 
 vous serait-elle possible ?
 ```
-*(~240 caractères — adapter)*
+*(~240 caractères : adapter)*
 
 **Situation B : Approche pour un stage/alternance (sans le dire directement)**
 ```
-Bonjour [Prénom], votre parcours chez [Entreprise] m'intéresse — j'ai travaillé 
+Bonjour [Prénom], votre parcours chez [Entreprise] m'intéresse : j'ai travaillé 
 sur [projet similaire] en [formation]. Seriez-vous disponible 10 min pour 
 échanger sur [axe précis] ?
 ```
@@ -60,10 +60,10 @@ Pourrais-je vous poser 2 questions ?
 | Erreur | Pourquoi ça ne marche pas |
 |--------|---------------------------|
 | "Je cherche une alternance/un stage" | Transforme la personne en recruteur malgré elle |
-| "Je me permets de vous contacter..." | Formule de déférence excessive — sonne désespéré |
+| "Je me permets de vous contacter..." | Formule de déférence excessive : sonne désespéré |
 | "Votre entreprise m'intéresse beaucoup" | Vague, non-ancré, impersonnel |
 | Message > 300 caractères | Tronqué, non lu |
-| Envoyer son CV en pièce jointe d'emblée | Grille-pain — perçu comme du spam |
+| Envoyer son CV en pièce jointe d'emblée | Grille-pain : perçu comme du spam |
 | Copier-coller le même message à 50 personnes | Détectable, contre-productif |
 
 ### Paires avant/après
@@ -80,7 +80,7 @@ possible sur [point précis] ?"
 
 ---
 
-## 2. Cold Emails — approche directe
+## 2. Cold Emails : approche directe
 
 ### Quand utiliser le cold email plutôt que LinkedIn
 
@@ -92,7 +92,7 @@ possible sur [point précis] ?"
 ### Structure AIDA adaptée (candidature)
 
 ```
-OBJET : [Verbe d'action/résultat concret] — pas "Candidature stage"
+OBJET : [Verbe d'action/résultat concret] : pas "Candidature stage"
 
 §1 ATTENTION (1-2 phrases) :
   Élément précis sur le destinataire : article, projet, actualité récente.
@@ -111,19 +111,19 @@ OBJET : [Verbe d'action/résultat concret] — pas "Candidature stage"
   Option : "Si vous n'êtes pas la bonne personne, pouvez-vous m'orienter ?"
 ```
 
-### Objets d'email — exemples
+### Objets d'email : exemples
 
 | Mauvais objet | Bon objet |
 |---------------|-----------|
 | "Candidature stage développeur" | "Réduction de 40% du temps de traitement : retour d'expérience Python" |
 | "Demande d'alternance Master Finance" | "Consolidation IFRS : question sur votre approche vs méthode pooling" |
-| "Contact professionnel" | "Suite à votre conférence du [date] — question sur [point précis]" |
-| "Étudiant cherche alternance" | "Projet [nom] en BUT Info — collaboration possible ?" |
+| "Contact professionnel" | "Suite à votre conférence du [date] : question sur [point précis]" |
+| "Étudiant cherche alternance" | "Projet [nom] en BUT Info : collaboration possible ?" |
 
 ### Template complet
 
 ```
-Objet : [Résultat/angle concret] — [Votre prénom/contexte bref]
+Objet : [Résultat/angle concret] : [Votre prénom/contexte bref]
 
 Bonjour [Prénom],
 
@@ -132,7 +132,7 @@ m'a amené à [réfléchir à X / faire le lien avec Y]. [1 observation précise
 qui prouve que vous avez lu/vu leur travail.]
 
 Je suis [formation, niveau, établissement]. [Preuve centrale : "J'ai 
-développé X qui a produit Y résultat" — chiffré si possible.] [Pourquoi 
+développé X qui a produit Y résultat" : chiffré si possible.] [Pourquoi 
 vous en particulier, pas les 50 autres.]
 
 Je cherche [stage de X mois / alternance à partir de X / échange de 15 min] 
@@ -168,14 +168,14 @@ d'ici [date indicative] ?
 ### Structure de la relance
 
 ```
-Objet : Candidature [intitulé exact] — [Votre prénom NOM] — relance
+Objet : Candidature [intitulé exact] : [Votre prénom NOM] : relance
 
 Bonjour [Prénom/M./Mme NOM],
 
 [Je vous ai adressé ma candidature le [date] pour le poste de [intitulé].]
 
 [Élément nouveau optionnel mais recommandé : actualité récente de 
-l'entreprise, article publié depuis, projet annoncé — montre que vous 
+l'entreprise, article publié depuis, projet annoncé : montre que vous 
 suivez leur actualité.]
 
 Mon intérêt pour [poste/formation] reste intact. Je reste disponible 
@@ -205,19 +205,19 @@ Un email de remerciement envoyé sous 24h :
 ### Structure
 
 ```
-Objet : [Prénom] — suite à notre entretien du [date]
+Objet : [Prénom] : suite à notre entretien du [date]
 
 Bonjour [Prénom],
 
 Merci pour le temps accordé [hier/ce matin/lors de notre entretien du date].
 
-[Rebond ancré — OBLIGATOIRE : "Notre échange sur [point très précis 
+[Rebond ancré : OBLIGATOIRE : "Notre échange sur [point très précis 
 de la conversation] m'a/a confirmé..."] [1-2 phrases maximum.]
 
-[Optionnel — complément ou correction : "J'aurais pu mieux expliquer 
-ma réponse sur [sujet] — pour compléter : [précision claire en 2 phrases]."]
+[Optionnel : complément ou correction : "J'aurais pu mieux expliquer 
+ma réponse sur [sujet] : pour compléter : [précision claire en 2 phrases]."]
 
-[Réaffirmation d'intérêt en 1 phrase — sans insistance, sans supplique.]
+[Réaffirmation d'intérêt en 1 phrase : sans insistance, sans supplique.]
 
 [Prénom NOM]
 [Téléphone si pas déjà fourni]
@@ -231,7 +231,7 @@ et de découvrir votre entreprise. Je reste bien entendu disponible pour tout
 échange complémentaire."
 
 ✅ **Après (ancré) :**
-"Merci pour cet échange. La question sur [point précis — ex: la gestion des
+"Merci pour cet échange. La question sur [point précis : ex: la gestion des
 écarts de conversion en IFRS] m'a poussé à approfondir ce soir : j'aurais
 dû mentionner [précision]. Notre discussion sur [autre point] confirme que
 [insight concret]. Je reste disponible si vous souhaitez approfondir."
@@ -267,13 +267,13 @@ suffisamment précis pour qu'il soit impossible que ce soit une formule copiée.
 ### Secteur bancaire / finance / audit
 
 - **Ton** : plus formel, "Monsieur/Madame" au lieu du prénom sauf si l'échange est déjà informel
-- **Objet** : technique, centré résultat ("Modélisation LBO — question sur l'approche waterfall")
+- **Objet** : technique, centré résultat ("Modélisation LBO : question sur l'approche waterfall")
 - **Erreur à éviter** : demander une "opportunité" (terme perçu comme trop commercial)
 
 ### Start-ups / tech
 
 - **Ton** : direct, prénom, pas de "je me permets"
-- **Objet** : court, punch ("Side project React — question sur votre stack")
+- **Objet** : court, punch ("Side project React : question sur votre stack")
 - **LinkedIn > email** dans ce secteur
 - **GitHub ou portfolio** dans la signature si applicable
 
@@ -293,4 +293,4 @@ suffisamment précis pour qu'il soit impossible que ce soit une formule copiée.
 
 - **LinkedIn très utilisé** dans ce secteur
 - **Approche par événements** (conférences, webinaires) très efficace
-- **Objet email** : cas concret ou problème résolu ("Analyse sectorielle [industrie] — retour de stage")
+- **Objet email** : cas concret ou problème résolu ("Analyse sectorielle [industrie] : retour de stage")

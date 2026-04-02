@@ -623,9 +623,9 @@ Pour un étudiant TDAH : ne jamais donner un plan de révision de 4h d'un bloc.
 
 Structure recommandée :
 ```
-Bloc 1 (25 min) : [Tâche 1 ultra-précise — ex: "lire et surligner pages 12-18"]
+Bloc 1 (25 min) : [Tâche 1 ultra-précise : ex: "lire et surligner pages 12-18"]
 Pause (5 min) : se lever, bouger
-Bloc 2 (25 min) : [Tâche 2 — ex: "résumer les pages 12-18 en 5 bullet points"]
+Bloc 2 (25 min) : [Tâche 2 : ex: "résumer les pages 12-18 en 5 bullet points"]
 Pause longue (15 min) : après 2 blocs
 ```
 
@@ -641,7 +641,7 @@ Format recommandé pour dyslexiques :
 - Reformulation en "langage simple" puis version académique juste après
 - Associer 1 image mentale ou analogie à chaque concept abstrait
 
-**Référence étendue :** `references/neurodiversite.md` — profils DYS détaillés,
+**Référence étendue :** `references/neurodiversite.md` : profils DYS détaillés,
 outils numériques accessibles, communication avec l'administration.
 
 ---
@@ -674,7 +674,7 @@ les problématiques trop larges ou trop étroites.
 Questions types du mode Reviewer 2 :
 - "Ta problématique est-elle vraiment une question ou juste un thème ?"
 - "Quelle est la contribution originale par rapport à [auteur de référence] ?"
-- "Tu affirmes X — quelle est ta preuve ? Corrélation ≠ causalité."
+- "Tu affirmes X : quelle est ta preuve ? Corrélation ≠ causalité."
 - "Le périmètre de ton étude justifie-t-il une généralisation ?"
 - "Pourquoi cette méthodologie et pas [alternative] ?"
 - "Ta conclusion répond-elle exactement à ta problématique ?"
@@ -684,7 +684,7 @@ Questions types du mode Reviewer 2 :
 **Étape 1 :** L'étudiant précise le mode voulu (Candide ou Reviewer 2).
 
 **Étape 2 :** L'étudiant soumet la section à tester (intro, problématique,
-conclusion, ou le texte entier — max 500 mots recommandé).
+conclusion, ou le texte entier : max 500 mots recommandé).
 
 **Étape 3 :** Claude pose 5-7 questions dans le rôle choisi, sans réécrire,
 sans donner la réponse, sans juger.
@@ -703,7 +703,7 @@ sans donner la réponse, sans juger.
 - Ne remplace pas le regard du tuteur réel (les attentes institutionnelles varient)
 - Ne simule pas un jury complet (voir `references/questions-jury.md` pour ça)
 
-**Référence étendue :** `references/peer-review-simulator.md` — banque de 50+
+**Référence étendue :** `references/peer-review-simulator.md` : banque de 50+
 questions par mode, grille d'évaluation de la solidité argumentative.
 
 ---
@@ -786,7 +786,7 @@ que quand la conversation porte spécifiquement sur le sujet couvert.
 | `references/note-synthese.md` | L'étudiant travaille sur une note de synthèse, un écrit de synthèse, ou un résumé de dossier documentaire |
 | `references/disciplines-specificites.md` | La discipline de l'étudiant nécessite des normes, sources ou méthodologies spécifiques |
 
-| `references/neurodiversite.md` | L'étudiant mentionne un TDAH, une dyslexie, ou un autre trouble DYS — adapter les explications, le rythme et les outils de révision |
+| `references/neurodiversite.md` | L'étudiant mentionne un TDAH, une dyslexie, ou un autre trouble DYS : adapter les explications, le rythme et les outils de révision |
 | `references/peer-review-simulator.md` | L'étudiant veut tester sa problématique avant l'envoi au tuteur, ou demande un regard critique simulé |
 
 ### Skills externes (si disponibles dans l'environnement)

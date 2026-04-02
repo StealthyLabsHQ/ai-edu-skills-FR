@@ -1377,13 +1377,13 @@ SRP = (0.3 × (1 - structure_changed))
 
 ---
 
-## 11. Métriques de Bas Niveau — Architecture Tier 2 & Tier 3
+## 11. Métriques de Bas Niveau : Architecture Tier 2 & Tier 3
 
 > **Note d'architecture** : Les métriques Tier 1 (formules 1-34, stylométrie, N-grammes,
 > POS-tagging) couvrent le filtrage de surface. Les métriques ci-dessous opèrent au niveau
 > des **log-probabilités des modèles de fondation** et de l'**analyse topologique des
 > graphes syntaxiques**. Elles sont documentées ici pour compréhension du pipeline de
-> détection — elles ne peuvent pas être calculées directement par ce skill sans accès
+> détection : elles ne peuvent pas être calculées directement par ce skill sans accès
 > GPU/API, mais permettent de comprendre comment contourner les détecteurs avancés.
 >
 > *Seuils calibrés sur architecture de référence LLaMA-3-70B / GPT-3.5. En production,
@@ -1391,7 +1391,7 @@ SRP = (0.3 × (1 - structure_changed))
 
 ---
 
-### Formule 35 — Perplexité Réelle (Cross-Entropy Loss sur séquence)
+### Formule 35 : Perplexité Réelle (Cross-Entropy Loss sur séquence)
 
 **Concept :** La perplexité mesure le degré de "surprise" d'un LLM face à une séquence
 de tokens. Un texte généré par une IA a une entropie croisée très faible par rapport au
@@ -1410,9 +1410,9 @@ $$PPL(X) = \exp(CE(X)) = \exp \left( -\frac{1}{N} \sum_{i=1}^{N} \log p_\theta(x
 
 | Valeur | Interprétation |
 |--------|----------------|
-| $PPL < 35$ | Généré par IA — le modèle prédit facilement la suite |
-| $35 \le PPL \le 65$ | Zone grise — texte IA très édité ou humain académique soutenu |
-| $PPL > 65$ | Humain — transitions inattendues, imprévisibilité naturelle |
+| $PPL < 35$ | Généré par IA : le modèle prédit facilement la suite |
+| $35 \le PPL \le 65$ | Zone grise : texte IA très édité ou humain académique soutenu |
+| $PPL > 65$ | Humain : transitions inattendues, imprévisibilité naturelle |
 
 **Vecteur d'attaque (comment augmenter artificiellement la perplexité) :**
 Remplacer des mots communs par des synonymes rares, introduire des structures grammaticales
@@ -1425,7 +1425,7 @@ tokens sont rares dans la distribution générale du modèle proxy.
 
 ---
 
-### Formule 36 — Ratios GLTR (Giant Language Model Test Room)
+### Formule 36 : Ratios GLTR (Giant Language Model Test Room)
 
 **Concept :** Au lieu de la probabilité absolue, GLTR regarde le **rang** du token choisi
 dans la distribution. Les LLMs échantillonnent massivement dans le Top-10. Les humains
@@ -1461,7 +1461,7 @@ de $B_{10}$ vers $B_{100}$ et $B_{1000}$.
 
 ---
 
-### Formule 37 — Score DetectGPT (Perturbation Discrepancy)
+### Formule 37 : Score DetectGPT (Perturbation Discrepancy)
 
 **Concept :** La métrique zero-shot la plus robuste actuellement. Hypothèse : le texte IA se
 trouve sur un **maximum local** de la log-probabilité. Une légère perturbation fait chuter
@@ -1482,20 +1482,20 @@ $$Z(x) = \frac{d(x)}{\sigma_{\tilde{x}}}$$
 
 | Valeur | Interprétation |
 |--------|----------------|
-| $Z(x) > 1.5$ | Texte IA — chute de probabilité statistiquement très significative |
-| $Z(x) \approx 0$ ou $Z(x) < 0$ | Texte humain — la perturbation ne dégrade pas ou améliore la probabilité |
+| $Z(x) > 1.5$ | Texte IA : chute de probabilité statistiquement très significative |
+| $Z(x) \approx 0$ ou $Z(x) < 0$ | Texte humain : la perturbation ne dégrade pas ou améliore la probabilité |
 
-**Vecteur d'attaque — Paraphrasing Attack :** Générer avec GPT-4, puis paraphraser avec un
+**Vecteur d'attaque : Paraphrasing Attack :** Générer avec GPT-4, puis paraphraser avec un
 modèle radicalement différent (BART, Quillbot) ou modifier manuellement 20% des phrases.
 Cela déplace $x$ hors du maximum local : $\log p_\theta(x)$ baisse, les perturbations
 $\tilde{x}_k$ ne provoquent plus de chute drastique, $d(x) \to 0$.
 
-**Coût computationnel :** O(K × N × V) — très élevé ($K = 100$ perturbations recommandées).
+**Coût computationnel :** O(K × N × V) : très élevé ($K = 100$ perturbations recommandées).
 À ne déclencher qu'en Tier 3 si les scores Tier 1 & 2 sont en zone d'incertitude (40-60%).
 
 ---
 
-### Formule 38 — Variance de la Profondeur de l'Arbre Syntaxique ($\sigma^2_D$)
+### Formule 38 : Variance de la Profondeur de l'Arbre Syntaxique ($\sigma^2_D$)
 
 **Concept :** Les LLMs génèrent des arbres de dépendance syntaxique réguliers et équilibrés
 (profondeurs homogènes). Les humains écrivent de façon chaotique : une phrase courte
@@ -1514,16 +1514,16 @@ $$\mu_D = \frac{1}{S} \sum_{j=1}^{S} D(T_j)$$
 
 $$\sigma^2_D = \frac{1}{S} \sum_{j=1}^{S} \left( D(T_j) - \mu_D \right)^2$$
 
-*(On peut également calculer la variance du Branching Factor — nombre d'enfants par nœud)*
+*(On peut également calculer la variance du Branching Factor : nombre d'enfants par nœud)*
 
 **Seuils de détection :**
 
 | Valeur | Interprétation | Exemple de profondeurs |
 |--------|----------------|------------------------|
-| $\sigma^2_D < 2.5$ | Texte IA — complexité structurelle homogène | [5, 6, 5, 5, 7, 6] |
-| $\sigma^2_D > 4.5$ | Texte humain — forte hétérogénéité | [2, 8, 4, 11, 3] |
+| $\sigma^2_D < 2.5$ | Texte IA : complexité structurelle homogène | [5, 6, 5, 5, 7, 6] |
+| $\sigma^2_D > 4.5$ | Texte humain : forte hétérogénéité | [2, 8, 4, 11, 3] |
 
-**Vecteur d'attaque — Burstiness Prompting structurel :** Demander explicitement d'alterner
+**Vecteur d'attaque : Burstiness Prompting structurel :** Demander explicitement d'alterner
 phrases courtes (1-4 mots) et phrases très longues et complexes (multiples subordonnées et
 incises). Cela force les $D(T_j)$ à s'éloigner de $\mu_D$ : les écarts au carré
 $(D(T_j) - \mu_D)^2$ augmentent, faisant exploser $\sigma^2_D$.
@@ -1539,15 +1539,15 @@ sans parseur. En Tier 1, la variance des longueurs de phrases suffit pour l'esti
 Pour intégrer ces 4 métriques avec les 34 formules existantes :
 
 ```
-TIER 1 — O(1) / O(N) — Instantané
+TIER 1 : O(1) / O(N) : Instantané
   ├── Formules 1-34 (métriques de surface)
   └── Formule 38 approx. : variance de longueur de phrase (proxy de σ²_D)
 
-TIER 2 — O(N × V) — Nécessite un Forward Pass sur modèle proxy
+TIER 2 : O(N × V) : Nécessite un Forward Pass sur modèle proxy
   ├── Formule 35 : Perplexité (PPL) via LLaMA-3-8B quantifié ou GPT-2 XL
-  └── Formule 36 : Ratios GLTR — rang des tokens dans la distribution
+  └── Formule 36 : Ratios GLTR : rang des tokens dans la distribution
 
-TIER 3 — O(K × N × V) — Très coûteux
+TIER 3 : O(K × N × V) : Très coûteux
   └── Formule 37 : DetectGPT
       → Ne déclencher que si score de probabilité IA Tier 1+2 entre 40% et 60%
       → K = 100 perturbations, modèle T5-large recommandé
