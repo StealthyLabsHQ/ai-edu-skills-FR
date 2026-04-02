@@ -555,6 +555,194 @@ signaux humains les plus efficaces :
 
 ---
 
+## 10. Compilatio — Données empiriques officielles (2025-2026)
+
+> **Statut de cette section :** données issues de la documentation officielle Compilatio,
+> du rapport de Claude for Chrome (2 avril 2026), et de l'étude indépendante Dessus & Seyve
+> (STICEF, 2025). Contrairement aux sections 1-9 (prompts reconstitués par inférence),
+> cette section contient des informations **vérifiées sur source primaire**.
+
+---
+
+### 10.1 Architecture du pipeline Compilatio (documentée officiellement)
+
+Compilatio décrit **5 étapes** dans sa documentation publique :
+
+```
+1. DÉCOUPAGE
+   → Le texte est segmenté en passages de style homogène
+   → Fenêtre glissante (taille non publiée)
+
+2. ÉTIQUETAGE
+   → Classification IA / humain pour chaque passage
+   → LLM propriétaire "maison" entraîné sur corpus mixte
+
+3. REGROUPEMENT
+   → Agrégation des passages étiquetés IA en "points d'intérêt"
+   → Ces points sont surlignés dans le rapport final
+
+4. NETTOYAGE
+   → Filtrage des passages non pertinents
+   → Objectif explicite : réduire les faux positifs
+
+5. PRÉSENTATION
+   → Score final en % + localisation des passages dans le document
+   → Rapport visible par l'enseignant dans Magister / Magister+
+```
+
+**Cohérence avec la section 8.1 (pipeline LLM + modules externes) :** la documentation
+confirme qu'un LLM est utilisé pour l'analyse stylistique (étape 2), combiné à un pipeline
+de traitement statistique préalable. Les métriques de perplexité et burstiness sont
+les deux indicateurs explicitement cités dans la communication officielle.
+
+**Version en production (au 2 avril 2026) : v4.5.3** — mise en production le 4 septembre 2025.
+Version précédente : v4.2.1 (octobre 2024).
+
+---
+
+### 10.2 Modèles IA ciblés par Compilatio
+
+Liste officielle publiée sur `compilatio.net/ia-detecteur-info` (au 2 avril 2026) :
+
+| Éditeur | Modèles détectés |
+|---------|-----------------|
+| **OpenAI** | GPT-5.2, GPT-5.1, GPT-5, GPT-4.5, GPT-4o, GPT-4o Mini |
+| **Anthropic** | Claude Sonnet 4.5 (+ versions non précisées) |
+| **Google** | Gemini 2.5 Flash, Gemini 3 Pro, Copilot |
+| **Mistral** | Modèle(s) Mistral (français) |
+| **Meta** | Llama |
+| **Autres** | DeepSeek, Jasper, YouChat, "bien d'autres" |
+
+**Note sur Claude Sonnet 4.6** (le modèle utilisé dans ce skill) : Compilatio mentionne
+"Claude Sonnet 4.5" dans sa liste officielle. La version 4.6 (actuelle au 2 avril 2026)
+est vraisemblablement couverte dans la même entrée ou dans la catégorie "autres".
+
+---
+
+### 10.3 Métriques de fiabilité publiées (v4.5.3)
+
+| Indicateur | Valeur annoncée | Conditions de test |
+|------------|----------------|-------------------|
+| **Précision** | 99 % | 99/100 passages signalés "IA" le sont vraiment |
+| **Rappel** | 98 % | 98/100 passages IA correctement identifiés |
+| **Exactitude** | 99 % | 99/100 passages (tous types) bien classés |
+| **Faux positifs** | < 1 % | Moins d'1 texte humain sur 100 faussement signalé |
+| **Performance hétérogène** | 9/10 | Documents mixtes (IA + humain) |
+
+**Conditions de test à considérer avec prudence :**
+- Corpus de ~7 400 textes en 24 langues
+- Prompts IA utilisés : questions simples, **sans instructions de style particulier**
+- Ces conditions sont plus favorables que l'usage réel (textes académiques post-édités)
+
+**Étude indépendante (Dessus & Seyve, STICEF 2025 — hal-04578682) :**
+- 86 documents testés en conditions universitaires réelles (francophones)
+- Résultat sur les textes humains : **zéro faux positif dans cet échantillon**
+- Comparaison avec d'autres détecteurs : Compilatio Magister+ = meilleure performance testée
+
+---
+
+### 10.4 Différences techniques Studium / Magister / Magister+
+
+| Fonctionnalité | Magister | Magister+ | Studium |
+|----------------|----------|-----------|---------|
+| Détection similitudes syntaxiques | ✅ | ✅ | ✅ |
+| **Détection IA** | ❌ | ✅ | ✅ |
+| **Détection sémantique** (reformulations profondes) | ❌ | ✅ | ❌ |
+| Détection multilingue / traductions | ❌ | ✅ | ❌ |
+| **Détection textes altérés** (Unicode, caractères invisibles) | ❌ | ✅ | ❌ |
+| Corpus Magister mondial | ✅ | ✅ | ❌ |
+| Score IA dans le rapport final | ❌ | ✅ (détaillé) | ✅ (simplifié) |
+
+**Implications stratégiques pour le skill :**
+
+**Sur Studium (étudiant) :** le score IA est disponible mais sans la localisation détaillée
+ni le rapport grammatical. C'est l'outil d'autocontrôle. La détection sémantique est **absente** :
+une reformulation profonde des mots n'est pas détectée par Studium.
+
+**Sur Magister (enseignant standard) :** la détection IA est **absente** dans Magister de base.
+Un texte soumis via Magister (non Magister+) ne recevra pas de score IA. Vérifier quelle
+version utilise l'établissement est donc stratégiquement important.
+
+**Sur Magister+ (outil complet) :** c'est le plus difficile à tromper.
+En plus de la détection IA, il inclut :
+- **Détection sémantique** : repère les reformulations profondes par similarité vectorielle
+  (embeddings). Un minimum de mots communs est requis ; les reformulations extrêmes sans
+  vocabulaire partagé peuvent échapper. Activable/désactivable par l'administrateur.
+- **Détection des textes altérés** : module spécifique pour les substitutions Unicode
+  (cyrilliques → latins, caractères invisibles). Ce module confirme que ce vecteur avait
+  été activement utilisé, forçant Compilatio à le contrer.
+
+---
+
+### 10.5 Angles morts officiellement reconnus par Compilatio
+
+Compilatio reconnaît explicitement dans sa documentation les situations à risque
+élevé de faux positifs ou de non-détection :
+
+**Non-détection probable (angles morts) :**
+- Texte **corrigé par IA orthographiquement** sans reformulation : si l'étudiant demande
+  à un LLM de corriger uniquement les fautes, la structure reste humaine. Compilatio
+  considère objectivement ce texte comme humain.
+- **Textes très courts** (< ~150 mots) : pas assez de données linguistiques
+- **Post-édition intensive** : modification manuelle approfondie peut effacer les empreintes
+
+**Faux positifs probables (surclassification IA) :**
+- Textes techniques ou académiques très formels (leur uniformité ressemble au style IA)
+- Textes dans un domaine très codifié (droit, médecine, sciences exactes)
+- Étudiants avec un style naturellement très structuré et formel
+- Résumés/abstracts (genre intrinsèquement structuré)
+
+**Variabilité officiellement reconnue :** pour un même document, les scores peuvent varier
+d'une analyse à l'autre, en raison de la nature probabiliste du modèle, des différences
+d'encodage selon le format (PDF vs DOCX), et des ajustements réguliers de l'algorithme.
+
+---
+
+### 10.6 Seuils et interprétation (politique officielle de Compilatio)
+
+Compilatio **ne publie aucun seuil automatique d'alerte**. Il n'existe pas de règle
+"au-dessus de X %, le document est bloqué ou l'étudiant est sanctionné".
+
+Le score est présenté comme un **indicateur probabiliste** à interpréter contextuellement
+par l'enseignant. La formulation retenue est délibérément prudente :
+**"textes potentiellement générés par IA"** — jamais "textes générés par IA".
+
+Pour un document de 1 000 mots avec un score de 10 % : 100 mots présentent
+un style similaire à celui d'une IA. L'interprétation est laissée à l'enseignant.
+
+**Cohérence avec le seuil Turnitin 0.20 (section 9.3) :** Compilatio adopte une approche
+similaire de non-signalement automatique à faible score. L'objectif pratique du skill
+reste < 20 % — zone dans laquelle même un enseignant vigilant aura du mal à justifier
+une sanction en l'absence de seuil institutionnel défini.
+
+---
+
+### 10.7 Recommandations spécifiques Compilatio pour le skill
+
+À partir de ces données empiriques, les priorités pour un texte soumis à Compilatio :
+
+**Priorité absolue :**
+1. **Varier la longueur des phrases** (burstiness) — cité explicitement dans la doc comme
+   métrique clé. Cible : B > 0.3 (formule section 3).
+2. **Augmenter la perplexité** — l'autre métrique explicitement citée. Injection de
+   vocabulaire concret, noms propres, chiffres, termes idiosyncrasiques.
+
+**Si soumis à Magister+ :**
+3. **Changer la structure argumentative** (pas seulement le lexique) — la détection
+   sémantique (embeddings) contourne les reformulations lexicales pures.
+4. **Éviter les substitutions Unicode** — le module de détection des textes altérés
+   les cible spécifiquement. Ce vecteur est donc à exclure.
+
+**Si soumis à Magister (non +) :**
+5. La détection IA est absente. Seule la détection de plagiat syntaxique est active.
+   Le skill peut se concentrer sur l'originalité du contenu plutôt que sur le style IA.
+
+**Si soumis à Studium :**
+6. Score IA disponible mais pas la détection sémantique. Les reformulations profondes
+   de mots ne sont pas détectées. Priorité : burstiness + perplexité.
+
+---
+
 ## Sources
 
 - Claude Sonnet 4.6 Extended, prompt de détection reconstitué (pipeline 7 étapes, formules, seuils)
@@ -562,3 +750,5 @@ signaux humains les plus efficaces :
 - Gemini 3.1 Pro, prompt de détection reconstitué (métriques, seuils, format JSON)
 - ChatGPT 5.4 Thinking, architecture réelle d'un détecteur (pipeline LLM + modules externes, plafonds de confiance, littérature DetectGPT/GLTR)
 - ChatGPT 5.4 Pro, prompt de production (hiérarchie des preuves, catégorie paraphrase, seuil 0.20, métriques complètes)
+- **Rapport Claude for Chrome, 2 avril 2026** — documentation officielle Compilatio (support.compilatio.net, compilatio.net/ia-detecteur-info, compilatio.net/magister-plus), version v4.5.3
+- **Dessus, P. & Seyve, D. (2025)**. *La détection de l'utilisation de robots conversationnels en contexte universitaire : Le cas de Compilatio Magister+*. STICEF, Vol. 32, No 1, pp. 112–128. Preprint : HAL UGA, hal-04578682
