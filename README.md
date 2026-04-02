@@ -1,6 +1,6 @@
 # ai-edu-skills-FR
 
-Skills pour Claude : accompagnement scolaire et universitaire.
+Skills pour ChatGPT & Claude : accompagnement scolaire et universitaire.
 
 ## Objectif
 
@@ -126,7 +126,7 @@ Les skills peuvent se compléter selon le besoin :
 
 #### Sur Claude : [claude.ai/customize/skills](https://claude.ai/customize/skills)
 
-1. Aller sur [claude.ai/customize/skills](https://claude.ai/customize/skills)
+1. Aller sur [Claude](https://claude.ai/customize/skills)
 2. Cliquer sur **"Add skill"**
 3. Donner un nom au skill (ex : `soutien-academique`)
 4. Coller le contenu du fichier `SKILL.md` correspondant dans le champ instructions
@@ -135,7 +135,7 @@ Les skills peuvent se compléter selon le besoin :
 
 #### Sur ChatGPT : [chatgpt.com/skills](https://chatgpt.com/skills)
 
-1. Aller sur [chatgpt.com/skills](https://chatgpt.com/skills)
+1. Aller sur [ChatGPT](https://chatgpt.com/skills)
 2. Cliquer sur **"Create skill"**
 3. Donner un nom et une description au skill
 4. Coller le contenu du fichier `SKILL.md` dans le champ instructions
