@@ -122,6 +122,11 @@ Les skills peuvent se compléter selon le besoin :
 
 ## Installation
 
+### Comment installer les skills
+
+- **Claude** : [claude.ai/customize/skills](https://claude.ai/customize/skills)
+- **ChatGPT** : [chatgpt.com/skills](https://chatgpt.com/skills)
+
 ### Sur Claude.ai (avec Claude Code ou Cowork)
 
 ```bash
