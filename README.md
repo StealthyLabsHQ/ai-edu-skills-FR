@@ -1,6 +1,6 @@
 # anthropics-education-FR
 
-Skills pour Claude -accompagnement scolaire et universitaire.
+Skills pour Claude — accompagnement scolaire et universitaire.
 
 ## Objectif
 
@@ -12,7 +12,7 @@ Bibliothèque de skills `.md` open-source pour transformer Claude en assistant p
 anthropics-education-FR/
 ├── README.md
 ├── soutien-academique/
-│   ├── SKILL.md                              ← Skill principal (8 modules)
+│   ├── SKILL.md                              ← Skill principal (10 modules)
 │   └── references/                           ← Ressources chargées à la demande
 │       ├── normes-citation.md                ← APA 7, norme française, Harvard, Vancouver, Chicago
 │       ├── ecriture-naturelle.md             ← Filtre anti-détection IA (30+ paires avant/après)
@@ -25,30 +25,49 @@ anthropics-education-FR/
 │       ├── recherche-documentaire.md         ← Google Scholar, Cairn, HAL, évaluation CRAAP, fiches de lecture
 │       ├── gestion-projet-memoire.md         ← Timeline, réunions tuteur, blocages, versioning
 │       ├── note-synthese.md                  ← Méthode de dépouillement, plan de synthèse, pièges
-│       └── disciplines-specificites.md       ← Normes et ressources par discipline (compta, droit, SHS, info, santé)
+│       ├── disciplines-specificites.md       ← Normes et ressources par discipline (compta, droit, SHS, info, santé)
+│       ├── neurodiversite.md                 ← TDAH, dyslexie, DYS : adaptations, outils, aménagements officiels
+│       └── peer-review-simulator.md          ← Simulateur Peer-Review : Mode Candide + Mode Reviewer 2
 ├── lettre-motivation/
-│   ├── SKILL.md                              ← Lettres de motivation personnalisées
+│   ├── SKILL.md                              ← Lettres de motivation + réseautage digital (Module 5)
 │   └── references/
 │       ├── types-candidature.md              ← Spécificités par type de candidature
-│       └── anti-generique.md                 ← 20 paires avant/après anti-phrases creuses
-└── plume-naturelle/
-    ├── SKILL.md                              ← Réécriture anti-IA (48 patterns, 8 phases, auto-évaluation)
+│       ├── anti-generique.md                 ← 20 paires avant/après anti-phrases creuses
+│       └── reseautage-digital.md             ← Cold emails, messages LinkedIn, relances, remerciements post-entretien
+├── plume-naturelle/
+│   ├── SKILL.md                              ← Réécriture anti-IA + Mode Pédagogique + Oralité
+│   └── references/
+│       ├── patterns-par-discipline.md        ← Patterns IA spécifiques par discipline
+│       ├── marqueurs-ia-francais.md          ← Liste noire transversale de 80+ marqueurs IA avec multiplicateurs
+│       ├── prompts-detecteurs.md             ← Prompts de détection reconstitués (formules, seuils, architecture)
+│       ├── formules-auto-evaluation.md       ← 38 formules mathématiques (Tier 1 à Tier 3 : PPL, GLTR, DetectGPT, σ²_D)
+│       └── mode-pedagogique.md              ← Annotation pédagogique, remédiation, scripts de soutenance annotés
+├── orientation-strategie/
+│   ├── SKILL.md                              ← Parcoursup, MonMaster, réorientation, filières méconnues
+│   └── references/
+│       ├── parcoursup-monmaster.md           ← Guide des filières, critères de sélection, calendriers
+│       └── projet-formation-motive.md        ← Templates PFM, 15 paires avant/après, grille de vérification
+├── entretien-oral/
+│   ├── SKILL.md                              ← Entretiens blancs, méthode STAR, réponses bateau
+│   └── references/
+│       ├── methode-star.md                   ← Exemples STAR par secteur, stock de 6 histoires, exercices
+│       └── questions-pieges.md              ← 50+ questions avec antidotes, réponses bateau, erreurs de fond/forme
+└── productivite-pkm/
+    ├── SKILL.md                              ← Obsidian, Notion, Zotero, Zettelkasten pour mémoire
     └── references/
-        ├── patterns-par-discipline.md        ← Patterns IA spécifiques par discipline (compta, droit, SHS, info, santé, lettres)
-        ├── marqueurs-ia-francais.md          ← Liste noire transversale de 80+ marqueurs IA avec multiplicateurs
-        ├── prompts-detecteurs.md             ← Prompts de détection reconstitués (formules, seuils, architecture)
-        └── formules-auto-evaluation.md       ← Formules mathématiques pour auto-évaluer un texte avant livraison
+        ├── zettelkasten-obsidian.md          ← Config Obsidian complète, plugins, templates, workflows
+        └── zotero-bibliographie.md           ← Zotero avancé, styles de citation français, intégration Word
 ```
 
 ## Comment ça fonctionne
 
 Le système utilise un **chargement progressif à 3 niveaux** :
 
-1. **Metadata** (toujours en contexte) -Le `name` + `description` dans le frontmatter YAML du SKILL.md. C'est ce que Claude lit pour décider s'il doit activer le skill. ~150 mots.
+1. **Metadata** (toujours en contexte) — Le `name` + `description` dans le frontmatter YAML du SKILL.md. C'est ce que Claude lit pour décider s'il doit activer le skill. ~150 mots.
 
-2. **SKILL.md** (chargé quand le skill se déclenche) -Le corps principal avec les modules, les principes, les réponses types. Contient les règles et la logique, pas les détails exhaustifs.
+2. **SKILL.md** (chargé quand le skill se déclenche) — Le corps principal avec les modules, les principes, les réponses types. Contient les règles et la logique, pas les détails exhaustifs.
 
-3. **references/** (chargé à la demande) -Les fichiers détaillés que Claude consulte uniquement quand la conversation porte sur un sujet spécifique. Par exemple, `normes-citation.md` n'est lu que si l'étudiant demande de l'aide sur sa bibliographie.
+3. **references/** (chargé à la demande) — Les fichiers détaillés que Claude consulte uniquement quand la conversation porte sur un sujet spécifique. Par exemple, `normes-citation.md` n'est lu que si l'étudiant demande de l'aide sur sa bibliographie.
 
 Cette architecture évite de surcharger le contexte avec des informations inutiles tout en gardant la profondeur disponible quand elle est nécessaire.
 
@@ -56,9 +75,12 @@ Cette architecture évite de surcharger le contexte avec des informations inutil
 
 | Skill | Modules couverts | Niveaux ciblés |
 |-------|-----------------|----------------|
-| `soutien-academique` | Mémoire pro, mémoire recherche, rapport de stage, soutien scolaire, dissertation/commentaire, soutenance, projets de groupe/SAÉ, spécificités disciplinaires | Lycée → Master |
-| `lettre-motivation` | LM personnalisées pour école, alternance, stage, emploi, candidature spontanée, reconversion | Tous niveaux |
-| `plume-naturelle` | Réécriture anti-IA : collecte d'ancrage (9 questions), diagnostic, 48 patterns, 8 phases, 34 formules mathématiques d'auto-évaluation, processus en 8 étapes, contre-mesures statistiques | Tous niveaux |
+| `soutien-academique` | Mémoire pro, mémoire recherche, rapport de stage, soutien scolaire, dissertation/commentaire, soutenance, projets de groupe/SAÉ, spécificités disciplinaires, **neurodiversité (TDAH/DYS)**, **simulateur peer-review** | Lycée → Master |
+| `lettre-motivation` | LM personnalisées pour école, alternance, stage, emploi, candidature spontanée, reconversion, **cold emails, messages LinkedIn, relances et remerciements post-entretien** | Tous niveaux |
+| `plume-naturelle` | Réécriture anti-IA : 48 patterns, 8 phases, **38 formules mathématiques** (Tier 1-3 : PPL, GLTR, DetectGPT, σ²_D), **mode pédagogique par annotation**, **scripts de soutenance oraux** | Tous niveaux |
+| `orientation-strategie` | Exploration de filières méconnues, stratégie Parcoursup, MonMaster, réorientation, **rédaction du PFM** | Terminale → L3 / réorientation |
+| `entretien-oral` | Méthode STAR, entretiens blancs simulés, traque des **réponses bateau**, questions pièges, présentations initiales | Tous niveaux |
+| `productivite-pkm` | **Zettelkasten**, Obsidian, Notion, **Zotero** pour mémoires et thèses, organisation des sources, PKM académique | BUT → Doctorat |
 
 ## Exemples de prompts
 
@@ -71,6 +93,13 @@ Cette architecture évite de surcharger le contexte avec des informations inutil
 "On a un projet de groupe SAÉ à rendre, comment on s'organise ?"
 "Mon intro sonne trop ChatGPT, rends-la naturelle"
 "Humanise ce texte, mon prof va voir que c'est de l'IA"
+"J'ai un TDAH, aide-moi à réviser autrement"
+"Annote mon texte pour que je comprenne pourquoi ça sonne IA"
+"Je ne sais pas quoi faire après mon BUT, aide-moi à explorer les Masters"
+"J'ai un entretien de sélection pour un Master demain, entraîne-moi"
+"Comment j'organise mes notes Obsidian pour mon mémoire ?"
+"J'ai besoin d'un message LinkedIn pour contacter un alumni"
+"Simule le Reviewer 2 sur mon introduction de mémoire"
 ```
 
 ## Dépendances entre skills
@@ -85,6 +114,11 @@ Les skills peuvent se compléter selon le besoin :
 | Soutenance + slides | `soutien-academique` | `pptx` (public) |
 | Fiche de révision imprimable | `soutien-academique` | `pdf` (public) |
 | Lettre qui sonne trop IA | `plume-naturelle` | `lettre-motivation` |
+| Orientation + candidature | `orientation-strategie` | `lettre-motivation` |
+| Orientation + entretien de sélection | `orientation-strategie` | `entretien-oral` |
+| Mémoire + organisation des sources | `soutien-academique` | `productivite-pkm` |
+| Préparation soutenance (écrit + oral) | `soutien-academique` | `plume-naturelle` (mode oralité) |
+| Réorientation + LM + entretien | `orientation-strategie` | `lettre-motivation` + `entretien-oral` |
 
 ## Installation
 
@@ -93,10 +127,13 @@ Les skills peuvent se compléter selon le besoin :
 ```bash
 git clone https://github.com/StealthyLabsHQ/anthropics-education-FR.git
 
-# Installer les skills souhaités (avec leurs références)
+# Installer tous les skills
 cp -r anthropics-education-FR/soutien-academique /mnt/skills/user/
 cp -r anthropics-education-FR/lettre-motivation /mnt/skills/user/
 cp -r anthropics-education-FR/plume-naturelle /mnt/skills/user/
+cp -r anthropics-education-FR/orientation-strategie /mnt/skills/user/
+cp -r anthropics-education-FR/entretien-oral /mnt/skills/user/
+cp -r anthropics-education-FR/productivite-pkm /mnt/skills/user/
 ```
 
 > **Important :** copier le dossier entier (avec `references/`) pour que le chargement progressif fonctionne. Sans le dossier `references/`, Claude n'aura pas accès aux ressources détaillées.
@@ -112,47 +149,65 @@ cp -r anthropics-education-FR/plume-naturelle /mnt/skills/user/
 
 Copier-coller le contenu de `SKILL.md` dans la conversation ou dans les instructions système d'un appel API.
 
-## Plume Naturelle - le moteur anti-détection
+## Plume Naturelle — le moteur anti-détection
 
 Le skill `plume-naturelle` est le plus avancé du repo. Il a été construit à partir de
-l'auto-analyse de **6 modèles LLM** qui décrivent leurs propres biais de génération :
+l'auto-analyse de **6 modèles LLM** qui décrivent leurs propres biais de génération.
 
-| Modèle | Contribution |
-|--------|-------------|
-| Gemini 3.1 Pro | Structure en sablier RLHF, biais de neutralité, fluff d'audience |
-| Gemini 3.1 Pro Thinking | Persistance isotopique (signal unique), concession préemptive, variance tonale |
-| Claude Opus 4.6 | Régularité syntaxique, structures parallèles |
-| Claude Sonnet 4.6 | Longueur calibrée, tirets cadratins comme signature Claude |
-| ChatGPT 5.4 | Micro-révisions absentes, redondance paraphrastique, coût cognitif, 20 tics avec multiplicateurs |
-| ChatGPT 5.4 Pro | Hiérarchie des preuves, catégorie paraphrase, seuil Turnitin 0.20 |
-| Gemini 3.1 Pro Thinking High | 12 formules (Zipf, Brunet, Gini, contagion lexicale, etc.) + 4 formules couverture 40% + questionnaire d'ancrage |
+**48 patterns** de détection/humanisation, **8 phases** d'analyse, **38 formules mathématiques**
+d'auto-évaluation réparties en 3 tiers :
 
-**48 patterns** de détection/humanisation, **8 phases** d'analyse, **34 formules mathématiques**
-d'auto-évaluation (burstiness, TTR, Zipf, Brunet, Gini, entropie connecteurs/ponctuation/temps
-verbaux, similarité cosinus, contagion lexicale, volatilité émotionnelle, ancrage référentiel,
-distorsion collocationnelle, dilution du signal, etc.), **5 prompts de détection reconstitués**,
-et un **questionnaire d'ancrage en 9 questions** (version express : 5 questions) qui force
-l'étudiant à fournir les détails réels sans lesquels aucune humanisation ne fonctionne.
+| Tier | Formules | Coût computationnel | Accès |
+|------|----------|---------------------|-------|
+| **Tier 1** | Formules 1-34 : stylométrie, N-grammes, POS-tagging, burstiness, TTR, Zipf, Brunet, Gini, entropie, similarité cosinus | O(N) — instantané | Direct dans ce skill |
+| **Tier 2** | Formules 35-36 : Perplexité (PPL, Cross-Entropy Loss), Ratios GLTR (buckets de rang) | O(N × V) — nécessite inférence sur modèle proxy | API LLaMA/GPT-2 |
+| **Tier 3** | Formule 37 : DetectGPT (Perturbation Discrepancy, Z-score) | O(K × N × V) — très coûteux | GPU dédié |
+| **Syntaxique** | Formule 38 : Variance de la profondeur des arbres syntaxiques (σ²_D) | O(N) si parseur spaCy | Tier 1 (approximation) ou parseur |
 
-**Processus en 8 étapes :** collecte d'ancrage obligatoire, diagnostic, identification du
-modèle source, réécriture, auto-audit, auto-évaluation mathématique (SCE v3), réécriture
-finale avec vérification de sortie (DARL > 4.5, DS > 0.5, RDS > 0.35, SCE < 0.35),
-résumé des modifications.
+**Mode Pédagogique** : annotation du texte de l'étudiant avec codes de patterns, exercices
+de remédiation ciblés, synthèse des patterns récurrents, et progression multi-sessions.
+
+**Mode Oralité** : patterns de "plume naturelle orale" pour scripts de soutenance annotés
+avec pauses, connecteurs oraux légitimes, micro-hésitations, et gestion du stress.
 
 **Estimation :** un texte IA brut score 85-99 % sur Compilatio. Avec le skill complet
 et les détails de l'étudiant, l'objectif est 5-20 % (zone invisible pour Turnitin).
 
-Compilatio utilise : GPT-5.4, GPT-5.2, GPT-5.1, GPT-5, GPT-4o, Claude Opus 4.6,
-Claude Sonnet 4.6, Claude Sonnet 4.5, Gemini 3.1 Pro, Gemini 3.1 Flash Lite,
-Gemini 3 Flash, Gemini 2.5 Flash.
+## Améliorations v2 (basées sur les retours Gemini)
+
+### Skills existants enrichis
+
+**`lettre-motivation`** :
+- Nouveau Module 5 : réseautage digital (cold emails, messages LinkedIn 300 chars, relances, remerciements post-entretien)
+- Checklist interne d'auto-évaluation Claude avant livraison
+- Nouvelle référence `reseautage-digital.md` : templates complets, variantes sectorielles
+
+**`plume-naturelle`** :
+- Mode Pédagogique : annotation avec 12 codes de patterns, exercices de remédiation, progression multi-sessions
+- Mode Oralité : scripts de soutenance annotés, connecteurs oraux, gestion du stress à l'oral
+- 4 nouvelles formules Tier 2 & 3 (PPL, GLTR, DetectGPT, σ²_D) dans `formules-auto-evaluation.md`
+- Nouvelle référence `mode-pedagogique.md` : grille d'annotation complète, scripts complets
+
+**`soutien-academique`** :
+- Module 9 : soutien à la neurodiversité (TDAH, dyslexie, DYS) — adaptations, Pomodoro, fiches DYS-friendly
+- Module 10 : simulateur Peer-Review (Mode Candide + Mode Reviewer 2)
+- Nouvelles références `neurodiversite.md` et `peer-review-simulator.md`
+
+### Nouveaux skills
+
+- **`orientation-strategie`** : exploration de filières, Parcoursup, MonMaster, PFM, réorientation
+- **`entretien-oral`** : entretiens blancs, STAR, réponses bateau, 50+ questions avec antidotes
+- **`productivite-pkm`** : Obsidian/Zettelkasten, Notion, Zotero pour mémoires et thèses
 
 ## Philosophie
 
-1. **Accompagner, pas remplacer** -Les skills guident l'étudiant dans sa réflexion au lieu d'écrire à sa place
-2. **Rigueur académique** -Aucune source inventée, normes de citation respectées
-3. **Anti-détection IA** -48 patterns, 8 phases, 34 formules mathématiques, 5 prompts de détection reconstitués, questionnaire d'ancrage, processus en 8 étapes
-4. **Adaptation au niveau** -Ajustement automatique de la profondeur selon le profil (lycée - M2)
-5. **Chargement progressif** -Les références lourdes ne sont lues que quand c'est pertinent
+1. **Accompagner, pas remplacer** — Les skills guident l'étudiant dans sa réflexion au lieu d'écrire à sa place
+2. **Rigueur académique** — Aucune source inventée, normes de citation respectées
+3. **Anti-détection IA** — 48 patterns, 8 phases, 38 formules (3 tiers), 5 prompts reconstitués, questionnaire d'ancrage
+4. **Adaptation au niveau** — Ajustement automatique de la profondeur selon le profil (lycée → M2)
+5. **Chargement progressif** — Les références lourdes ne sont lues que quand c'est pertinent
+6. **Pédagogie de l'écriture** — Mode annotation pour que l'étudiant progresse, pas seulement pour corriger
+7. **Accessibilité** — Support neurodiversité (TDAH, DYS) intégré
 
 ## Consommation des modèles
 
@@ -173,12 +228,15 @@ Les contributions sont bienvenues. Ouvrez une issue ou une PR pour :
 
 ## Roadmap
 
-- [x] Skill `soutien-academique` -Mémoires, rapports, révisions, dissertation
-- [x] Skill `lettre-motivation` -LM personnalisées tous types
-- [x] Skill `plume-naturelle` -Réécriture anti-IA : 48 patterns, 8 phases, 34 formules, 5 prompts reconstitués, questionnaire d'ancrage, processus 8 étapes
-- [ ] Skill `prepa-concours` -Préparation aux concours (CPGE, fonction publique, santé)
-- [ ] Skill `bts-pro` -Spécificités BTS (épreuves E4/E6, fiches, PFMP)
-- [ ] Skill `doctorat` -Accompagnement thèse (revue systématique, publication, HDR)
+- [x] Skill `soutien-academique` — Mémoires, rapports, révisions, dissertation, neurodiversité, peer-review
+- [x] Skill `lettre-motivation` — LM personnalisées + réseautage digital (cold email, LinkedIn, relances)
+- [x] Skill `plume-naturelle` — Réécriture anti-IA : 48 patterns, 8 phases, 38 formules (Tier 1-3), mode pédagogique, oralité
+- [x] Skill `orientation-strategie` — Parcoursup, MonMaster, PFM, filières méconnues, réorientation
+- [x] Skill `entretien-oral` — STAR, entretiens blancs, réponses bateau, questions pièges
+- [x] Skill `productivite-pkm` — Zettelkasten, Obsidian, Notion, Zotero pour mémoires et thèses
+- [ ] Skill `prepa-concours` — Préparation aux concours (CPGE, fonction publique, santé)
+- [ ] Skill `bts-pro` — Spécificités BTS (épreuves E4/E6, fiches, PFMP)
+- [ ] Skill `doctorat` — Accompagnement thèse (revue systématique, publication, HDR)
 - [ ] Références supplémentaires par discipline (droit, santé, STAPS, info...)
 - [ ] Templates DOCX/PPTX prêts à l'emploi
 

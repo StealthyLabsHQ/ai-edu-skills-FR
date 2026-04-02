@@ -1374,3 +1374,190 @@ SRP = (0.3 × (1 - structure_changed))
    (retrieval, paraphrase_bypass, cross_model_agreement). Les ~15 % restants
    (logprobs réels, DetectGPT) nécessitent un accès API que le skill n'a pas.
    Le meilleur compensateur reste un texte ancré dans le réel.
+
+---
+
+## 11. Métriques de Bas Niveau — Architecture Tier 2 & Tier 3
+
+> **Note d'architecture** : Les métriques Tier 1 (formules 1-34, stylométrie, N-grammes,
+> POS-tagging) couvrent le filtrage de surface. Les métriques ci-dessous opèrent au niveau
+> des **log-probabilités des modèles de fondation** et de l'**analyse topologique des
+> graphes syntaxiques**. Elles sont documentées ici pour compréhension du pipeline de
+> détection — elles ne peuvent pas être calculées directement par ce skill sans accès
+> GPU/API, mais permettent de comprendre comment contourner les détecteurs avancés.
+>
+> *Seuils calibrés sur architecture de référence LLaMA-3-70B / GPT-3.5. En production,
+> ajuster via classifieur (XGBoost ou MLP) entraîné sur corpus propre.*
+
+---
+
+### Formule 35 — Perplexité Réelle (Cross-Entropy Loss sur séquence)
+
+**Concept :** La perplexité mesure le degré de "surprise" d'un LLM face à une séquence
+de tokens. Un texte généré par une IA a une entropie croisée très faible par rapport au
+modèle proxy (le texte suit exactement la distribution de probabilité apprise).
+
+**Formule mathématique :**
+
+Soit $X = (x_1, x_2, ..., x_N)$ une séquence de tokens et $p_\theta$ la probabilité
+assignée par le modèle de langage.
+
+$$CE(X) = -\frac{1}{N} \sum_{i=1}^{N} \log p_\theta(x_i \mid x_1, ..., x_{i-1})$$
+
+$$PPL(X) = \exp(CE(X)) = \exp \left( -\frac{1}{N} \sum_{i=1}^{N} \log p_\theta(x_i \mid x_{<i}) \right)$$
+
+**Seuils de détection** (Proxy Model : LLaMA-3-8B ou GPT-2 XL) :
+
+| Valeur | Interprétation |
+|--------|----------------|
+| $PPL < 35$ | Généré par IA — le modèle prédit facilement la suite |
+| $35 \le PPL \le 65$ | Zone grise — texte IA très édité ou humain académique soutenu |
+| $PPL > 65$ | Humain — transitions inattendues, imprévisibilité naturelle |
+
+**Vecteur d'attaque (comment augmenter artificiellement la perplexité) :**
+Remplacer des mots communs par des synonymes rares, introduire des structures grammaticales
+archaïques, ou varier les registres. Mathématiquement : forcer $\log p_\theta(x_i \mid x_{<i})$
+à être un grand nombre négatif en sélectionnant des tokens dont $p_\theta \approx 0$.
+
+**Implication pour ce skill :** L'injection de vocabulaire concret (noms propres, chiffres,
+termes techniques du domaine de l'étudiant) augmente naturellement la perplexité car ces
+tokens sont rares dans la distribution générale du modèle proxy.
+
+---
+
+### Formule 36 — Ratios GLTR (Giant Language Model Test Room)
+
+**Concept :** Au lieu de la probabilité absolue, GLTR regarde le **rang** du token choisi
+dans la distribution. Les LLMs échantillonnent massivement dans le Top-10. Les humains
+piochent régulièrement dans la longue traîne (Top-1000+).
+
+**Formule mathématique :**
+
+Soit $R(x_i)$ le rang du token $x_i$ trié par probabilité décroissante $p_\theta(x \mid x_{<i})$.
+4 buckets définis : $B_{10}$ (Top 1-10), $B_{100}$ (Top 11-100), $B_{1000}$ (Top 101-1000),
+$B_{10k+}$ (> 1000).
+
+$$F(B_k) = \frac{1}{N} \sum_{i=1}^{N} \mathbb{I}\left( R(x_i) \in B_k \right)$$
+
+*(où $\mathbb{I}$ est la fonction indicatrice valant 1 si la condition est vraie)*
+
+**Seuils de détection :**
+
+| Bucket | Texte IA | Texte Humain |
+|--------|----------|--------------|
+| $F(B_{10})$ | > 85 % | ≈ 65-70 % |
+| $F(B_{100})$ | ≈ 12 % | ≈ 15-20 % |
+| $F(B_{1000})$ | < 2 % | ≈ 10 % |
+| $F(B_{10k+})$ | ≈ 0 % | > 2 % |
+
+**Vecteur d'attaque :** Augmenter la température ($T > 1.2$) et le Top-P ($P > 0.95$) lors
+de la génération, ou demander "utilise un vocabulaire hautement imprévisible". L'échantillonnage
+à haute température aplatit la distribution Softmax, forçant la sélection de tokens avec
+$R(x_i) > 100$ et remplissant $B_{1000}$ et $B_{10k+}$.
+
+**Implication pour ce skill :** La Phase 2 (suppression des marqueurs IA courants) et la
+Phase 4 (injection de vocabulaire concret et d'idiolecte) déplacent naturellement des tokens
+de $B_{10}$ vers $B_{100}$ et $B_{1000}$.
+
+---
+
+### Formule 37 — Score DetectGPT (Perturbation Discrepancy)
+
+**Concept :** La métrique zero-shot la plus robuste actuellement. Hypothèse : le texte IA se
+trouve sur un **maximum local** de la log-probabilité. Une légère perturbation fait chuter
+drastiquement la probabilité. Un texte humain (hors maximum local) reste stable sous perturbation.
+
+**Formule mathématique :**
+
+Soit $x$ le texte original, $p_\theta$ le modèle à tester, et $q(\cdot \mid x)$ un modèle de
+perturbation (ex: T5-large masquant 15% des mots). On génère $K$ perturbations $\tilde{x}_k \sim q(\cdot \mid x)$.
+
+$$d(x) = \log p_\theta(x) - \frac{1}{K} \sum_{k=1}^{K} \log p_\theta(\tilde{x}_k)$$
+
+$$Z(x) = \frac{d(x)}{\sigma_{\tilde{x}}}$$
+
+*(où $\sigma_{\tilde{x}}$ est l'écart-type des log-probabilités des textes perturbés)*
+
+**Seuils de détection :**
+
+| Valeur | Interprétation |
+|--------|----------------|
+| $Z(x) > 1.5$ | Texte IA — chute de probabilité statistiquement très significative |
+| $Z(x) \approx 0$ ou $Z(x) < 0$ | Texte humain — la perturbation ne dégrade pas ou améliore la probabilité |
+
+**Vecteur d'attaque — Paraphrasing Attack :** Générer avec GPT-4, puis paraphraser avec un
+modèle radicalement différent (BART, Quillbot) ou modifier manuellement 20% des phrases.
+Cela déplace $x$ hors du maximum local : $\log p_\theta(x)$ baisse, les perturbations
+$\tilde{x}_k$ ne provoquent plus de chute drastique, $d(x) \to 0$.
+
+**Coût computationnel :** O(K × N × V) — très élevé ($K = 100$ perturbations recommandées).
+À ne déclencher qu'en Tier 3 si les scores Tier 1 & 2 sont en zone d'incertitude (40-60%).
+
+---
+
+### Formule 38 — Variance de la Profondeur de l'Arbre Syntaxique ($\sigma^2_D$)
+
+**Concept :** Les LLMs génèrent des arbres de dépendance syntaxique réguliers et équilibrés
+(profondeurs homogènes). Les humains écrivent de façon chaotique : une phrase courte
+(profondeur 2) suivie d'une phrase très complexe (profondeur 9+). Cette hétérogénéité est
+un marqueur fort de l'écriture naturelle.
+
+**Outil requis :** parseur de dépendances (spaCy `fr_dep_news_trf` pour le français,
+ou Stanford CoreNLP).
+
+**Formule mathématique :**
+
+Soit un document de $S$ phrases. Pour chaque phrase $j$, $D(T_j)$ = profondeur maximale
+de l'arbre de dépendance (chemin le plus long racine → feuille).
+
+$$\mu_D = \frac{1}{S} \sum_{j=1}^{S} D(T_j)$$
+
+$$\sigma^2_D = \frac{1}{S} \sum_{j=1}^{S} \left( D(T_j) - \mu_D \right)^2$$
+
+*(On peut également calculer la variance du Branching Factor — nombre d'enfants par nœud)*
+
+**Seuils de détection :**
+
+| Valeur | Interprétation | Exemple de profondeurs |
+|--------|----------------|------------------------|
+| $\sigma^2_D < 2.5$ | Texte IA — complexité structurelle homogène | [5, 6, 5, 5, 7, 6] |
+| $\sigma^2_D > 4.5$ | Texte humain — forte hétérogénéité | [2, 8, 4, 11, 3] |
+
+**Vecteur d'attaque — Burstiness Prompting structurel :** Demander explicitement d'alterner
+phrases courtes (1-4 mots) et phrases très longues et complexes (multiples subordonnées et
+incises). Cela force les $D(T_j)$ à s'éloigner de $\mu_D$ : les écarts au carré
+$(D(T_j) - \mu_D)^2$ augmentent, faisant exploser $\sigma^2_D$.
+
+**Implication pour ce skill (Tier 1 accessible) :** La variance de la longueur de phrase
+(Phase 3, signal déjà présent dans le diagnostic) est une approximation de $\sigma^2_D$
+sans parseur. En Tier 1, la variance des longueurs de phrases suffit pour l'estimation.
+
+---
+
+### Architecture Pipeline Recommandée
+
+Pour intégrer ces 4 métriques avec les 34 formules existantes :
+
+```
+TIER 1 — O(1) / O(N) — Instantané
+  ├── Formules 1-34 (métriques de surface)
+  └── Formule 38 approx. : variance de longueur de phrase (proxy de σ²_D)
+
+TIER 2 — O(N × V) — Nécessite un Forward Pass sur modèle proxy
+  ├── Formule 35 : Perplexité (PPL) via LLaMA-3-8B quantifié ou GPT-2 XL
+  └── Formule 36 : Ratios GLTR — rang des tokens dans la distribution
+
+TIER 3 — O(K × N × V) — Très coûteux
+  └── Formule 37 : DetectGPT
+      → Ne déclencher que si score de probabilité IA Tier 1+2 entre 40% et 60%
+      → K = 100 perturbations, modèle T5-large recommandé
+```
+
+**Seuil de déclenchement Tier 3 :** uniquement si Tier 1 ET Tier 2 sont en zone grise.
+Un texte qui passe clairement Tier 1 (score < 3) ne nécessite pas DetectGPT.
+
+**Conclusion pratique pour ce skill :** Sans accès GPU, les Tiers 2 & 3 sont inaccessibles
+directement. La stratégie reste : maximiser les métriques Tier 1 (formules 1-34) +
+appliquer les vecteurs d'attaque documentés (diversification lexicale, burstiness
+structurel, paraphrase cross-modèle) pour que le texte soit défavorable aux Tiers 2 & 3
+même sans les calculer.

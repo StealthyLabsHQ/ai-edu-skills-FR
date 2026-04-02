@@ -2101,6 +2101,133 @@ Si l'utilisateur demande une humanisation « totale » ou « profonde » :
 
 ---
 
+## Mode Pédagogique — Annoter plutôt que réécrire
+
+Activé quand l'utilisateur dit : "explique-moi pourquoi ça sonne IA", "apprends-moi
+à écrire mieux", "annote mon texte", "montre-moi mes erreurs", "mode pédagogique",
+ou quand le contexte suggère que l'étudiant veut progresser, pas juste corriger.
+
+### Objectif
+
+Au lieu de réécrire le texte, **annoter chaque passage problématique** pour expliquer
+*pourquoi* il sonne artificiel et *comment* un humain l'aurait formulé différemment.
+L'étudiant reçoit un texte avec des commentaires numérotés, puis une synthèse des
+patterns récurrents dans son écriture.
+
+### Format d'annotation
+
+```
+[Texte original de l'étudiant avec insertions]
+
+[1] "Dans un contexte de mondialisation croissante⁽¹⁾, les entreprises font face
+à des défis⁽²⁾ de plus en plus complexes⁽³⁾."
+
+⁽¹⁾ PATTERN : Ouverture contextuelle IA. Un humain commence par son sujet, pas par
+    un constat sur le monde. → Supprime ou remplace par la situation concrète que
+    tu analyses.
+⁽²⁾ PATTERN : "Faire face à des défis" — formule ultra-récurrente dans les textes IA.
+    → Nomme le défi précis : concurrence ? pression sur les marges ? turnover ?
+⁽³⁾ PATTERN : Adjectif superlatif vague ("complexe", "crucial", "important").
+    → Soit tu supprimes, soit tu quantifies : "une concurrence 3x plus intense
+    qu'il y a dix ans" dit la même chose en étant crédible.
+```
+
+### Synthèse pédagogique finale
+
+Après les annotations, fournir :
+
+```
+SYNTHÈSE DE TES PATTERNS RÉCURRENTS
+═══════════════════════════════════
+
+1. [Pattern le plus fréquent] : apparu X fois
+   → Ce que ça révèle de ton style IA : [explication]
+   → Exercice de remédiation : [exercice concret]
+
+2. [Pattern suivant] : apparu X fois
+   ...
+
+TON POINT FORT : [ce que l'étudiant fait déjà naturellement bien]
+
+PROCHAIN TEXTE : concentre-toi en priorité sur [1 seul point, pas 5]
+```
+
+**Règle pédagogique** : ne jamais pointer plus de 3 types de problèmes différents.
+Un étudiant qui reçoit 15 types de corrections ne travaille aucun. Un étudiant qui
+reçoit 1 correction précise l'intègre.
+
+**Référence étendue :** `references/mode-pedagogique.md` — grille d'annotation
+complète, exercices de remédiation par pattern, progression sur plusieurs sessions.
+
+---
+
+## Mode Oralité — Scripts de soutenance et prises de parole
+
+Activé quand l'utilisateur mentionne : "script de soutenance", "présentation orale",
+"je dois parler devant un jury", "discours", "exposé oral", "pitch".
+
+### Différences fondamentales écrit → oral
+
+| Écrit académique | Oral naturel |
+|---|---|
+| Phrases longues et construites | Phrases courtes, 12 mots max à l'oral |
+| Connecteurs formels (néanmoins, toutefois) | Connecteurs oraux (alors, du coup, et là...) |
+| Pas de répétition | Répétition assumée pour ancrer |
+| Structure implicite | Structure annoncée à voix haute |
+| Aucune marque d'hésitation | Pauses et micro-hésitations légitimes |
+
+### Patterns de plume naturelle orale
+
+**Pauses signalées dans le script :**
+```
+... [PAUSE] ...      → pause de 1-2 secondes, regard au jury
+... [RESPIRATION] ... → reprendre son souffle, ralentir
+... [TRANSITION] ...  → changer de partie, contact visuel
+```
+
+**Connecteurs oraux légitimes** (invisibles à l'écrit, nécessaires à l'oral) :
+- "Donc..." (annonce une conclusion)
+- "Et là..." (transition narrative)
+- "Ce qui m'amène à..." (enchaînement logique)
+- "Je vais vous montrer..." (annonce d'un exemple)
+- "En clair..." (reformulation pour ancrer)
+- "Concrètement..." (pivot vers l'exemple)
+
+**Micro-hésitations légitimes** (humanisent sans affaiblir) :
+- "...enfin, plus précisément..."
+- "...ce qui n'est pas — ou pas exactement — la même chose que..."
+- "...je dirais même..."
+
+**Ce qu'il ne faut PAS dans un script oral :**
+- Participes présents en -ant (sonnent IA à l'oral)
+- Triades systématiques (artificiel quand énoncé à voix haute)
+- Phrases dépassant 20 mots (impossible à dire sans perdre le fil)
+- "Il convient de noter que" — jamais à l'oral
+- Raisonnement sur-explicite sans pause : l'audience a besoin de temps de traitement
+
+### Format de script annoté
+
+```
+[PARTIE 1 — 2 min]
+
+"Bonsoir. Je vais vous présenter [titre exact] — une question qui m'est venue
+de [situation concrète]. [PAUSE — regarder le jury]
+
+En [durée de stage/projet], j'ai observé que [fait précis]. Ce n'est pas
+évident au premier abord — [PAUSE] — mais ça soulève une vraie question :
+[problématique en 1 phrase simple].
+
+Je vais vous montrer trois choses. [Lever 3 doigts — PAUSE] Premier point :
+[X]. Deuxième : [Y]. Troisième : [Z]. On commence."
+
+[TRANSITION — vérifier que tout le monde suit]
+```
+
+**Référence étendue :** `references/mode-pedagogique.md` — section oralité avec
+exemples complets de scripts annotés, gestion du stress et de la voix.
+
+---
+
 ## Références internes
 
 | Fichier | Quand le consulter |
@@ -2111,3 +2238,4 @@ Si l'utilisateur demande une humanisation « totale » ou « profonde » :
 | `references/prompts-detecteurs.md` | Prompts de détection reconstitués : formules, seuils, pondérations, exemples calibrés |
 | `references/formules-auto-evaluation.md` | Formules mathématiques pour auto-évaluer un texte avant livraison + prompt d'auto-évaluation |
 | `/mnt/skills/user/soutien-academique/references/questions-jury.md` | Section 9 : questions pièges anti-IA que les profs génèrent avec des LLM pour les soutenances |
+| `references/mode-pedagogique.md` | Mode annotation pédagogique, exercices de remédiation, patterns d'oralité pour soutenances |
