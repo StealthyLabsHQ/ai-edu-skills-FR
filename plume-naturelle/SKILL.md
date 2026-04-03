@@ -860,4 +860,5 @@ zéro phrase > 20 mots, zéro « il convient de noter que » à l'oral.
 | `references/mode-pedagogique.md` | Grille d'annotation, exercices par pattern, scripts de soutenance |
 | `references/marqueurs-ia-francais.md` | Liste noire de 60+ marqueurs IA en français |
 | `references/patterns-par-discipline.md` | Patterns IA par discipline (compta, droit, SHS, info, santé, lettres) |
+| `references/analyse-rapport-compilatio.md` | Interpréter un rapport Compilatio : grille de lecture, diagnostic par bloc, stratégie de correction |
 | `/mnt/skills/user/soutien-academique/SKILL.md` | Règles d'écriture naturelle pour mémoires et rapports |
