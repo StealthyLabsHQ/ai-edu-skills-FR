@@ -41,6 +41,8 @@ ai-edu-skills-FR/
 │       ├── marqueurs-ia-francais.md          ← Liste noire transversale de 80+ marqueurs IA avec multiplicateurs
 │       ├── prompts-detecteurs.md             ← Prompts de détection reconstitués (formules, seuils, architecture)
 │       ├── formules-auto-evaluation.md       ← 38 formules mathématiques (Tier 1 à Tier 3 : PPL, GLTR, DetectGPT, σ²_D)
+│       ├── audit-detecteurs-fr.md            ← Audit comparatif 12 détecteurs + protocole reproductible FR
+│       ├── audit-detecteurs-fr.py            ← Script autonome PPL/GLTR/TTR/Zipf/σ²_D + banc de test
 │       └── mode-pedagogique.md              ← Annotation pédagogique, remédiation, scripts de soutenance annotés
 ├── orientation-strategie/
 │   ├── SKILL.md                              ← Parcoursup, MonMaster, réorientation, filières méconnues

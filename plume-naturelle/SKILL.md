@@ -854,6 +854,7 @@ zéro phrase > 20 mots, zéro « il convient de noter que » à l'oral.
 
 | Fichier | Quand le consulter |
 |---|---|
+| `references/audit-detecteurs-fr.md` | Audit comparatif 12 détecteurs + script Python reproductible centré français |
 | `references/patterns-academiques-fr.md` | Exemples complets avant/après des patterns 25-48 |
 | `references/formules-auto-evaluation.md` | Formules mathématiques, questionnaire ancrage complet 9 questions |
 | `references/prompts-detecteurs.md` | Données Compilatio v4.5.3, seuils, pipeline, comparatif outils |
