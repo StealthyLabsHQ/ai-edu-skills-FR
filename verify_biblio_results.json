@@ -1,0 +1,388 @@
+{
+  "expected_references": {
+    "2301.11305": {
+      "title": "DetectGPT: Zero-Shot Machine-Generated Text Detection using Probability Curvature",
+      "authors": [
+        "Eric Mitchell",
+        "Yoonho Lee",
+        "Chelsea Finn"
+      ]
+    },
+    "2301.10226": {
+      "title": "A Watermark for Large Language Models",
+      "authors": [
+        "John Kirchenbauer",
+        "Jonas Geiping",
+        "Tom Goldstein"
+      ]
+    },
+    "2303.11156": {
+      "title": "Can AI-Generated Text be Reliably Detected?",
+      "authors": [
+        "Vinu Sankar Sadasivan",
+        "Soheil Feizi"
+      ]
+    },
+    "2303.13408": {
+      "title": "Paraphrasing evades detectors of AI-generated text, but retrieval is an effective defense",
+      "authors": [
+        "Kalpesh Krishna",
+        "John Wieting",
+        "Mohit Iyyer"
+      ]
+    },
+    "2304.02819": {
+      "title": "GPT detectors are biased against non-native English writers",
+      "authors": [
+        "Weixin Liang",
+        "Mert Yuksekgonul",
+        "James Zou"
+      ]
+    },
+    "2303.07205": {
+      "title": "The Science of Detecting LLM-Generated Texts",
+      "authors": [
+        "Ruixiang Tang",
+        "Xia Hu"
+      ]
+    },
+    "2304.04736": {
+      "title": "On the Possibilities of AI-Generated Text Detection",
+      "authors": [
+        "Souradip Chakraborty",
+        "Amrit Singh Bedi",
+        "Furong Huang"
+      ]
+    },
+    "2406.12549": {
+      "title": "MultiSocial: Multilingual Benchmark of Machine-Generated Text Detection of Social-Media Texts",
+      "authors": [
+        "Dominik Macko",
+        "Jakub Kopal",
+        "Ivan Srba"
+      ]
+    },
+    "2406.15583": {
+      "title": "Detecting AI-Generated Text: Factors Influencing Detectability with Current Methods",
+      "authors": [
+        "Kathleen C. Fraser",
+        "Svetlana Kiritchenko"
+      ]
+    },
+    "2402.13671": {
+      "title": "KInIT at SemEval-2024 Task 8: Fine-tuned LLMs for Multilingual Machine-Generated Text Detection",
+      "authors": [
+        "Michal Spiegel",
+        "Dominik Macko"
+      ]
+    },
+    "2310.14724": {
+      "title": "A Survey on LLM-Generated Text Detection: Necessity, Methods, and Future Directions",
+      "authors": [
+        "Junchao Wu",
+        "Shu Yang",
+        "Lidia S. Chao"
+      ]
+    },
+    "2310.15264": {
+      "title": "Towards Possibilities & Impossibilities of AI-generated Text Detection: A Survey",
+      "authors": [
+        "Soumya Suvra Ghosal",
+        "Souradip Chakraborty",
+        "Amrit Singh Bedi"
+      ]
+    }
+  },
+  "audit": [
+    {
+      "id": "2301.11305",
+      "status": "OK",
+      "title_found": "DetectGPT: Zero-Shot Machine-Generated Text Detection using Probability Curvature",
+      "comment": "title_ratio=100.0; author_ratio=100.0; author_match=Eric Mitchell->Eric Mitchell"
+    },
+    {
+      "id": "2301.10226",
+      "status": "OK",
+      "title_found": "A Watermark for Large Language Models",
+      "comment": "title_ratio=100.0; author_ratio=100.0; author_match=John Kirchenbauer->John Kirchenbauer"
+    },
+    {
+      "id": "2303.11156",
+      "status": "OK",
+      "title_found": "Can AI-Generated Text be Reliably Detected?",
+      "comment": "title_ratio=100.0; author_ratio=100.0; author_match=Vinu Sankar Sadasivan->Vinu Sankar Sadasivan"
+    },
+    {
+      "id": "2303.13408",
+      "status": "OK",
+      "title_found": "Paraphrasing evades detectors of AI-generated text, but retrieval is an effective defense",
+      "comment": "title_ratio=100.0; author_ratio=100.0; author_match=Kalpesh Krishna->Kalpesh Krishna"
+    },
+    {
+      "id": "2304.02819",
+      "status": "OK",
+      "title_found": "GPT detectors are biased against non-native English writers",
+      "comment": "title_ratio=100.0; author_ratio=100.0; author_match=Weixin Liang->Weixin Liang"
+    },
+    {
+      "id": "2303.07205",
+      "status": "OK",
+      "title_found": "The Science of Detecting LLM-Generated Texts",
+      "comment": "title_ratio=100.0; author_ratio=100.0; author_match=Ruixiang Tang->Ruixiang Tang"
+    },
+    {
+      "id": "2304.04736",
+      "status": "OK",
+      "title_found": "On the Possibilities of AI-Generated Text Detection",
+      "comment": "title_ratio=100.0; author_ratio=100.0; author_match=Souradip Chakraborty->Souradip Chakraborty"
+    },
+    {
+      "id": "2406.12549",
+      "status": "OK",
+      "title_found": "MultiSocial: Multilingual Benchmark of Machine-Generated Text Detection of Social-Media Texts",
+      "comment": "title_ratio=100.0; author_ratio=100.0; author_match=Dominik Macko->Dominik Macko"
+    },
+    {
+      "id": "2406.15583",
+      "status": "OK",
+      "title_found": "Detecting AI-Generated Text: Factors Influencing Detectability with Current Methods",
+      "comment": "title_ratio=100.0; author_ratio=100.0; author_match=Kathleen C. Fraser->Kathleen C. Fraser"
+    },
+    {
+      "id": "2402.13671",
+      "status": "OK",
+      "title_found": "KInIT at SemEval-2024 Task 8: Fine-tuned LLMs for Multilingual Machine-Generated Text Detection",
+      "comment": "title_ratio=100.0; author_ratio=100.0; author_match=Michal Spiegel->Michal Spiegel"
+    },
+    {
+      "id": "2310.14724",
+      "status": "OK",
+      "title_found": "A Survey on LLM-Generated Text Detection: Necessity, Methods, and Future Directions",
+      "comment": "title_ratio=100.0; author_ratio=100.0; author_match=Junchao Wu->Junchao Wu; note=arXiv 2023, pas post-2024"
+    },
+    {
+      "id": "2310.15264",
+      "status": "OK",
+      "title_found": "Towards Possibilities & Impossibilities of AI-generated Text Detection: A Survey",
+      "comment": "title_ratio=100.0; author_ratio=100.0; author_match=Soumya Suvra Ghosal->Soumya Suvra Ghosal; note=arXiv 2023, pas post-2024"
+    }
+  ],
+  "records": {
+    "2301.11305": {
+      "title": "DetectGPT: Zero-Shot Machine-Generated Text Detection using Probability Curvature",
+      "authors": [
+        "Eric Mitchell",
+        "Yoonho Lee",
+        "Alexander Khazatsky",
+        "Christopher D. Manning",
+        "Chelsea Finn"
+      ],
+      "abstract": "The increasing fluency and widespread usage of large language models (LLMs) highlight the desirability of corresponding tools aiding detection of LLM-generated text. In this paper, we identify a property of the structure of an LLM's probability function that is useful for such detection. Specifically, we demonstrate that text sampled from an LLM tends to occupy negative curvature regions of the model's log probability function. Leveraging this observation, we then define a new curvature-based criterion for judging if a passage is generated from a given LLM. This approach, which we call DetectGPT, does not require training a separate classifier, collecting a dataset of real or generated passages, or explicitly watermarking generated text. It uses only log probabilities computed by the model of interest and random perturbations of the passage from another generic pre-trained language model (e.g., T5). We find DetectGPT is more discriminative than existing zero-shot methods for model sample detection, notably improving detection of fake news articles generated by 20B parameter GPT-NeoX from 0.81 AUROC for the strongest zero-shot baseline to 0.95 AUROC for DetectGPT. See https://ericmitchell.ai/detectgpt for code, data, and other project information.",
+      "pdf_url": "https://arxiv.org/pdf/2301.11305v2",
+      "published": "2023-01-26T18:44:06Z"
+    },
+    "2301.10226": {
+      "title": "A Watermark for Large Language Models",
+      "authors": [
+        "John Kirchenbauer",
+        "Jonas Geiping",
+        "Yuxin Wen",
+        "Jonathan Katz",
+        "Ian Miers",
+        "Tom Goldstein"
+      ],
+      "abstract": "Potential harms of large language models can be mitigated by watermarking model output, i.e., embedding signals into generated text that are invisible to humans but algorithmically detectable from a short span of tokens. We propose a watermarking framework for proprietary language models. The watermark can be embedded with negligible impact on text quality, and can be detected using an efficient open-source algorithm without access to the language model API or parameters. The watermark works by selecting a randomized set of \"green\" tokens before a word is generated, and then softly promoting use of green tokens during sampling. We propose a statistical test for detecting the watermark with interpretable p-values, and derive an information-theoretic framework for analyzing the sensitivity of the watermark. We test the watermark using a multi-billion parameter model from the Open Pretrained Transformer (OPT) family, and discuss robustness and security.",
+      "pdf_url": "https://arxiv.org/pdf/2301.10226v4",
+      "published": "2023-01-24T18:52:59Z"
+    },
+    "2303.11156": {
+      "title": "Can AI-Generated Text be Reliably Detected?",
+      "authors": [
+        "Vinu Sankar Sadasivan",
+        "Aounon Kumar",
+        "Sriram Balasubramanian",
+        "Wenxiao Wang",
+        "Soheil Feizi"
+      ],
+      "abstract": "Large Language Models (LLMs) perform impressively well in various applications. However, the potential for misuse of these models in activities such as plagiarism, generating fake news, and spamming has raised concern about their responsible use. Consequently, the reliable detection of AI-generated text has become a critical area of research. AI text detectors have shown to be effective under their specific settings. In this paper, we stress-test the robustness of these AI text detectors in the presence of an attacker. We introduce recursive paraphrasing attack to stress test a wide range of detection schemes, including the ones using the watermarking as well as neural network-based detectors, zero shot classifiers, and retrieval-based detectors. Our experiments conducted on passages, each approximately 300 tokens long, reveal the varying sensitivities of these detectors to our attacks. Our findings indicate that while our recursive paraphrasing method can significantly reduce detection rates, it only slightly degrades text quality in many cases, highlighting potential vulnerabilities in current detection systems in the presence of an attacker. Additionally, we investigate the susceptibility of watermarked LLMs to spoofing attacks aimed at misclassifying human-written text as AI-generated. We demonstrate that an attacker can infer hidden AI text signatures without white-box access to the detection method, potentially leading to reputational risks for LLM developers. Finally, we provide a theoretical framework connecting the AUROC of the best possible detector to the Total Variation distance between human and AI text distributions. This analysis offers insights into the fundamental challenges of reliable detection as language models continue to advance. Our code is publicly available at https://github.com/vinusankars/Reliability-of-AI-text-detectors.",
+      "pdf_url": "https://arxiv.org/pdf/2303.11156v4",
+      "published": "2023-03-17T17:53:19Z"
+    },
+    "2303.13408": {
+      "title": "Paraphrasing evades detectors of AI-generated text, but retrieval is an effective defense",
+      "authors": [
+        "Kalpesh Krishna",
+        "Yixiao Song",
+        "Marzena Karpinska",
+        "John Wieting",
+        "Mohit Iyyer"
+      ],
+      "abstract": "The rise in malicious usage of large language models, such as fake content creation and academic plagiarism, has motivated the development of approaches that identify AI-generated text, including those based on watermarking or outlier detection. However, the robustness of these detection algorithms to paraphrases of AI-generated text remains unclear. To stress test these detectors, we build a 11B parameter paraphrase generation model (DIPPER) that can paraphrase paragraphs, condition on surrounding context, and control lexical diversity and content reordering. Using DIPPER to paraphrase text generated by three large language models (including GPT3.5-davinci-003) successfully evades several detectors, including watermarking, GPTZero, DetectGPT, and OpenAI's text classifier. For example, DIPPER drops detection accuracy of DetectGPT from 70.3% to 4.6% (at a constant false positive rate of 1%), without appreciably modifying the input semantics.\n  To increase the robustness of AI-generated text detection to paraphrase attacks, we introduce a simple defense that relies on retrieving semantically-similar generations and must be maintained by a language model API provider. Given a candidate text, our algorithm searches a database of sequences previously generated by the API, looking for sequences that match the candidate text within a certain threshold. We empirically verify our defense using a database of 15M generations from a fine-tuned T5-XXL model and find that it can detect 80% to 97% of paraphrased generations across different settings while only classifying 1% of human-written sequences as AI-generated. We open-source our models, code and data.",
+      "pdf_url": "https://arxiv.org/pdf/2303.13408v2",
+      "published": "2023-03-23T16:29:27Z"
+    },
+    "2304.02819": {
+      "title": "GPT detectors are biased against non-native English writers",
+      "authors": [
+        "Weixin Liang",
+        "Mert Yuksekgonul",
+        "Yining Mao",
+        "Eric Wu",
+        "James Zou"
+      ],
+      "abstract": "The rapid adoption of generative language models has brought about substantial advancements in digital communication, while simultaneously raising concerns regarding the potential misuse of AI-generated content. Although numerous detection methods have been proposed to differentiate between AI and human-generated content, the fairness and robustness of these detectors remain underexplored. In this study, we evaluate the performance of several widely-used GPT detectors using writing samples from native and non-native English writers. Our findings reveal that these detectors consistently misclassify non-native English writing samples as AI-generated, whereas native writing samples are accurately identified. Furthermore, we demonstrate that simple prompting strategies can not only mitigate this bias but also effectively bypass GPT detectors, suggesting that GPT detectors may unintentionally penalize writers with constrained linguistic expressions. Our results call for a broader conversation about the ethical implications of deploying ChatGPT content detectors and caution against their use in evaluative or educational settings, particularly when they may inadvertently penalize or exclude non-native English speakers from the global discourse. The published version of this study can be accessed at: www.cell.com/patterns/fulltext/S2666-3899(23)00130-7",
+      "pdf_url": "https://arxiv.org/pdf/2304.02819v3",
+      "published": "2023-04-06T01:51:15Z"
+    },
+    "2303.07205": {
+      "title": "The Science of Detecting LLM-Generated Texts",
+      "authors": [
+        "Ruixiang Tang",
+        "Yu-Neng Chuang",
+        "Xia Hu"
+      ],
+      "abstract": "The emergence of large language models (LLMs) has resulted in the production of LLM-generated texts that is highly sophisticated and almost indistinguishable from texts written by humans. However, this has also sparked concerns about the potential misuse of such texts, such as spreading misinformation and causing disruptions in the education system. Although many detection approaches have been proposed, a comprehensive understanding of the achievements and challenges is still lacking. This survey aims to provide an overview of existing LLM-generated text detection techniques and enhance the control and regulation of language generation models. Furthermore, we emphasize crucial considerations for future research, including the development of comprehensive evaluation metrics and the threat posed by open-source LLMs, to drive progress in the area of LLM-generated text detection.",
+      "pdf_url": "https://arxiv.org/pdf/2303.07205v3",
+      "published": "2023-02-04T04:49:17Z"
+    },
+    "2304.04736": {
+      "title": "On the Possibilities of AI-Generated Text Detection",
+      "authors": [
+        "Souradip Chakraborty",
+        "Amrit Singh Bedi",
+        "Sicheng Zhu",
+        "Bang An",
+        "Dinesh Manocha",
+        "Furong Huang"
+      ],
+      "abstract": "Our work addresses the critical issue of distinguishing text generated by Large Language Models (LLMs) from human-produced text, a task essential for numerous applications. Despite ongoing debate about the feasibility of such differentiation, we present evidence supporting its consistent achievability, except when human and machine text distributions are indistinguishable across their entire support. Drawing from information theory, we argue that as machine-generated text approximates human-like quality, the sample size needed for detection increases. We establish precise sample complexity bounds for detecting AI-generated text, laying groundwork for future research aimed at developing advanced, multi-sample detectors. Our empirical evaluations across multiple datasets (Xsum, Squad, IMDb, and Kaggle FakeNews) confirm the viability of enhanced detection methods. We test various state-of-the-art text generators, including GPT-2, GPT-3.5-Turbo, Llama, Llama-2-13B-Chat-HF, and Llama-2-70B-Chat-HF, against detectors, including oBERTa-Large/Base-Detector, GPTZero. Our findings align with OpenAI's empirical data related to sequence length, marking the first theoretical substantiation for these observations.",
+      "pdf_url": "https://arxiv.org/pdf/2304.04736v3",
+      "published": "2023-04-10T17:47:39Z"
+    },
+    "2406.12549": {
+      "title": "MultiSocial: Multilingual Benchmark of Machine-Generated Text Detection of Social-Media Texts",
+      "authors": [
+        "Dominik Macko",
+        "Jakub Kopal",
+        "Robert Moro",
+        "Ivan Srba"
+      ],
+      "abstract": "Recent LLMs are able to generate high-quality multilingual texts, indistinguishable for humans from authentic human-written ones. Research in machine-generated text detection is however mostly focused on the English language and longer texts, such as news articles, scientific papers or student essays. Social-media texts are usually much shorter and often feature informal language, grammatical errors, or distinct linguistic items (e.g., emoticons, hashtags). There is a gap in studying the ability of existing methods in detection of such texts, reflected also in the lack of existing multilingual benchmark datasets. To fill this gap we propose the first multilingual (22 languages) and multi-platform (5 social media platforms) dataset for benchmarking machine-generated text detection in the social-media domain, called MultiSocial. It contains 472,097 texts, of which about 58k are human-written and approximately the same amount is generated by each of 7 multilingual LLMs. We use this benchmark to compare existing detection methods in zero-shot as well as fine-tuned form. Our results indicate that the fine-tuned detectors have no problem to be trained on social-media texts and that the platform selection for training matters.",
+      "pdf_url": "https://arxiv.org/pdf/2406.12549v2",
+      "published": "2024-06-18T12:26:09Z"
+    },
+    "2406.15583": {
+      "title": "Detecting AI-Generated Text: Factors Influencing Detectability with Current Methods",
+      "authors": [
+        "Kathleen C. Fraser",
+        "Hillary Dawkins",
+        "Svetlana Kiritchenko"
+      ],
+      "abstract": "Large language models (LLMs) have advanced to a point that even humans have difficulty discerning whether a text was generated by another human, or by a computer. However, knowing whether a text was produced by human or artificial intelligence (AI) is important to determining its trustworthiness, and has applications in many domains including detecting fraud and academic dishonesty, as well as combating the spread of misinformation and political propaganda. The task of AI-generated text (AIGT) detection is therefore both very challenging, and highly critical. In this survey, we summarize state-of-the art approaches to AIGT detection, including watermarking, statistical and stylistic analysis, and machine learning classification. We also provide information about existing datasets for this task. Synthesizing the research findings, we aim to provide insight into the salient factors that combine to determine how \"detectable\" AIGT text is under different scenarios, and to make practical recommendations for future work towards this significant technical and societal challenge.",
+      "pdf_url": "https://arxiv.org/pdf/2406.15583v2",
+      "published": "2024-06-21T18:31:49Z"
+    },
+    "2402.13671": {
+      "title": "KInIT at SemEval-2024 Task 8: Fine-tuned LLMs for Multilingual Machine-Generated Text Detection",
+      "authors": [
+        "Michal Spiegel",
+        "Dominik Macko"
+      ],
+      "abstract": "SemEval-2024 Task 8 is focused on multigenerator, multidomain, and multilingual black-box machine-generated text detection. Such a detection is important for preventing a potential misuse of large language models (LLMs), the newest of which are very capable in generating multilingual human-like texts. We have coped with this task in multiple ways, utilizing language identification and parameter-efficient fine-tuning of smaller LLMs for text classification. We have further used the per-language classification-threshold calibration to uniquely combine fine-tuned models predictions with statistical detection metrics to improve generalization of the system detection performance. Our submitted method achieved competitive results, ranking at the fourth place, just under 1 percentage point behind the winner.",
+      "pdf_url": "https://arxiv.org/pdf/2402.13671v2",
+      "published": "2024-02-21T10:09:56Z"
+    },
+    "2310.14724": {
+      "title": "A Survey on LLM-Generated Text Detection: Necessity, Methods, and Future Directions",
+      "authors": [
+        "Junchao Wu",
+        "Shu Yang",
+        "Runzhe Zhan",
+        "Yulin Yuan",
+        "Derek F. Wong",
+        "Lidia S. Chao"
+      ],
+      "abstract": "The powerful ability to understand, follow, and generate complex language emerging from large language models (LLMs) makes LLM-generated text flood many areas of our daily lives at an incredible speed and is widely accepted by humans. As LLMs continue to expand, there is an imperative need to develop detectors that can detect LLM-generated text. This is crucial to mitigate potential misuse of LLMs and safeguard realms like artistic expression and social networks from harmful influence of LLM-generated content. The LLM-generated text detection aims to discern if a piece of text was produced by an LLM, which is essentially a binary classification task. The detector techniques have witnessed notable advancements recently, propelled by innovations in watermarking techniques, statistics-based detectors, neural-base detectors, and human-assisted methods. In this survey, we collate recent research breakthroughs in this area and underscore the pressing need to bolster detector research. We also delve into prevalent datasets, elucidating their limitations and developmental requirements. Furthermore, we analyze various LLM-generated text detection paradigms, shedding light on challenges like out-of-distribution problems, potential attacks, real-world data issues and the lack of effective evaluation framework. Conclusively, we highlight interesting directions for future research in LLM-generated text detection to advance the implementation of responsible artificial intelligence (AI). Our aim with this survey is to provide a clear and comprehensive introduction for newcomers while also offering seasoned researchers a valuable update in the field of LLM-generated text detection. The useful resources are publicly available at: https://github.com/NLP2CT/LLM-generated-Text-Detection.",
+      "pdf_url": "https://arxiv.org/pdf/2310.14724v3",
+      "published": "2023-10-23T09:01:13Z"
+    },
+    "2310.15264": {
+      "title": "Towards Possibilities & Impossibilities of AI-generated Text Detection: A Survey",
+      "authors": [
+        "Soumya Suvra Ghosal",
+        "Souradip Chakraborty",
+        "Jonas Geiping",
+        "Furong Huang",
+        "Dinesh Manocha",
+        "Amrit Singh Bedi"
+      ],
+      "abstract": "Large Language Models (LLMs) have revolutionized the domain of natural language processing (NLP) with remarkable capabilities of generating human-like text responses. However, despite these advancements, several works in the existing literature have raised serious concerns about the potential misuse of LLMs such as spreading misinformation, generating fake news, plagiarism in academia, and contaminating the web. To address these concerns, a consensus among the research community is to develop algorithmic solutions to detect AI-generated text. The basic idea is that whenever we can tell if the given text is either written by a human or an AI, we can utilize this information to address the above-mentioned concerns. To that end, a plethora of detection frameworks have been proposed, highlighting the possibilities of AI-generated text detection. But in parallel to the development of detection frameworks, researchers have also concentrated on designing strategies to elude detection, i.e., focusing on the impossibilities of AI-generated text detection. This is a crucial step in order to make sure the detection frameworks are robust enough and it is not too easy to fool a detector. Despite the huge interest and the flurry of research in this domain, the community currently lacks a comprehensive analysis of recent developments. In this survey, we aim to provide a concise categorization and overview of current work encompassing both the prospects and the limitations of AI-generated text detection. To enrich the collective knowledge, we engage in an exhaustive discussion on critical and challenging open questions related to ongoing research on AI-generated text detection.",
+      "pdf_url": "https://arxiv.org/pdf/2310.15264v1",
+      "published": "2023-10-23T18:11:32Z"
+    }
+  },
+  "liang": {
+    "metadata": {
+      "title": "GPT detectors are biased against non-native English writers",
+      "authors": [
+        "Weixin Liang",
+        "Mert Yuksekgonul",
+        "Yining Mao",
+        "Eric Wu",
+        "James Zou"
+      ],
+      "abstract": "The rapid adoption of generative language models has brought about substantial advancements in digital communication, while simultaneously raising concerns regarding the potential misuse of AI-generated content. Although numerous detection methods have been proposed to differentiate between AI and human-generated content, the fairness and robustness of these detectors remain underexplored. In this study, we evaluate the performance of several widely-used GPT detectors using writing samples from native and non-native English writers. Our findings reveal that these detectors consistently misclassify non-native English writing samples as AI-generated, whereas native writing samples are accurately identified. Furthermore, we demonstrate that simple prompting strategies can not only mitigate this bias but also effectively bypass GPT detectors, suggesting that GPT detectors may unintentionally penalize writers with constrained linguistic expressions. Our results call for a broader conversation about the ethical implications of deploying ChatGPT content detectors and caution against their use in evaluative or educational settings, particularly when they may inadvertently penalize or exclude non-native English speakers from the global discourse. The published version of this study can be accessed at: www.cell.com/patterns/fulltext/S2666-3899(23)00130-7",
+      "pdf_url": "https://arxiv.org/pdf/2304.02819v3",
+      "published": "2023-04-06T01:51:15Z"
+    },
+    "quotes": [
+      {
+        "page": 2,
+        "value": "61.22",
+        "quote": "he detectors demonstrated near-perfect accuracy for US 8-th grade essays. However, they misclassified over half of the TOEFL essays as \"AI-generated\" (average false positive rate: 61.22%). All seven detectors unanimously identified 18 of the 91 TOEFL essays (19.78%) as AI-authored, while 89 of the 91 TOEFL essays (97.80%) are flagged as AI-generated by at least one detector. For the TOEFL essays that we"
+      },
+      {
+        "page": 2,
+        "value": "19.78",
+        "quote": "er, they misclassified over half of the TOEFL essays as \"AI-generated\" (average false positive rate: 61.22%). All seven detectors unanimously identified 18 of the 91 TOEFL essays (19.78%) as AI-authored, while 89 of the 91 TOEFL essays (97.80%) are flagged as AI-generated by at least one detector. For the TOEFL essays that were unanimously identified (Fig. 1b), we observed that they had significantly lo"
+      },
+      {
+        "page": 2,
+        "value": "97.80",
+        "quote": "AI-generated\" (average false positive rate: 61.22%). All seven detectors unanimously identified 18 of the 91 TOEFL essays (19.78%) as AI-authored, while 89 of the 91 TOEFL essays (97.80%) are flagged as AI-generated by at least one detector. For the TOEFL essays that were unanimously identified (Fig. 1b), we observed that they had significantly lower perplexity compared to the others (P-value: 9.74E-05)"
+      },
+      {
+        "page": 2,
+        "value": "49.45",
+        "quote": "e like that of a native speaker.”) (Fig. 1c). Remarkably, this intervention led to a substantial reduction in misclassification, with the average false positive rate decreasing by 49.45% (from 61.22% to 11.77%). Post-intervention, the TOEFL essays’ perplexity significantly increased (P-value=9.36E-05), and only 1 out of 91 essays (1.10%) was unanimously detected as AI-written. In contrast, applying Chat"
+      },
+      {
+        "page": 2,
+        "value": "61.22",
+        "quote": "f a native speaker.”) (Fig. 1c). Remarkably, this intervention led to a substantial reduction in misclassification, with the average false positive rate decreasing by 49.45% (from 61.22% to 11.77%). Post-intervention, the TOEFL essays’ perplexity significantly increased (P-value=9.36E-05), and only 1 out of 91 essays (1.10%) was unanimously detected as AI-written. In contrast, applying ChatGPT to adjust"
+      },
+      {
+        "page": 2,
+        "value": "11.77",
+        "quote": "speaker.”) (Fig. 1c). Remarkably, this intervention led to a substantial reduction in misclassification, with the average false positive rate decreasing by 49.45% (from 61.22% to 11.77%). Post-intervention, the TOEFL essays’ perplexity significantly increased (P-value=9.36E-05), and only 1 out of 91 essays (1.10%) was unanimously detected as AI-written. In contrast, applying ChatGPT to adjust the word"
+      },
+      {
+        "page": 2,
+        "value": "1.10",
+        "quote": "ositive rate decreasing by 49.45% (from 61.22% to 11.77%). Post-intervention, the TOEFL essays’ perplexity significantly increased (P-value=9.36E-05), and only 1 out of 91 essays (1.10%) was unanimously detected as AI-written. In contrast, applying ChatGPT to adjust the word choices in US 8th-grade essays to mimic non-native speaker writing (Prompt: \"Simplify word choices as if written by a non-native"
+      },
+      {
+        "page": 2,
+        "value": "5.19",
+        "quote": "iting (Prompt: \"Simplify word choices as if written by a non-native speaker.\") led to a significant increase in the misclassification rate as AI-generated text, from an average of 5.19% across detectors to 56.65% (Fig. 1ac). This word choice adjustment also resulted in significantly lower text perplexity (Fig. 1d). This observation highlights that essays authored by non-native writers inherently exhibi"
+      },
+      {
+        "page": 2,
+        "value": "56.65",
+        "quote": "ord choices as if written by a non-native speaker.\") led to a significant increase in the misclassification rate as AI-generated text, from an average of 5.19% across detectors to 56.65% (Fig. 1ac). This word choice adjustment also resulted in significantly lower text perplexity (Fig. 1d). This observation highlights that essays authored by non-native writers inherently exhibit reduced linguistic variab"
+      }
+    ],
+    "verdict": "arrondi_correct",
+    "pdf_error": ""
+  }
+}
