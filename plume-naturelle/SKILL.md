@@ -9,7 +9,7 @@ description: >
   robot". Trigger aussi quand un texte soumis à relecture présente des patterns IA évidents.
   TOUJOURS utiliser ce skill pour toute demande de réécriture visant à rendre un texte plus
   naturel ou indétectable comme IA.
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Plume Naturelle -Moteur de réécriture anti-IA pour le français
@@ -66,6 +66,15 @@ Avant toute réécriture, scanner le texte et compter :
 | Isotopie métaphorique persistante (même champ lexical sur > 2 paragraphes) | Drapeau rouge |
 | Concessions préemptives intégrées (thèse + antithèse dans la même phrase) | > 1 par page |
 | Ton constant sans montée en intensité | Drapeau rouge |
+| Énumération ordinale "La première... La deuxième..." (scaffolding) | > 0 par § |
+| Thèse-méta en tête de § (assertion abstraite en ouverture) | > 2 par page |
+| Phrases aphoristiques finales de § (punchline courte) | > 3 par page |
+| "Pas X : Y" / "X n'est pas A. C'est B." (définition binaire) | > 1 par page |
+| Scaffolding "D'abord/Ensuite/Enfin" argumentatif | > 0 par page |
+| Cleft obsessionnel "Ce qui X, c'est Y" | > 2 par page |
+| Cascade d'autorités ("A affirme X. B confirme Y.") | > 0 |
+| "Dit autrement" / "Autrement dit" / "En clair" (marqueur reformulation) | > 0 |
+| Conclusion / Résumé / Abstract non retravaillés (zone rouge) | Drapeau rouge |
 
 ### Calcul du score
 
@@ -102,6 +111,15 @@ Détail :
   - Doublons paraphrastiques : [n]
   - Idiolecte personnel : [Présent / Absent]
   - Coût cognitif visible : [Oui / Non]
+  - Énumération ordinale (La 1ère/2ème/3ème) : [n]
+  - Thèse-méta en tête de § : [n]
+  - Aphorismes finaux : [n]
+  - Définitions binaires (Pas X : Y) : [n]
+  - Scaffolding D'abord/Ensuite/Enfin : [n]
+  - Clefts "Ce qui X, c'est Y" : [n]
+  - Cascades d'autorités : [n]
+  - Marqueurs reformulation (Dit autrement...) : [n]
+  - Zones rouges (Résumé / Abstract / Conclusion) : [retravaillées / brutes]
 
 Patterns dominants : [les 3 principaux problèmes]
 ```
@@ -625,6 +643,16 @@ Voir `references/patterns-academiques-fr.md` pour les exemples complets avant/ap
 | 46 -Densité adjectivale lisse | Paires d'adjectifs génériques | Jamais deux adjectifs génériques côte à côte : remplacer par un fait |
 | 47 -Calques anglais | Syntaxe SVO, faux amis | Vérifier : « un francophone natif dirait-il ça comme ça ? » |
 | 48 -Persistance macro-structure | Structure rigide malgré humanisation | Déséquilibrer les parties + 1 digression par chapitre + pas de récap |
+| 49 -Énumération ordinale scaffolding | "La première est X. La deuxième est Y." | Fusionner étapes, hiérarchiser, intégrer dans récit |
+| 50 -Thèse-méta en ouverture | Phrase-annonce abstraite en tête de § | Commencer par le détail ; supprimer l'annonce |
+| 51 -Aphorisme de clôture | Phrase courte universalisante en fin de § | Terminer sur fait concret, hésitation, question |
+| 52 -Définition binaire | "X n'est pas A. C'est B." / "Pas X : Y" | Affirmer directement ; intégrer la nuance dans la phrase |
+| 53 -Scaffolding trois-raisons | "D'abord... Ensuite... Enfin..." | Supprimer l'annonce ; fusionner 2 raisons ; assumer 2 ou 4 |
+| 54 -Cleft obsessionnel | "Ce qui X, c'est Y" répété | Max 1 par page ; ordre SVO direct |
+| 55 -Cascade d'autorités | "A affirme X. B confirme Y. C ajoute Z." | Une seule autorité bien exploitée ; pas de "confirme" |
+
+Pour exemples détaillés avant/après des patterns 49-55 : voir
+`references/cadence-structurelle.md`.
 
 ---
 
@@ -679,6 +707,41 @@ Référence complète : `references/formules-auto-evaluation.md` et `references/
 exagérée, concentrer les détails concrets dans 2-3 phrases seulement -ces techniques mécaniques
 sont elles-mêmes détectables. La seule humanisation qui fonctionne produit un texte qu'un vrai
 étudiant aurait réellement pu écrire.
+
+---
+
+## Zones rouges académiques
+
+Certaines sections de mémoires et rapports sont quasi-systématiquement
+détectées, même quand le corps du texte passe. Le format imposé produit
+une structure normalisée que les LLM de détection reconnaissent à coup sûr.
+
+| Zone rouge | Pourquoi flaggée | Traitement spécial |
+|---|---|---|
+| Résumé / Abstract | Format contraint, densité synthétique extrême | Mode Résumé/Abstract (cf. section dédiée) |
+| Conclusion | "En conclusion...", récap, ouverture prospective générique | Commencer par le résultat le plus contre-intuitif ; pas de récap ; finir sur tension ouverte |
+| Introduction (3 premiers §) | "Ce mémoire porte sur...", annonce de plan | Ouvrir sur scène / observation / chiffre brut ; supprimer annonces de plan si titres clairs |
+| Méthodologie / Pipeline | Énumérations ordinales, listes d'étapes parallèles | Patterns 49-50-53 en priorité ; récit plutôt qu'inventaire |
+| Descriptions de processus | "Il ouvre, il lit, il détermine, il saisit..." | Casser la liste d'actions en récit asymétrique |
+| Annexes documentaires | Texte structuré type CLAUDE.md, README, guide | Si possible, laisser en format brut factuel ; si rédigé en prose, traiter comme corps du texte |
+| Bibliographie | Format APA mécanique | Normalement exclue du calcul Compilatio ; vérifier que les citations sont bien entre guillemets |
+
+### Règle zone rouge
+
+Pour tout mémoire > 5000 mots qui dépasse 30 % de détection alors que
+les passages narratifs avec "je" passent : la cause est dans les zones
+rouges. Les retravailler **en priorité** avant de toucher au reste.
+
+**Ordre recommandé :**
+1. Résumé et abstract (Mode Résumé/Abstract)
+2. Conclusion
+3. Sections méthodologiques / pipeline (patterns 49-50-53)
+4. Introduction (3 premiers paragraphes)
+5. Corps du texte (patterns 1-48 + 51-55)
+
+**Gain typique :** corriger les 4 premières zones rouges sur un mémoire
+de 10 000 mots fait baisser le score de 15 à 20 points sans toucher à
+80 % du texte.
 
 ---
 
@@ -787,6 +850,16 @@ MODIFICATIONS EFFECTUÉES
 - **Texte anglais en contexte français :** proposer de traduire *et* d'humaniser en français.
 - **Humanisation « légère » :** Phases 1-5 seulement, Phase 7 minimale, pas de restructuration.
 - **Humanisation « totale » :** toutes les phases + Phase 7 maximum + restructuration autorisée.
+- **Long mémoire (> 5000 mots) avec score 30-50 % malgré ancrage correct :** le problème est
+  structurel, pas lexical. Appliquer dans cet ordre : (1) audit des zones rouges (Résumé,
+  Conclusion, Introduction, Méthodologie) ; (2) patterns 49-55 (cadence structurelle) sur
+  les sections techniques ; (3) Mode Résumé/Abstract sur les synthèses ; (4) ne pas toucher
+  aux passages narratifs déjà validés (risque de sur-humanisation). Objectif réaliste :
+  -15 à -20 points en traitant 20-30 % du texte ciblé.
+- **Résumé / abstract / 4e de couverture détecté à 80-100 % :** Mode Résumé/Abstract
+  (cf. section dédiée). Réécriture complète plutôt que retouche.
+- **Rapport avec pipeline / méthodologie en énumération ordinale :** Pattern 49 en priorité,
+  récit avant inventaire, pas de "la première est / la deuxième est".
 
 ---
 
@@ -850,6 +923,93 @@ zéro phrase > 20 mots, zéro « il convient de noter que » à l'oral.
 
 ---
 
+## Mode Résumé / Abstract anti-détection
+
+Activé quand : le texte à humaniser inclut un résumé, un abstract, une
+synthèse de mémoire, ou quand l'utilisateur mentionne "mon abstract fait
+100 %", "le résumé est entièrement flaggé", "je n'arrive pas à faire
+baisser le score sur le résumé".
+
+### Pourquoi les résumés sont piégés
+
+Un résumé de mémoire, par format, concentre exactement les signaux que
+les détecteurs LLM cherchent :
+- Densité thématique élevée (chaque phrase résume un paragraphe entier)
+- Structure canonique (problématique → méthode → résultats → apports)
+- Absence de digressions, d'hésitations, de détails débordants
+- Registre uniformément soutenu
+- Ouverture typique "Ce mémoire porte sur / examine / étudie..."
+
+Un résumé rédigé "proprement" sera détecté à 80-100 % presque toujours,
+même quand le reste du mémoire passe.
+
+### Règles de réécriture d'un résumé
+
+**1. Ouvrir sur une scène ou un chiffre brut, pas sur "ce mémoire porte sur".**
+- Avant : "Ce mémoire examine l'automatisation de la saisie bancaire..."
+- Après : "Au Cabinet X, saisir un relevé bancaire prend 30 minutes. Multiplié par 400 clients, ça finit par peser."
+
+**2. Casser la structure canonique.**
+- Ne pas enchaîner problématique → méthode → résultats → apports dans l'ordre attendu
+- Commencer par le résultat le plus marquant, ou par la difficulté principale rencontrée
+
+**3. Un seul chiffre-ancre fort.**
+- Pas de liste "88-92 %, 84 %, 25 relevés, 8 banques" dans la même phrase
+- Choisir le chiffre le plus parlant et le laisser respirer
+
+**4. Rythme cassé obligatoire.**
+- Alterner phrase courte (< 10 mots) et phrase longue (> 30 mots)
+- Insérer une phrase nominale si possible
+
+**5. Supprimer toutes les transitions méta.**
+- "Au-delà des résultats mesurés..."
+- "Ce mémoire interroge également..."
+- "La dissertation examine par ailleurs..."
+
+**6. Finir sur tension ouverte, pas sur synthèse.**
+- Pas de "le collaborateur voit ses compétences se reconfigurer"
+- Oui : "Reste à voir si le taux de 84 % tient sur un an d'usage réel."
+
+**7. Réduire de 20-30 %.**
+- Un résumé IA est toujours trop dense
+- Couper d'abord les phrases-transition et les doublons paraphrastiques
+
+### Abstract anglais
+
+Mêmes règles, renforcées : l'anglais académique est encore plus normé
+que le français, et les LLM ont vu dix fois plus d'abstracts anglais à
+l'entraînement. En particulier :
+- Pas de "This dissertation examines / explores / investigates / analyzes"
+- Préférer "At Cabinet X, bank statement entry takes 30 minutes..."
+- Éviter les conclusions universalisantes type "...in their own right"
+
+### Exemple complet
+
+**Avant (détection typique ~90 %) :**
+> Ce mémoire porte sur le développement et le déploiement d'outils
+> d'automatisation au sein du Cabinet ATF. Partant du constat que la
+> saisie manuelle des relevés bancaires mobilise entre 25 et 40 minutes
+> par relevé sur un portefeuille de 400 clients, nous avons développé
+> SAGE Parser v2, un outil Python qui automatise la transformation de
+> relevés bancaires PDF en fichiers Excel directement importables dans
+> SAGE Génération Experts. L'outil couvre 8 banques et a été développé
+> avec Claude Code d'Anthropic. Les mesures effectuées sur 25 relevés
+> réels confirment un gain de 88 à 92 % sur le temps de traitement,
+> avec un taux de réussite de 84 %.
+
+**Après (détection visée < 30 %) :**
+> Au Cabinet ATF, saisir un relevé bancaire prenait entre 25 et 40
+> minutes. Sur 400 clients, ça finit par peser. J'ai écrit, pendant
+> l'alternance, un outil Python qui avale le PDF et sort un Excel
+> directement importable dans SAGE Génération Experts : huit banques
+> couvertes, parce que ce sont celles que nos clients utilisent. Le
+> gain réel mesuré sur 25 relevés tourne autour de 90 %. Mais 16 %
+> des fichiers sortent avec un écart que l'outil signale sans le
+> résoudre. À ce stade, c'est l'humain qui tranche, et rien ne dit
+> que ça tiendra à l'échelle du cabinet entier.
+
+---
+
 ## Références internes
 
 | Fichier | Quand le consulter |
@@ -862,4 +1022,5 @@ zéro phrase > 20 mots, zéro « il convient de noter que » à l'oral.
 | `references/marqueurs-ia-francais.md` | Liste noire de 60+ marqueurs IA en français |
 | `references/patterns-par-discipline.md` | Patterns IA par discipline (compta, droit, SHS, info, santé, lettres) |
 | `references/analyse-rapport-compilatio.md` | Interpréter un rapport Compilatio : grille de lecture, diagnostic par bloc, stratégie de correction |
+| `references/cadence-structurelle.md` | Patterns 49-55 détaillés (énumération ordinale, thèse-méta, aphorisme clôture, définition binaire, scaffolding 3-raisons, cleft, cascade d'autorités) avec exemples avant/après |
 | `/mnt/skills/user/soutien-academique/SKILL.md` | Règles d'écriture naturelle pour mémoires et rapports |
