@@ -149,7 +149,7 @@ Les skills peuvent se compléter selon le besoin :
 ### Sur Claude.ai (avec Claude Code ou Cowork)
 
 ```bash
-git clone https://github.com/StealthyLabsHQ/ai-edu-skills-FR.git
+git clone https://github.com/stealthsrc/ai-edu-skills-FR.git
 
 # Installer tous les skills
 cp -r ai-edu-skills-FR/soutien-academique /mnt/skills/user/
